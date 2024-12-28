@@ -199,7 +199,7 @@ int word_exists(char* string)
 	return 0;
 	// i think the strat i wanna use is to preprocess the words_alpha.txt in runtime memory
 	// use fseek and ftell to jump to the word offsets in the file, and use an arraylist to pick the index of the word, which will contain the offset
-	FILE* file = open_file("textfile.txt"); // Replace with "./english-words/words_alpha.txt" when ready
+	FILE* file = open_file("textfile.txt"); // Replace with "./words.txt" when ready
 	if (file == NULL)
 	{
 		printf("Error opening the file!\n");

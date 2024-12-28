@@ -3,7 +3,7 @@
 #include <string.h>
 
 #define TOTAL_WORDS 370105
-#define NUM_DIGITS 8
+#define NUM_DIGITS 7
 
 // The point of this program is to take the words_alpha.txt text file and generate a parallel
 // file containing the offsets of each word using fseek. The problem at hand is that we can use
@@ -25,7 +25,7 @@ int main(void)
 {
 	FILE* preprocess_ptr = fopen("preprocessed.txt", "w");
 	if (preprocess_ptr == NULL) printf("ERROR PREPROCESS\n");
-	FILE* words_ptr = fopen("./alphabetic_words.txt", "r");
+	FILE* words_ptr = fopen("./words.txt", "r");
 	if (words_ptr == NULL) printf("ERROR WORDS\n");
 	int cumulative = 0;
 	char* initial_offset = get_init_offset();
