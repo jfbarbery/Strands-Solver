@@ -25,7 +25,7 @@ int main(void)
 {
 	FILE* preprocess_ptr = fopen("preprocessed.txt", "w");
 	if (preprocess_ptr == NULL) printf("ERROR PREPROCESS\n");
-	FILE* words_ptr = fopen("./english-words/words_alpha.txt", "r");
+	FILE* words_ptr = fopen("./alphabetic_words.txt", "r");
 	if (words_ptr == NULL) printf("ERROR WORDS\n");
 	int cumulative = 0;
 	char* initial_offset = get_init_offset();
