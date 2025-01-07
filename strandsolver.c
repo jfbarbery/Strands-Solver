@@ -9,7 +9,6 @@
 #define COLS 6
 
 char** read_board(char* argv[]);
-FILE* open_file(char* filename);
 char* read_word(FILE* file);
 char** strand_solver(char** board);
 void backtrack(char** board, char** colors, int n, int r, int c, int** selected);
@@ -49,13 +48,6 @@ char** read_board(char* argv[])
 		board[r][ROWS] = '\0';
 	}
 	return board;
-}
-
-// Opens a file and returns the file pointer
-FILE* open_file(char* filename)
-{
-	FILE* file = fopen(filename, "r");
-	return file;
 }
 
 // Reads a single word from the file
@@ -197,22 +189,13 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 int word_exists(char* string)
 {
 	return 0;
-	// i think the strat i wanna use is to preprocess the words_alpha.txt in runtime memory
-	// use fseek and ftell to jump to the word offsets in the file, and use an arraylist to pick the index of the word, which will contain the offset
-	FILE* file = open_file("textfile.txt"); // Replace with "./words.txt" when ready
+	FILE* file = fopen("./en.txt", "r");
 	if (file == NULL)
 	{
 		printf("Error opening the file!\n");
 		return 1;
 	}
-	int i = 0;
-	while (i < 100) // Replace condition with something dynamic to stop while loop when EOF
-	{
-		char* word = read_word(file);
-		//printf("%s\n", word);
-		free(word);
-		i++;
-	}
+	// binary search here
 	fclose(file);
 }
 
