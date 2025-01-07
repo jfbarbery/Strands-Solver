@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define TOTAL_WORDS 370105
+#define TOTAL_WORDS 274927
 #define NUM_DIGITS 7
 
 // The point of this program is to take the words_alpha.txt text file and generate a parallel
@@ -25,13 +25,13 @@ int main(void)
 {
 	FILE* preprocess_ptr = fopen("preprocessed.txt", "w");
 	if (preprocess_ptr == NULL) printf("ERROR PREPROCESS\n");
-	FILE* words_ptr = fopen("./words.txt", "r");
+	FILE* words_ptr = fopen("./en.txt", "r");
 	if (words_ptr == NULL) printf("ERROR WORDS\n");
 	int cumulative = 0;
 	char* initial_offset = get_init_offset();
 	fprintf(preprocess_ptr, initial_offset);
 	free(initial_offset);
-	for (int i = 0; i < TOTAL_WORDS; i++)
+	for (int i = 0; i < TOTAL_WORDS-1; i++)
 	{
 		int offset = read_word_offset(words_ptr);
 		cumulative += offset + 1;

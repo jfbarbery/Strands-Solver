@@ -20,7 +20,7 @@ void remove_nl(char* word);
 int main(void)
 {
 	FILE* preprocessed_ptr = fopen("preprocessed.txt", "r");
-	FILE* words_ptr = fopen("./english-words/words_alpha.txt", "r");
+	FILE* words_ptr = fopen("./en.txt", "r");
 	
 	// 000000
 	// 000006
@@ -37,7 +37,7 @@ int main(void)
 	// Jump to the word
 	// The offset should be calculated by taking total digits * total words which gets you the total number of chars in the file
 	// Then divide by 2 to get half
-	int offset = formatted_str_to_int("02133183");
+	int offset = formatted_str_to_int("02133184");
 	printf("offset: %d\n", offset);
 	fseek(words_ptr, offset, SEEK_SET);
 	char* word = (char*) malloc(sizeof(char) * 30);
