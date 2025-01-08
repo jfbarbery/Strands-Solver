@@ -7,16 +7,21 @@
 #define MAX_LETTER_SOLUTION 10
 #define ROWS 8
 #define COLS 6
+#define NUM_DIGITS 7
+#define NUM_WORDS 274927
 
 char** read_board(char* argv[]);
 char* read_word(FILE* file);
 char** strand_solver(char** board);
 void backtrack(char** board, char** colors, int n, int r, int c, int** selected);
-int word_exists(char* string);
+int word_exists(char* target);
 int coords_in_selected(int r, int c, int** selected, int n);
 void print_board(char** board, char** colors, int** selected, int n);
 char* get_selected_str(char** board, int** selected, int n);
 char** set_colors();
+void remove_nl(char* word);
+int formatted_str_to_int(char* str);
+int tentopower(int n);
 
 int main(int argc, char* argv[])
 {
@@ -82,13 +87,8 @@ char** strand_solver(char** board)
 {
 	char** colors = set_colors();
 	
-	// Use backtracking to come up with possible words.
-	// As a rule of thumb, don't try to come up with
-	// words that are longer than 10 letters, and
-	// use lexicographical sorting as you're adding
-	// letters on the words. Meaning do a binary search
-	// for the letter you're on, comparing it to the word
-	// list.
+	// Uses backtracking and binary searching in a dictionary to come up with possible words
+	// For this purpose, a "full solution" is the case when a word is found in the dictionary
 	print_board(board, colors, NULL, 0);
 	// Initialize selected letters in partial solution
 	int** selected = (int**) malloc(sizeof(int*) * MAX_LETTER_SOLUTION); // Max selected letters
@@ -112,7 +112,7 @@ char** strand_solver(char** board)
 
 void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 {
-	sleep(0.5);
+	sleep(1);
 	print_board(board, colors, selected, n);
 	// Here is where we try and see if our current partial solution could be a real word
 	char* string = get_selected_str(board, selected, n);
@@ -186,17 +186,78 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 }
 
 // Checks the word list for the string parameter
-int word_exists(char* string)
+int word_exists(char* target)
 {
-	return 0;
-	FILE* file = fopen("./en.txt", "r");
-	if (file == NULL)
+	FILE* words_ptr = fopen("./en.txt", "r");
+	if (words_ptr == NULL) return 0;
+	FILE* offset_ptr = fopen("./preprocessed.txt", "r");
+	if (offset_ptr == NULL) return 0;
+	// Binary Search On Line Number
+	int low = 0;
+	int high = NUM_WORDS-1;
+	int mid = (low+high)/2;
+	// Get the middle offset by multiplying the middle line number * num digits per line (+1 for nl)
+	int offset_for_offset = mid * (NUM_DIGITS+1);
+	fseek(offset_ptr, offset_for_offset, SEEK_SET);
+	char* offset = (char*) malloc(sizeof(char) * (NUM_DIGITS+2));
+	fgets(offset, 9, offset_ptr);
+	remove_nl(offset);
+	int int_offset = formatted_str_to_int(offset);
+	free(offset);
+	fseek(words_ptr, int_offset, SEEK_SET);
+	char* guess = (char*) malloc(sizeof(char) * 30);
+	fgets(guess, 30, words_ptr);
+	remove_nl(guess);
+	int guesses = 0;
+	int res = 0;
+	while (!res)
 	{
-		printf("Error opening the file!\n");
-		return 1;
+		int res = strcmp(target, guess);
+		// Target is lexographically before this guess
+		if (res < 0)
+		{
+			high = mid;
+		}
+		// Target is lexographically after this guess
+		else if (res > 0)
+		{
+			low = mid;
+		}
+		// Found the word
+		else
+		{
+			free(guess);
+			fclose(words_ptr);
+			fclose(offset_ptr);
+			return 1;
+		}
+		int newmid = (low + high)/2;
+		// We couldn't find the word
+		if (mid == newmid) return 0;
+		mid = newmid;
+		// Go to the line number in our offset file
+		offset_for_offset = mid * (NUM_DIGITS+1);
+		fseek(offset_ptr, offset_for_offset, SEEK_SET);
+		// Get the string version of the offset for the word
+		offset = (char*) malloc(sizeof(char) * 9);
+		fgets(offset, 9, offset_ptr);
+		// Remove the newline from fgets
+		remove_nl(offset);
+		// Turn the word offset (a string of decimal digits) into an int type
+		int int_offset = formatted_str_to_int(offset);
+		free(offset);
+		// Go to the offset in the words file
+		fseek(words_ptr, int_offset, SEEK_SET);
+		// Erase the last guess
+		free(guess);
+		guess = (char*) malloc(sizeof(char) * 30);
+		fgets(guess, 30, words_ptr);
+		remove_nl(guess);
+		guesses++;
 	}
-	// binary search here
-	fclose(file);
+	free(guess);
+	fclose(words_ptr);
+	fclose(offset_ptr);
 }
 
 // Returns 1 if r and c appear as a coordinate pair in selected, 0 otherwise
@@ -230,8 +291,8 @@ void print_board(char** board, char** colors, int** selected, int n)
 	printf("%s+", colors[4]);
 	printf("%s-----------%s+\n", colors[5], colors[4]);
 	char* str = get_selected_str(board, selected, n);
-	printf("currently selected letters: %s\n", word);
-	free(word);
+	printf("currently selected letters: %s\n", str);
+	free(str);
 }
 
 char* get_selected_str(char** board, int** selected, int n)
@@ -262,3 +323,48 @@ char** set_colors()
 	return colors;
 }
 
+// Removes the newline character from the return of fgets
+void remove_nl(char* word)
+{
+	if (word == NULL) return;
+	int i = 0;
+	while (word[i] != '\0')
+	{
+		if (word[i] == '\n')
+		{
+			word[i] = '\0';
+			return;
+		}
+		i++;
+	}
+}
+
+// Takes a string that represents an integer and returns the int primitive
+int formatted_str_to_int(char* str)
+{
+	if (str == NULL) return 0;
+	int ret = 0;
+	long unsigned int len = strlen(str);
+	int digits[len];
+	for (int i = 0; i < len; i++)
+	{
+		int single_digit = (int)(str[i] - 48);
+		digits[i] = single_digit;
+		ret = ret + (digits[i] * (tentopower(len - i-1)));
+	}
+	return ret;
+}
+
+// Returns ten to power of n
+int tentopower(int n)
+{
+	if (n == 0) return 1;
+	int ret = 1;
+	int i = 0;
+	while (i < n)
+	{
+		ret *= 10;
+		i++;
+	}
+	return ret;
+}

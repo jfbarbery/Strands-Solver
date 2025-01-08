@@ -12,26 +12,15 @@ int tentopower(int n);
 
 int main(void)
 {
-	printf("Hello, World!\n");
 	FILE* words_ptr = fopen("./en.txt", "r");
-	if (words_ptr == NULL)
-	{
-		printf("Error: Couldn't open words file.\n");
-		return 1;
-	}
+	if (words_ptr == NULL) return 0;
 	FILE* offset_ptr = fopen("./preprocessed.txt", "r");
-	if (offset_ptr == NULL)
-	{
-		printf("Error: Couldn't open offset file.\n");
-		fclose(words_ptr);
-		return 1;
-	}
-	
-	// Binary Search On Index
+	if (offset_ptr == NULL) return 0;
+	// Binary Search On Line Number
 	int low = 0;
-	int high = NUM_WORDS-2;
+	int high = NUM_WORDS-1;
 	int mid = (low+high)/2;
-	char target[] = "zzzz";
+	char target[] = "zzzs";
 	// total words / 2, then mult by num digits per entry, then fseek there
 	int offset_for_offset = mid * (NUM_DIGITS+1);
 	fseek(offset_ptr, offset_for_offset, SEEK_SET);
@@ -45,41 +34,32 @@ int main(void)
 	fgets(guess, 30, words_ptr);
 	remove_nl(guess);
 	int guesses = 0;
-	printf("Initial Guess: |%s|\n", guess);
 	int res = 0;
 	while (!res)
 	{
-		printf("-----------------------------\n\n");
-		printf("Guessing Index:   %d\n", mid);
-		printf("Low Bound Index:  %d\n", low);
-		printf("High Bound Index: %d\n", high);
-		printf("Guess: |%s|\n\n", guess);
-		sleep(1);
 		int res = strcmp(target, guess);
-		printf("Result of |%s| vs |%s|: %d\n", target, guess, res);
+		// Target is lexographically before this guess
 		if (res < 0)
 		{
 			high = mid;
-			if (high == mid)
-			{
-				high--;
-			}
 		}
+		// Target is lexographically after this guess
 		else if (res > 0)
 		{
 			low = mid;
-			if (low == mid)
-			{
-				low++;
-			}
 		}
+		// Found the word
 		else
 		{
-			printf("It seems we found the word?\n");
-			break;
+			free(guess);
+			fclose(words_ptr);
+			fclose(offset_ptr);
+			return 1;
 		}
-		
-		mid = (low + high)/2;
+		int newmid = (low + high)/2;
+		// We couldn't find the word
+		if (mid == newmid) return 0;
+		mid = newmid;
 		// Go to the line number in our offset file
 		offset_for_offset = mid * (NUM_DIGITS+1);
 		fseek(offset_ptr, offset_for_offset, SEEK_SET);
@@ -99,12 +79,6 @@ int main(void)
 		fgets(guess, 30, words_ptr);
 		remove_nl(guess);
 		guesses++;
-		printf("New guess: |%s| Num Guesses: %d\n", guess, guesses);
-		if (guesses > 100)
-		{
-			printf("Something clearly went wrong lol\n");
-			break;
-		}
 	}
 	free(guess);
 	fclose(words_ptr);
