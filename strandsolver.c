@@ -22,6 +22,8 @@ char** set_colors();
 void remove_nl(char* word);
 int formatted_str_to_int(char* str);
 int tentopower(int n);
+void tolowercase(char* str);
+void reset_selected(int** selected);
 
 int main(int argc, char* argv[])
 {
@@ -50,6 +52,7 @@ char** read_board(char* argv[])
 		{
 			board[r][c] = argv[0][(r*COLS)+c+offset];
 		}
+		tolowercase(board[r]);
 		board[r][ROWS] = '\0';
 	}
 	return board;
@@ -96,7 +99,23 @@ char** strand_solver(char** board)
 	{
 		selected[i] = (int*) malloc(sizeof(int) * 2); // Coordinate pair, row and col
 	}
-	backtrack(board, colors, 0, 0, 0, selected);
+	
+	// Set the starting letter and backtrack
+	for (int r = 0; r < ROWS; r++)
+	{
+		for (int c = 0; c < COLS; c++)
+		{
+			selected[0][0] = r;
+			selected[0][1] = c;
+			printf("Selected letter: %c\n", board[r][c]);
+			sleep(5);
+			backtrack(board, colors, 1, 0, 0, selected);
+			printf("DONE! About to start another iteration...\n");
+			reset_selected(selected);
+		}
+	}
+	
+	
 	for (int i = 0; i < MAX_LETTER_SOLUTION; i++)
 	{
 		free(selected[i]);
@@ -112,15 +131,26 @@ char** strand_solver(char** board)
 
 void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 {
-	sleep(1);
-	print_board(board, colors, selected, n);
-	// Here is where we try and see if our current partial solution could be a real word
+	//sleep(1);
+	// See if current partial solution could be a real word
 	char* string = get_selected_str(board, selected, n);
-	if (word_exists(string))
+	remove_nl(string);
+	int exists = word_exists(string);
+	// This word doesn't exist and has no possible future spellings
+	if (!exists)
 	{
-		printf("Could this be a word? |%s|\n", string);
+		printf("womp womp don't try this one: '%s'\n", string);
+		return;
 	}
-	
+	if (exists == 1)
+	{
+		print_board(board, colors, selected, n);
+	}
+	else if (exists == 2)
+	{
+		//printf("We should keep trying more letters to see if there's a word here...\n");
+	}
+	//printf("%s\n", string);
 	free(string);
 	// Base case
 	if (n == MAX_LETTER_SOLUTION) return;
@@ -189,9 +219,17 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 int word_exists(char* target)
 {
 	FILE* words_ptr = fopen("./en.txt", "r");
-	if (words_ptr == NULL) return 0;
+	if (words_ptr == NULL)
+	{
+		printf("Word file didn't open correctly\n");
+		return 0;
+	}
 	FILE* offset_ptr = fopen("./preprocessed.txt", "r");
-	if (offset_ptr == NULL) return 0;
+	if (offset_ptr == NULL)
+	{
+		printf("Offset file didn't open correctly\n");
+		return 0;
+	}
 	// Binary Search On Line Number
 	int low = 0;
 	int high = NUM_WORDS-1;
@@ -212,7 +250,7 @@ int word_exists(char* target)
 	int res = 0;
 	while (!res)
 	{
-		int res = strcmp(target, guess);
+		res = strcmp(target, guess);
 		// Target is lexographically before this guess
 		if (res < 0)
 		{
@@ -226,14 +264,40 @@ int word_exists(char* target)
 		// Found the word
 		else
 		{
-			free(guess);
 			fclose(words_ptr);
 			fclose(offset_ptr);
+			printf("We found the word '%s'!\n", guess);
+			free(guess);
 			return 1;
 		}
 		int newmid = (low + high)/2;
 		// We couldn't find the word
-		if (mid == newmid) return 0;
+		if (mid == newmid)
+		{
+			// Try and look at the word after to see if it had any further spellings
+			int offset_after_guess = (mid+1) * (NUM_DIGITS+1);
+			fseek(offset_ptr, offset_after_guess, SEEK_SET);
+			offset = (char*) malloc(sizeof(char) * 9);
+			fgets(offset, 9, offset_ptr);
+			remove_nl(offset);
+			int int_offset = formatted_str_to_int(offset);
+			free(offset);
+			fseek(words_ptr, int_offset, SEEK_SET);
+			fgets(guess, 30, words_ptr);
+			remove_nl(guess);
+			res = strcmp(target, guess);
+			free(guess);
+			// If the difference between the string compares is greater than 96,
+			// that means that they were the same spelling but one of them had more letters
+			// meaning there are still potential words to look for
+			if (res < -96 || res > 96)
+			{
+				//printf("There is a word to keep looking for!\n");
+				return 2;
+			}
+			printf("There is no possible word that could be formed from this\n");
+			return 0;
+		}
 		mid = newmid;
 		// Go to the line number in our offset file
 		offset_for_offset = mid * (NUM_DIGITS+1);
@@ -258,6 +322,8 @@ int word_exists(char* target)
 	free(guess);
 	fclose(words_ptr);
 	fclose(offset_ptr);
+	printf("We got to the end of the function somehow\n");
+	return 0;
 }
 
 // Returns 1 if r and c appear as a coordinate pair in selected, 0 otherwise
@@ -291,7 +357,6 @@ void print_board(char** board, char** colors, int** selected, int n)
 	printf("%s+", colors[4]);
 	printf("%s-----------%s+\n", colors[5], colors[4]);
 	char* str = get_selected_str(board, selected, n);
-	printf("currently selected letters: %s\n", str);
 	free(str);
 }
 
@@ -302,7 +367,7 @@ char* get_selected_str(char** board, int** selected, int n)
 	{
 		str[i] = board[ (selected[i][0]) ][ (selected[i][1]) ];
 	}
-	str[n+1] = '\0';
+	str[n] = '\0';
 	return str;
 }
 
@@ -367,4 +432,26 @@ int tentopower(int n)
 		i++;
 	}
 	return ret;
+}
+
+void tolowercase(char* str)
+{
+	int i = 0;
+	while (str[i])
+	{
+		if ( ((int)str[i]) > 64 && ((int)str[i]) < 91 )
+		{
+			str[i] = (char)(str[i]+32);
+		}
+		i++;
+	}
+}
+
+void reset_selected(int** selected)
+{
+	for (int i = 0; i < MAX_LETTER_SOLUTION; i++)
+	{
+		selected[i][0] = 0;
+		selected[i][1] = 0;
+	}
 }

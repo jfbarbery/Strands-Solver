@@ -20,7 +20,7 @@ int main(void)
 	int low = 0;
 	int high = NUM_WORDS-1;
 	int mid = (low+high)/2;
-	char target[] = "zzzs";
+	char target[] = "r";
 	// total words / 2, then mult by num digits per entry, then fseek there
 	int offset_for_offset = mid * (NUM_DIGITS+1);
 	fseek(offset_ptr, offset_for_offset, SEEK_SET);
@@ -37,7 +37,12 @@ int main(void)
 	int res = 0;
 	while (!res)
 	{
+		if (guesses > 12) sleep(1);
 		int res = strcmp(target, guess);
+		printf("-------------------\n\n");
+		printf("target: %s\n", target);
+		printf("guess:  %s\n", guess);
+		printf("res:    %d\n\n", res);
 		// Target is lexographically before this guess
 		if (res < 0)
 		{
@@ -58,7 +63,32 @@ int main(void)
 		}
 		int newmid = (low + high)/2;
 		// We couldn't find the word
-		if (mid == newmid) return 0;
+		if (mid == newmid)
+		{
+			// Try and look at the word after to see if it had any further spellings
+			int offset_after_guess = (mid+1) * (NUM_DIGITS+1);
+			fseek(offset_ptr, offset_after_guess, SEEK_SET);
+			offset = (char*) malloc(sizeof(char) * 9);
+			fgets(offset, 9, offset_ptr);
+			remove_nl(offset);
+			int int_offset = formatted_str_to_int(offset);
+			free(offset);
+			fseek(words_ptr, int_offset, SEEK_SET);
+			fgets(guess, 30, words_ptr);
+			remove_nl(guess);
+			res = strcmp(target, guess);
+			free(guess);
+			// If the difference between the string compares is greater than 96,
+			// that means that they were the same spelling but one of them had more letters
+			// meaning there are still potential words to look for
+			if (res < -96)
+			{
+				printf("There is a word to keep looking for!\n");
+				return 1;
+			}
+			printf("There is no possible word that could be formed from this\n");
+			return 0;
+		}
 		mid = newmid;
 		// Go to the line number in our offset file
 		offset_for_offset = mid * (NUM_DIGITS+1);
