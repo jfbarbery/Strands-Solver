@@ -107,10 +107,10 @@ char** strand_solver(char** board)
 		{
 			selected[0][0] = r;
 			selected[0][1] = c;
-			printf("Selected letter: %c\n", board[r][c]);
-			sleep(5);
-			backtrack(board, colors, 1, 0, 0, selected);
-			printf("DONE! About to start another iteration...\n");
+			//printf("Selected letter: %c\n", board[r][c]);
+			//sleep(5);
+			backtrack(board, colors, 1, r, c, selected);
+			//printf("DONE! About to start another iteration...\n");
 			reset_selected(selected);
 		}
 	}
@@ -135,11 +135,11 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 	// See if current partial solution could be a real word
 	char* string = get_selected_str(board, selected, n);
 	remove_nl(string);
+	//printf("'%s'\n", string);
 	int exists = word_exists(string);
 	// This word doesn't exist and has no possible future spellings
-	if (!exists)
+	if (exists == 0)
 	{
-		printf("womp womp don't try this one: '%s'\n", string);
 		return;
 	}
 	if (exists == 1)
@@ -151,7 +151,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 		//printf("We should keep trying more letters to see if there's a word here...\n");
 	}
 	//printf("%s\n", string);
-	free(string);
+	
 	// Base case
 	if (n == MAX_LETTER_SOLUTION) return;
 	
@@ -160,6 +160,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 	// North
 	if (r-1 >= 0 && !coords_in_selected(r-1, c, selected, n))
 	{
+		//printf("n %d %d\n", r-1, c);
 		selected[n][0] = r-1;
 		selected[n][1] = c;
 		backtrack(board, colors, n+1, r-1, c, selected);
@@ -167,6 +168,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 	// East
 	if (c+1 < 6 && !coords_in_selected(r, c+1, selected, n))
 	{
+		//printf("e %d %d\n", r, c+1);
 		selected[n][0] = r;
 		selected[n][1] = c+1;
 		backtrack(board, colors, n+1, r, c+1, selected);
@@ -174,6 +176,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 	// South
 	if (r+1 < 8 && !coords_in_selected(r+1, c, selected, n))
 	{
+		//printf("s\n");
 		selected[n][0] = r+1;
 		selected[n][1] = c;
 		backtrack(board, colors, n+1, r+1, c, selected);
@@ -181,6 +184,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 	// West
 	if (c-1 >= 0 && !coords_in_selected(r, c-1, selected, n))
 	{
+		//printf("w\n");
 		selected[n][0] = r;
 		selected[n][1] = c-1;
 		backtrack(board, colors, n+1, r, c-1, selected);
@@ -188,6 +192,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 	// North East
 	if (r-1 >= 0 && c+1 < 6 && !coords_in_selected(r-1, c+1, selected, n))
 	{
+		//printf("ne\n");
 		selected[n][0] = r-1;
 		selected[n][1] = c+1;
 		backtrack(board, colors, n+1, r-1, c+1, selected);
@@ -195,6 +200,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 	// South East
 	if (r+1 < 8 && c+1 < 6 && !coords_in_selected(r+1, c+1, selected, n))
 	{
+		//printf("se\n");
 		selected[n][0] = r+1;
 		selected[n][1] = c+1;
 		backtrack(board, colors, n+1, r+1, c+1, selected);
@@ -202,6 +208,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 	// South West
 	if (r+1 < 8 && c-1 >= 0 && !coords_in_selected(r+1, c-1, selected, n))
 	{
+		//printf("sw\n");
 		selected[n][0] = r+1;
 		selected[n][1] = c-1;
 		backtrack(board, colors, n+1, r+1, c-1, selected);
@@ -209,10 +216,13 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 	// North West
 	if (r-1 >= 0 && c-1 >= 0 && !coords_in_selected(r-1, c-1, selected, n))
 	{
+		//printf("nw\n");
 		selected[n][0] = r-1;
 		selected[n][1] = c-1;
 		backtrack(board, colors, n+1, r-1, c-1, selected);
 	}
+	//printf("end of all possible options for the path '%s'\n", string);
+	free(string);
 }
 
 // Checks the word list for the string parameter
@@ -248,8 +258,15 @@ int word_exists(char* target)
 	remove_nl(guess);
 	int guesses = 0;
 	int res = 0;
-	while (!res)
+	int iterations = 0;
+	while (1)
 	{
+		if (iterations > 50)
+		{
+			printf("error too many iterations\n");
+			return 0;
+		}
+		iterations++;
 		res = strcmp(target, guess);
 		// Target is lexographically before this guess
 		if (res < 0)
@@ -266,7 +283,7 @@ int word_exists(char* target)
 		{
 			fclose(words_ptr);
 			fclose(offset_ptr);
-			printf("We found the word '%s'!\n", guess);
+			//printf("We found the word '%s'!\n", guess);
 			free(guess);
 			return 1;
 		}
@@ -295,7 +312,7 @@ int word_exists(char* target)
 				//printf("There is a word to keep looking for!\n");
 				return 2;
 			}
-			printf("There is no possible word that could be formed from this\n");
+			//printf("There is no possible word that could be formed from this\n");
 			return 0;
 		}
 		mid = newmid;
@@ -365,6 +382,11 @@ char* get_selected_str(char** board, int** selected, int n)
 	char* str = (char*) malloc(sizeof(char) * (n+1));
 	for (int i = 0; i < n; i++)
 	{
+		if (selected[i][0] == -1 || selected[i][1] == -1)
+		{
+			str[i] = '\0';
+			return str;
+		}
 		str[i] = board[ (selected[i][0]) ][ (selected[i][1]) ];
 	}
 	str[n] = '\0';
@@ -451,7 +473,7 @@ void reset_selected(int** selected)
 {
 	for (int i = 0; i < MAX_LETTER_SOLUTION; i++)
 	{
-		selected[i][0] = 0;
-		selected[i][1] = 0;
+		selected[i][0] = -1;
+		selected[i][1] = -1;
 	}
 }
