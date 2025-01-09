@@ -12,9 +12,9 @@
 
 char** read_board(char* argv[]);
 char* read_word(FILE* file);
-char** strand_solver(char** board);
-void backtrack(char** board, char** colors, int n, int r, int c, int** selected);
-int word_exists(char* target);
+char** strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr);
+void backtrack(char** board, char** colors, int n, int r, int c, int** selected, FILE* words_ptr, FILE* offset_ptr);
+int word_exists(char* target, FILE* words_ptr, FILE* offset_ptr);
 int coords_in_selected(int r, int c, int** selected, int n);
 void print_board(char** board, char** colors, int** selected, int n);
 char* get_selected_str(char** board, int** selected, int n);
@@ -25,13 +25,20 @@ int tentopower(int n);
 void tolowercase(char* str);
 void reset_selected(int** selected);
 
+int num_words_found = 0;
+
 int main(int argc, char* argv[])
 {
 	char** board = read_board(argv);
-	strand_solver(board);
+	FILE* words_ptr = fopen("./en.txt", "r");
+	FILE* offset_ptr = fopen("./preprocessed.txt", "r");
+	strand_solver(board, words_ptr, offset_ptr);
 	for (int i = 0; i < ROWS; i++)
 		free(board[i]);
 	free(board);
+	fclose(words_ptr);
+	fclose(offset_ptr);
+	printf("num words found: %d\n", num_words_found);
 	return 0;
 }
 
@@ -86,7 +93,7 @@ char* read_word(FILE* file)
 
 // Takes in a 2D array of characters that represent a game of Strands.
 // Returns a possible list of words that may be correct words in the game.
-char** strand_solver(char** board)
+char** strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr)
 {
 	char** colors = set_colors();
 	
@@ -109,7 +116,7 @@ char** strand_solver(char** board)
 			selected[0][1] = c;
 			//printf("Selected letter: %c\n", board[r][c]);
 			//sleep(5);
-			backtrack(board, colors, 1, r, c, selected);
+			backtrack(board, colors, 1, r, c, selected, words_ptr, offset_ptr);
 			//printf("DONE! About to start another iteration...\n");
 			reset_selected(selected);
 		}
@@ -129,26 +136,30 @@ char** strand_solver(char** board)
 	return NULL;
 }
 
-void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
+void backtrack(char** board, char** colors, int n, int r, int c, int** selected, FILE* words_ptr, FILE* offset_ptr)
 {
 	//sleep(1);
 	// See if current partial solution could be a real word
 	char* string = get_selected_str(board, selected, n);
 	remove_nl(string);
 	//printf("'%s'\n", string);
-	int exists = word_exists(string);
+	int exists = word_exists(string, words_ptr, offset_ptr);
 	// This word doesn't exist and has no possible future spellings
-	if (exists == 0)
+	if (strlen(string) > 3)
 	{
-		return;
-	}
-	if (exists == 1)
-	{
-		print_board(board, colors, selected, n);
-	}
-	else if (exists == 2)
-	{
-		//printf("We should keep trying more letters to see if there's a word here...\n");
+		if (exists == 0)
+		{
+			return;
+		}
+		if (exists == 1)
+		{
+			num_words_found++;
+			//print_board(board, colors, selected, n);
+		}
+		else if (exists == 2)
+		{
+			//printf("We should keep trying more letters to see if there's a word here...\n");
+		}
 	}
 	//printf("%s\n", string);
 	
@@ -163,7 +174,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 		//printf("n %d %d\n", r-1, c);
 		selected[n][0] = r-1;
 		selected[n][1] = c;
-		backtrack(board, colors, n+1, r-1, c, selected);
+		backtrack(board, colors, n+1, r-1, c, selected, words_ptr, offset_ptr);
 	}
 	// East
 	if (c+1 < 6 && !coords_in_selected(r, c+1, selected, n))
@@ -171,7 +182,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 		//printf("e %d %d\n", r, c+1);
 		selected[n][0] = r;
 		selected[n][1] = c+1;
-		backtrack(board, colors, n+1, r, c+1, selected);
+		backtrack(board, colors, n+1, r, c+1, selected, words_ptr, offset_ptr);
 	}
 	// South
 	if (r+1 < 8 && !coords_in_selected(r+1, c, selected, n))
@@ -179,7 +190,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 		//printf("s\n");
 		selected[n][0] = r+1;
 		selected[n][1] = c;
-		backtrack(board, colors, n+1, r+1, c, selected);
+		backtrack(board, colors, n+1, r+1, c, selected, words_ptr, offset_ptr);
 	}
 	// West
 	if (c-1 >= 0 && !coords_in_selected(r, c-1, selected, n))
@@ -187,7 +198,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 		//printf("w\n");
 		selected[n][0] = r;
 		selected[n][1] = c-1;
-		backtrack(board, colors, n+1, r, c-1, selected);
+		backtrack(board, colors, n+1, r, c-1, selected, words_ptr, offset_ptr);
 	}
 	// North East
 	if (r-1 >= 0 && c+1 < 6 && !coords_in_selected(r-1, c+1, selected, n))
@@ -195,7 +206,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 		//printf("ne\n");
 		selected[n][0] = r-1;
 		selected[n][1] = c+1;
-		backtrack(board, colors, n+1, r-1, c+1, selected);
+		backtrack(board, colors, n+1, r-1, c+1, selected, words_ptr, offset_ptr);
 	}
 	// South East
 	if (r+1 < 8 && c+1 < 6 && !coords_in_selected(r+1, c+1, selected, n))
@@ -203,7 +214,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 		//printf("se\n");
 		selected[n][0] = r+1;
 		selected[n][1] = c+1;
-		backtrack(board, colors, n+1, r+1, c+1, selected);
+		backtrack(board, colors, n+1, r+1, c+1, selected, words_ptr, offset_ptr);
 	}
 	// South West
 	if (r+1 < 8 && c-1 >= 0 && !coords_in_selected(r+1, c-1, selected, n))
@@ -211,7 +222,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 		//printf("sw\n");
 		selected[n][0] = r+1;
 		selected[n][1] = c-1;
-		backtrack(board, colors, n+1, r+1, c-1, selected);
+		backtrack(board, colors, n+1, r+1, c-1, selected, words_ptr, offset_ptr);
 	}
 	// North West
 	if (r-1 >= 0 && c-1 >= 0 && !coords_in_selected(r-1, c-1, selected, n))
@@ -219,27 +230,15 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected)
 		//printf("nw\n");
 		selected[n][0] = r-1;
 		selected[n][1] = c-1;
-		backtrack(board, colors, n+1, r-1, c-1, selected);
+		backtrack(board, colors, n+1, r-1, c-1, selected, words_ptr, offset_ptr);
 	}
 	//printf("end of all possible options for the path '%s'\n", string);
 	free(string);
 }
 
 // Checks the word list for the string parameter
-int word_exists(char* target)
+int word_exists(char* target, FILE* words_ptr, FILE* offset_ptr)
 {
-	FILE* words_ptr = fopen("./en.txt", "r");
-	if (words_ptr == NULL)
-	{
-		printf("Word file didn't open correctly\n");
-		return 0;
-	}
-	FILE* offset_ptr = fopen("./preprocessed.txt", "r");
-	if (offset_ptr == NULL)
-	{
-		printf("Offset file didn't open correctly\n");
-		return 0;
-	}
 	// Binary Search On Line Number
 	int low = 0;
 	int high = NUM_WORDS-1;
@@ -281,8 +280,6 @@ int word_exists(char* target)
 		// Found the word
 		else
 		{
-			fclose(words_ptr);
-			fclose(offset_ptr);
 			//printf("We found the word '%s'!\n", guess);
 			free(guess);
 			return 1;
@@ -337,8 +334,6 @@ int word_exists(char* target)
 		guesses++;
 	}
 	free(guess);
-	fclose(words_ptr);
-	fclose(offset_ptr);
 	printf("We got to the end of the function somehow\n");
 	return 0;
 }
