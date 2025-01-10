@@ -39,23 +39,11 @@ int tentopower(int n);
 void tolowercase(char* str);
 void reset_selected(int** selected);
 
-int num_words_found = 0;
+WordList* wl;
 
 int main(int argc, char* argv[])
 {
-	WordList* wl = create_list();
-	append_word(wl, "testy test");
-	for (int i = 0; i < wl->size; i++)
-	{
-		printf("'%s'\n", wl->list[i]);
-	}
-	for (int i = 0; i < 25; i++)
-	{
-		remove_word(wl, "test");
-	}
-	return 0;
-	
-	
+	wl = create_list();
 	char** board = read_board(argv);
 	FILE* words_ptr = fopen("./en.txt", "r");
 	FILE* offset_ptr = fopen("./preprocessed.txt", "r");
@@ -65,7 +53,14 @@ int main(int argc, char* argv[])
 	free(board);
 	fclose(words_ptr);
 	fclose(offset_ptr);
-	printf("num words found: %d\n", num_words_found);
+	//printf("num words found: %d\n", wl->size);
+	for (int i = 0; i < wl->size; i++)
+	{
+		printf("%s\n", wl->list[i]);
+		free(wl->list[i]);
+	}
+	free(wl->list);
+	free(wl);
 	return 0;
 }
 
@@ -107,7 +102,7 @@ char* read_word(FILE* file)
 		}
 		if (i >= MAX_WORD_LENGTH)
 		{
-			printf("We have ran into a word that is the maximum length! This word might be too long.\n");
+			//printf("We have ran into a word that is the maximum length! This word might be too long.\n");
 			ch = '\0';
 			break;
 		}
@@ -123,10 +118,9 @@ char* read_word(FILE* file)
 char** strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr)
 {
 	char** colors = set_colors();
-	
 	// Uses backtracking and binary searching in a dictionary to come up with possible words
 	// For this purpose, a "full solution" is the case when a word is found in the dictionary
-	print_board(board, colors, NULL, 0);
+	//print_board(board, colors, NULL, 0);
 	// Initialize selected letters in partial solution
 	int** selected = (int**) malloc(sizeof(int*) * MAX_LETTER_SOLUTION); // Max selected letters
 	for (int i = 0; i < MAX_LETTER_SOLUTION; i++)
@@ -180,7 +174,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		}
 		if (exists == 1)
 		{
-			num_words_found++;
+			append_word(wl, string);
 			//print_board(board, colors, selected, n);
 		}
 		else if (exists == 2)
@@ -504,7 +498,7 @@ void reset_selected(int** selected)
 
 WordList* create_list()
 {
-	WordList* wl;
+	WordList* wl = (WordList*) malloc(sizeof(WordList));
 	int init_cap = 10;
 	wl->list = (char**) malloc(sizeof(char*) * init_cap);
 	for (int i = 0; i < init_cap; i++)
@@ -533,7 +527,6 @@ void append_word(WordList* wl, char* string)
 		expand_list(wl);
 	}
 	strcpy(wl->list[wl->size], string);
-	printf("successfully copied string\n");
 	wl->size = wl->size + 1;
 }
 
@@ -575,6 +568,7 @@ void expand_list(WordList* wl)
 		return;
 	}
 	int new_cap = (wl->cap * 2) + 1;
+	printf("expanding from %d to %d\n", wl->cap, new_cap);
 	char** new_list = (char**) malloc(sizeof(char*) * new_cap);
 	for (int i = 0; i < new_cap; i++)
 	{
