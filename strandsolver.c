@@ -14,12 +14,15 @@ typedef struct WordList WordList;
 
 struct WordList {
 	char** list;
+	// first array is parallel to the list index, second array is the index of the characters in the
+	// word, third array [0] is row, [1] is col of that letter
+	int*** location_list;
 	int size;
 	int cap;
 };
 
 WordList* create_list();
-void append_word(WordList* wl, char* string);
+void append_word(WordList* wl, char* string, int** selected);
 void remove_word(WordList* wl, char* string);
 void sort_words(WordList* wl);
 void expand_list(WordList* wl);
@@ -56,10 +59,18 @@ int main(int argc, char* argv[])
 	//printf("num words found: %d\n", wl->size);
 	for (int i = 0; i < wl->size; i++)
 	{
-		printf("%s\n", wl->list[i]);
+		printf("%s ", wl->list[i]);
+		for (int j = 0; wl->location_list[i][j]; j++)
+		{
+			printf("%d %d\n", wl->location_list[i][j][0], wl->location_list[i][j][1]);
+			free(wl->location_list[i][j]);
+		}
 		free(wl->list[i]);
+		free(wl->location_list[i]);
 	}
+	
 	free(wl->list);
+	free(wl->location_list);
 	free(wl);
 	return 0;
 }
@@ -120,7 +131,7 @@ char** strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr)
 	char** colors = set_colors();
 	// Uses backtracking and binary searching in a dictionary to come up with possible words
 	// For this purpose, a "full solution" is the case when a word is found in the dictionary
-	//print_board(board, colors, NULL, 0);
+	print_board(board, colors, NULL, 0);
 	// Initialize selected letters in partial solution
 	int** selected = (int**) malloc(sizeof(int*) * MAX_LETTER_SOLUTION); // Max selected letters
 	for (int i = 0; i < MAX_LETTER_SOLUTION; i++)
@@ -174,8 +185,8 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		}
 		if (exists == 1)
 		{
-			append_word(wl, string);
-			//print_board(board, colors, selected, n);
+			append_word(wl, string, selected);
+			print_board(board, colors, selected, n);
 		}
 		else if (exists == 2)
 		{
@@ -378,8 +389,9 @@ void print_board(char** board, char** colors, int** selected, int n)
 		printf("%s|", colors[5]);
 		for (int c = 0; c < COLS; c++)
 		{
-			int color_to_print = 2;
+			int color_to_print = 6;
 			if (n != 0 && coords_in_selected(r, c, selected, n)) color_to_print = 0;
+			if (n != 0 && ( (selected[0][0] == r) && (selected[0][1] == c) ) ) color_to_print = 1;
 			printf("%s%c", colors[color_to_print], board[r][c]);
 			if (c == COLS - 1) continue;
 			printf(" ");
@@ -500,17 +512,28 @@ WordList* create_list()
 {
 	WordList* wl = (WordList*) malloc(sizeof(WordList));
 	int init_cap = 10;
+	// Space for the list
 	wl->list = (char**) malloc(sizeof(char*) * init_cap);
+	// Space for the location of all words in the list
+	wl->location_list = (int***) malloc(sizeof(int**) * init_cap);
 	for (int i = 0; i < init_cap; i++)
 	{
+		// Space for this word
 		wl->list[i] = (char*) malloc(sizeof(char) * MAX_WORD_LENGTH);
+		// Space for all locations (on the board) of this word
+		wl->location_list[i] = (int**) malloc(sizeof(int*) * MAX_WORD_LENGTH);
+		// Space for the row and col indexes of this letter
+		for (int j = 0; j < MAX_WORD_LENGTH; j++)
+		{
+			wl->location_list[i][j] = (int*) malloc(sizeof(int) * 2);
+		}
 	}
 	wl->size = 0;
 	wl->cap = init_cap;
 	return wl;
 }
 
-void append_word(WordList* wl, char* string)
+void append_word(WordList* wl, char* string, int** selected)
 {
 	if (string == NULL)
 	{
@@ -527,6 +550,12 @@ void append_word(WordList* wl, char* string)
 		expand_list(wl);
 	}
 	strcpy(wl->list[wl->size], string);
+	int word_len = strlen(string);
+	for (int i = 0; i < word_len; i++)
+	{
+		wl->location_list[wl->size][i][0] = selected[i][0];
+		wl->location_list[wl->size][i][1] = selected[i][1];
+	}
 	wl->size = wl->size + 1;
 }
 
@@ -549,6 +578,7 @@ void remove_word(WordList* wl, char* string)
 			for (int j = i; j < wl->size - 1; j++)
 			{
 				wl->list[j] = wl->list[j+1];
+				wl->location_list[j] = wl->location_list[j+1];
 			}
 			wl->size = wl->size - 1;
 		}
@@ -568,16 +598,24 @@ void expand_list(WordList* wl)
 		return;
 	}
 	int new_cap = (wl->cap * 2) + 1;
-	printf("expanding from %d to %d\n", wl->cap, new_cap);
+	//printf("expanding from %d to %d\n", wl->cap, new_cap);
 	char** new_list = (char**) malloc(sizeof(char*) * new_cap);
+	int*** new_location_list = (int***) malloc(sizeof(int**) * new_cap);
 	for (int i = 0; i < new_cap; i++)
 	{
 		new_list[i] = (char*) malloc(sizeof(char) * MAX_WORD_LENGTH);
+		new_location_list[i] = (int**) malloc(sizeof(int*) * MAX_WORD_LENGTH);
+		for (int j = 0; j < 2; j++)
+		{
+			new_location_list[i][j] = (int*) malloc(sizeof(int) * 2);
+		}
 	}
 	for (int i = 0; i < wl->size; i++)
 	{ 
 		strcpy(new_list[i], wl->list[i]);
+		new_location_list[i] = wl->location_list[i];
 	}
 	wl->list = new_list;
+	wl->location_list = new_location_list;
 	wl->cap = new_cap;
 }
