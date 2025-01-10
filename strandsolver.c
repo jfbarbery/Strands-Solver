@@ -62,6 +62,7 @@ int main(int argc, char* argv[])
 		printf("%s\n", wl->list[i]);
 		for (int j = 0; wl->location_list[i][j]; j++)
 		{
+			if (wl->list[i][j] == '\0') break;
 			printf("%c %d %d\n", wl->list[i][j], wl->location_list[i][j][0], wl->location_list[i][j][1]);
 		}
 	}
@@ -618,11 +619,11 @@ void expand_list(WordList* wl)
 		}
 	}
 	for (int i = 0; i < wl->size; i++)
-	{ 
+	{
 		strcpy(new_list[i], wl->list[i]);
 		free(wl->list[i]);
 		// Copy the locations from the old list to the new one
-		int word_len = strlen(wl->list[i]);
+		int word_len = strlen(new_list[i]);
 		for (int j = 0; j < word_len; j++)
 		{
 			new_location_list[i][j][0] = wl->location_list[i][j][0];
@@ -635,7 +636,5 @@ void expand_list(WordList* wl)
 	free(wl->location_list);
 	wl->list = new_list;
 	wl->location_list = new_location_list;
-	free(new_list);
-	free(new_location_list);
 	wl->cap = new_cap;
 }
