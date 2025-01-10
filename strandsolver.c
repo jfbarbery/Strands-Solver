@@ -380,6 +380,7 @@ void print_board(char** board, char** colors, int** selected, int n)
 		{
 			int color_to_print = 2;
 			if (n != 0 && coords_in_selected(r, c, selected, n)) color_to_print = 0;
+			if (n != 0 && (selected[0][0] == r) && (selected[0][1] == c) ) color_to_print = 6;
 			printf("%s%c", colors[color_to_print], board[r][c]);
 			if (c == COLS - 1) continue;
 			printf(" ");
@@ -568,7 +569,7 @@ void expand_list(WordList* wl)
 		return;
 	}
 	int new_cap = (wl->cap * 2) + 1;
-	printf("expanding from %d to %d\n", wl->cap, new_cap);
+	//printf("expanding from %d to %d\n", wl->cap, new_cap);
 	char** new_list = (char**) malloc(sizeof(char*) * new_cap);
 	for (int i = 0; i < new_cap; i++)
 	{
