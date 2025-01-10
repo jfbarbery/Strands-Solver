@@ -10,6 +10,20 @@
 #define NUM_DIGITS 7
 #define NUM_WORDS 274927
 
+typedef struct WordList WordList;
+
+struct WordList {
+	char** list;
+	int size;
+	int cap;
+};
+
+WordList* create_list();
+void append_word(WordList* wl, char* string);
+void remove_word(WordList* wl, char* string);
+void sort_words(WordList* wl);
+void expand_list(WordList* wl);
+
 char** read_board(char* argv[]);
 char* read_word(FILE* file);
 char** strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr);
@@ -29,6 +43,19 @@ int num_words_found = 0;
 
 int main(int argc, char* argv[])
 {
+	WordList* wl = create_list();
+	append_word(wl, "testy test");
+	for (int i = 0; i < wl->size; i++)
+	{
+		printf("'%s'\n", wl->list[i]);
+	}
+	for (int i = 0; i < 25; i++)
+	{
+		remove_word(wl, "test");
+	}
+	return 0;
+	
+	
 	char** board = read_board(argv);
 	FILE* words_ptr = fopen("./en.txt", "r");
 	FILE* offset_ptr = fopen("./preprocessed.txt", "r");
@@ -144,7 +171,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 	remove_nl(string);
 	//printf("'%s'\n", string);
 	int exists = word_exists(string, words_ptr, offset_ptr);
-	// This word doesn't exist and has no possible future spellings
+	// Minimum word count to be considered a word in strands
 	if (strlen(string) > 3)
 	{
 		if (exists == 0)
@@ -471,4 +498,92 @@ void reset_selected(int** selected)
 		selected[i][0] = -1;
 		selected[i][1] = -1;
 	}
+}
+
+
+
+WordList* create_list()
+{
+	WordList* wl;
+	int init_cap = 10;
+	wl->list = (char**) malloc(sizeof(char*) * init_cap);
+	for (int i = 0; i < init_cap; i++)
+	{
+		wl->list[i] = (char*) malloc(sizeof(char) * MAX_WORD_LENGTH);
+	}
+	wl->size = 0;
+	wl->cap = init_cap;
+	return wl;
+}
+
+void append_word(WordList* wl, char* string)
+{
+	if (string == NULL)
+	{
+		printf("Error appending word to list: string null\n");
+		exit(1);
+	}
+	if (wl == NULL)
+	{
+		printf("Error removing word from list: list null\n");
+		exit(1);
+	}
+	if (wl->size == wl->cap)
+	{
+		expand_list(wl);
+	}
+	strcpy(wl->list[wl->size], string);
+	printf("successfully copied string\n");
+	wl->size = wl->size + 1;
+}
+
+void remove_word(WordList* wl, char* string)
+{
+	if (string == NULL)
+	{
+		printf("Error removing word from list: string null\n");
+		exit(1);
+	}
+	if (wl == NULL)
+	{
+		printf("Error removing word from list: list null\n");
+		exit(1);
+	}
+	for (int i = 0; i < wl->size; i++)
+	{
+		if (strcmp(wl->list[i], string) == 0)
+		{
+			for (int j = i; j < wl->size - 1; j++)
+			{
+				wl->list[j] = wl->list[j+1];
+			}
+			wl->size = wl->size - 1;
+		}
+	}
+}
+
+void sort_words(WordList* wl)
+{
+	
+}
+
+void expand_list(WordList* wl)
+{
+	if (wl == NULL)
+	{
+		wl = create_list();
+		return;
+	}
+	int new_cap = (wl->cap * 2) + 1;
+	char** new_list = (char**) malloc(sizeof(char*) * new_cap);
+	for (int i = 0; i < new_cap; i++)
+	{
+		new_list[i] = (char*) malloc(sizeof(char) * MAX_WORD_LENGTH);
+	}
+	for (int i = 0; i < wl->size; i++)
+	{ 
+		strcpy(new_list[i], wl->list[i]);
+	}
+	wl->list = new_list;
+	wl->cap = new_cap;
 }
