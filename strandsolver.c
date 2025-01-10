@@ -30,7 +30,8 @@ void expand_list(WordList* wl);
 char** read_board(char* argv[]);
 char* read_word(FILE* file);
 void strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr);
-void backtrack(char** board, char** colors, int n, int r, int c, int** selected, FILE* words_ptr, FILE* offset_ptr);
+void backtrack_find(char** board, char** colors, int n, int r, int c, int** selected, FILE* words_ptr, FILE* offset_ptr);
+char** glue_puzzle_pieces();
 int word_exists(char* target, FILE* words_ptr, FILE* offset_ptr);
 int coords_in_selected(int r, int c, int** selected, int n);
 void print_board(char** board, char** colors, int** selected, int n);
@@ -65,7 +66,8 @@ int main(int argc, char* argv[])
 			printf("%c %d %d\n", wl->list[i][j], wl->location_list[i][j][0], wl->location_list[i][j][1]);
 		}
 	}
-	
+	// Another round of backtracking to place the words on the board
+	char** final_board = glue_puzzle_pieces();
 	// Memory leak bad!!!
 	for (int i = 0; i < wl->cap; i++)
 	{
@@ -156,7 +158,7 @@ void strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr)
 			selected[0][1] = c;
 			//printf("Selected letter: %c\n", board[r][c]);
 			//sleep(5);
-			backtrack(board, colors, 1, r, c, selected, words_ptr, offset_ptr);
+			backtrack_find(board, colors, 1, r, c, selected, words_ptr, offset_ptr);
 			//printf("DONE! About to start another iteration...\n");
 			reset_selected(selected);
 		}
@@ -175,7 +177,7 @@ void strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr)
 	free(colors);
 }
 
-void backtrack(char** board, char** colors, int n, int r, int c, int** selected, FILE* words_ptr, FILE* offset_ptr)
+void backtrack_find(char** board, char** colors, int n, int r, int c, int** selected, FILE* words_ptr, FILE* offset_ptr)
 {
 	//sleep(1);
 	// See if current partial solution could be a real word
@@ -213,7 +215,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		//printf("n %d %d\n", r-1, c);
 		selected[n][0] = r-1;
 		selected[n][1] = c;
-		backtrack(board, colors, n+1, r-1, c, selected, words_ptr, offset_ptr);
+		backtrack_find(board, colors, n+1, r-1, c, selected, words_ptr, offset_ptr);
 	}
 	// East
 	if (c+1 < 6 && !coords_in_selected(r, c+1, selected, n))
@@ -221,7 +223,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		//printf("e %d %d\n", r, c+1);
 		selected[n][0] = r;
 		selected[n][1] = c+1;
-		backtrack(board, colors, n+1, r, c+1, selected, words_ptr, offset_ptr);
+		backtrack_find(board, colors, n+1, r, c+1, selected, words_ptr, offset_ptr);
 	}
 	// South
 	if (r+1 < 8 && !coords_in_selected(r+1, c, selected, n))
@@ -229,7 +231,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		//printf("s\n");
 		selected[n][0] = r+1;
 		selected[n][1] = c;
-		backtrack(board, colors, n+1, r+1, c, selected, words_ptr, offset_ptr);
+		backtrack_find(board, colors, n+1, r+1, c, selected, words_ptr, offset_ptr);
 	}
 	// West
 	if (c-1 >= 0 && !coords_in_selected(r, c-1, selected, n))
@@ -237,7 +239,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		//printf("w\n");
 		selected[n][0] = r;
 		selected[n][1] = c-1;
-		backtrack(board, colors, n+1, r, c-1, selected, words_ptr, offset_ptr);
+		backtrack_find(board, colors, n+1, r, c-1, selected, words_ptr, offset_ptr);
 	}
 	// North East
 	if (r-1 >= 0 && c+1 < 6 && !coords_in_selected(r-1, c+1, selected, n))
@@ -245,7 +247,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		//printf("ne\n");
 		selected[n][0] = r-1;
 		selected[n][1] = c+1;
-		backtrack(board, colors, n+1, r-1, c+1, selected, words_ptr, offset_ptr);
+		backtrack_find(board, colors, n+1, r-1, c+1, selected, words_ptr, offset_ptr);
 	}
 	// South East
 	if (r+1 < 8 && c+1 < 6 && !coords_in_selected(r+1, c+1, selected, n))
@@ -253,7 +255,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		//printf("se\n");
 		selected[n][0] = r+1;
 		selected[n][1] = c+1;
-		backtrack(board, colors, n+1, r+1, c+1, selected, words_ptr, offset_ptr);
+		backtrack_find(board, colors, n+1, r+1, c+1, selected, words_ptr, offset_ptr);
 	}
 	// South West
 	if (r+1 < 8 && c-1 >= 0 && !coords_in_selected(r+1, c-1, selected, n))
@@ -261,7 +263,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		//printf("sw\n");
 		selected[n][0] = r+1;
 		selected[n][1] = c-1;
-		backtrack(board, colors, n+1, r+1, c-1, selected, words_ptr, offset_ptr);
+		backtrack_find(board, colors, n+1, r+1, c-1, selected, words_ptr, offset_ptr);
 	}
 	// North West
 	if (r-1 >= 0 && c-1 >= 0 && !coords_in_selected(r-1, c-1, selected, n))
@@ -269,10 +271,30 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		//printf("nw\n");
 		selected[n][0] = r-1;
 		selected[n][1] = c-1;
-		backtrack(board, colors, n+1, r-1, c-1, selected, words_ptr, offset_ptr);
+		backtrack_find(board, colors, n+1, r-1, c-1, selected, words_ptr, offset_ptr);
 	}
 	//printf("end of all possible options for the path '%s'\n", string);
 	free(string);
+}
+
+char** glue_puzzle_pieces()
+{
+	// Make a board to send in
+	char** board = (char**) malloc(sizeof(char*) * ROWS);
+	int i = 0;
+	while (i < ROWS)
+	{
+		board[i] = (char*) malloc(sizeof(char) * (COLS+1));
+		i++;
+	}
+	for (int r = 0; r < ROWS; r++)
+	{
+		for (int c = 0; c < COLS; c++)
+		{
+			board[r][c] = ' ';
+		}
+		board[r][ROWS] = '\0';
+	}
 }
 
 // Checks the word list for the string parameter
