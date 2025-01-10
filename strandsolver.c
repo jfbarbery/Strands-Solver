@@ -29,7 +29,7 @@ void expand_list(WordList* wl);
 
 char** read_board(char* argv[]);
 char* read_word(FILE* file);
-char** strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr);
+void strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr);
 void backtrack(char** board, char** colors, int n, int r, int c, int** selected, FILE* words_ptr, FILE* offset_ptr);
 int word_exists(char* target, FILE* words_ptr, FILE* offset_ptr);
 int coords_in_selected(int r, int c, int** selected, int n);
@@ -59,10 +59,18 @@ int main(int argc, char* argv[])
 	//printf("num words found: %d\n", wl->size);
 	for (int i = 0; i < wl->size; i++)
 	{
-		printf("%s ", wl->list[i]);
+		printf("%s\n", wl->list[i]);
 		for (int j = 0; wl->location_list[i][j]; j++)
 		{
-			printf("%d %d\n", wl->location_list[i][j][0], wl->location_list[i][j][1]);
+			printf("%c %d %d\n", wl->list[i][j], wl->location_list[i][j][0], wl->location_list[i][j][1]);
+		}
+	}
+	
+	// Memory leak bad!!!
+	for (int i = 0; i < wl->cap; i++)
+	{
+		for (int j = 0; j < MAX_LETTER_SOLUTION; j++)
+		{
 			free(wl->location_list[i][j]);
 		}
 		free(wl->list[i]);
@@ -126,7 +134,7 @@ char* read_word(FILE* file)
 
 // Takes in a 2D array of characters that represent a game of Strands.
 // Returns a possible list of words that may be correct words in the game.
-char** strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr)
+void strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr)
 {
 	char** colors = set_colors();
 	// Uses backtracking and binary searching in a dictionary to come up with possible words
@@ -165,7 +173,6 @@ char** strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr)
 		free(colors[i]);
 	}
 	free(colors);
-	return NULL;
 }
 
 void backtrack(char** board, char** colors, int n, int r, int c, int** selected, FILE* words_ptr, FILE* offset_ptr)
@@ -519,11 +526,11 @@ WordList* create_list()
 	for (int i = 0; i < init_cap; i++)
 	{
 		// Space for this word
-		wl->list[i] = (char*) malloc(sizeof(char) * MAX_WORD_LENGTH);
+		wl->list[i] = (char*) malloc(sizeof(char) * MAX_LETTER_SOLUTION);
 		// Space for all locations (on the board) of this word
-		wl->location_list[i] = (int**) malloc(sizeof(int*) * MAX_WORD_LENGTH);
+		wl->location_list[i] = (int**) malloc(sizeof(int*) * MAX_LETTER_SOLUTION);
 		// Space for the row and col indexes of this letter
-		for (int j = 0; j < MAX_WORD_LENGTH; j++)
+		for (int j = 0; j < MAX_LETTER_SOLUTION; j++)
 		{
 			wl->location_list[i][j] = (int*) malloc(sizeof(int) * 2);
 		}
@@ -542,7 +549,7 @@ void append_word(WordList* wl, char* string, int** selected)
 	}
 	if (wl == NULL)
 	{
-		printf("Error removing word from list: list null\n");
+		printf("Error appending word to list: list null\n");
 		exit(1);
 	}
 	if (wl->size == wl->cap)
@@ -603,9 +610,9 @@ void expand_list(WordList* wl)
 	int*** new_location_list = (int***) malloc(sizeof(int**) * new_cap);
 	for (int i = 0; i < new_cap; i++)
 	{
-		new_list[i] = (char*) malloc(sizeof(char) * MAX_WORD_LENGTH);
-		new_location_list[i] = (int**) malloc(sizeof(int*) * MAX_WORD_LENGTH);
-		for (int j = 0; j < 2; j++)
+		new_list[i] = (char*) malloc(sizeof(char) * MAX_LETTER_SOLUTION);
+		new_location_list[i] = (int**) malloc(sizeof(int*) * new_cap);
+		for (int j = 0; j < MAX_LETTER_SOLUTION; j++)
 		{
 			new_location_list[i][j] = (int*) malloc(sizeof(int) * 2);
 		}
@@ -613,9 +620,22 @@ void expand_list(WordList* wl)
 	for (int i = 0; i < wl->size; i++)
 	{ 
 		strcpy(new_list[i], wl->list[i]);
-		new_location_list[i] = wl->location_list[i];
+		free(wl->list[i]);
+		// Copy the locations from the old list to the new one
+		int word_len = strlen(wl->list[i]);
+		for (int j = 0; j < word_len; j++)
+		{
+			new_location_list[i][j][0] = wl->location_list[i][j][0];
+			new_location_list[i][j][1] = wl->location_list[i][j][1];
+			free(wl->location_list[i][j]);
+		}
+		free(wl->location_list[i]);
 	}
+	free(wl->list);
+	free(wl->location_list);
 	wl->list = new_list;
 	wl->location_list = new_location_list;
+	free(new_list);
+	free(new_location_list);
 	wl->cap = new_cap;
 }
