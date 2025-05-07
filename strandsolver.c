@@ -2,9 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 #define MAX_WORD_LENGTH 19
-#define MAX_LETTER_SOLUTION 10
+#define MAX_LETTER_SOLUTION 18
 #define ROWS 8
 #define COLS 6
 #define NUM_DIGITS 7
@@ -27,7 +30,7 @@ void remove_word(WordList* wl, char* string);
 void sort_words(WordList* wl);
 void expand_list(WordList* wl);
 
-char** read_board(char* argv[]);
+char** read_board();
 char* read_word(FILE* file);
 void strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr);
 void backtrack(char** board, char** colors, int n, int r, int c, int** selected, FILE* words_ptr, FILE* offset_ptr);
@@ -41,16 +44,19 @@ int formatted_str_to_int(char* str);
 int tentopower(int n);
 void tolowercase(char* str);
 void reset_selected(int** selected);
+int word_is_vertical_spangram(WordList* wl, int i);
+int word_is_horizontal_spangram(WordList* wl, int i);
 
 WordList* wl;
 
-int main(int argc, char* argv[])
+int main()
 {
 	wl = create_list();
-	char** board = read_board(argv);
+	char** board = read_board();
 	FILE* words_ptr = fopen("./en.txt", "r");
 	FILE* offset_ptr = fopen("./preprocessed.txt", "r");
 	strand_solver(board, words_ptr, offset_ptr);
+	sort_words(wl);
 	for (int i = 0; i < ROWS; i++)
 		free(board[i]);
 	free(board);
@@ -64,6 +70,30 @@ int main(int argc, char* argv[])
 		{
 			if (wl->list[i][j] == '\0') break;
 			printf("%c %d %d\n", wl->list[i][j], wl->location_list[i][j][0], wl->location_list[i][j][1]);
+		}
+	}
+	// Find all words who fit the requirements to be a spangram
+	for (int i = 0; i < wl->size; i++)
+	{
+		// If there's a 0 and a ROWS-1 in row index of location list
+		if (word_is_vertical_spangram(wl, i))
+		{
+			printf("%s\n", wl->list[i]);
+			for (int j = 0; wl->location_list[i][j]; j++)
+			{
+				if (wl->list[i][j] == '\0') break;
+				printf("%c %d %d\n", wl->list[i][j], wl->location_list[i][j][0], wl->location_list[i][j][1]);
+			}
+		}
+		// If there's a 0 and a COLS-1 in col index of location list
+		else if (word_is_horizontal_spangram(wl, i))
+		{
+			printf("%s\n", wl->list[i]);
+			for (int j = 0; wl->location_list[i][j]; j++)
+			{
+				if (wl->list[i][j] == '\0') break;
+				printf("%c %d %d\n", wl->list[i][j], wl->location_list[i][j][0], wl->location_list[i][j][1]);
+			}
 		}
 	}
 	
@@ -84,9 +114,52 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
-// Reads the command line Strands board parameter
-char** read_board(char* argv[])
+int word_is_vertical_spangram(WordList* wl, int i)
 {
+	int len = strlen(wl->list[i]);
+	int touches_top = 0;
+	int touches_bot = 0;
+	for (int index = 0; index < len; index++)
+	{
+		if (wl->location_list[i][index][0] == 0)
+		{
+			touches_top = 1;
+		}
+		else if (wl->location_list[i][index][0] == ROWS-1)
+		{
+			touches_bot = 1;
+		}
+	}
+	return touches_top && touches_bot;
+}
+
+int word_is_horizontal_spangram(WordList* wl, int i)
+{
+	int len = strlen(wl->list[i]);
+	int touches_left = 0;
+	int touches_right = 0;
+	for (int index = 0; index < len; index++)
+	{
+		if (wl->location_list[i][index][1] == 0)
+		{
+			touches_left = 1;
+		}
+		else if (wl->location_list[i][index][1] == COLS-1)
+		{
+			touches_right = 1;
+		}
+	}
+	return touches_left && touches_right;
+}
+
+// Reads the words from the textfile of today's date
+char** read_board()
+{
+	// TODO: Replace this logic with some API to get today's date
+	// unless it's possible w/o API
+	int fd = open("./5-7-board.txt", O_RDONLY);
+	// Add logic to check for invalid file opened
+
 	int offset = ROWS;
 	char** board = (char**) malloc(sizeof(char*) * ROWS);
 	int i = 0;
@@ -99,11 +172,14 @@ char** read_board(char* argv[])
 	{
 		for (int c = 0; c < COLS; c++)
 		{
-			board[r][c] = argv[0][(r*COLS)+c+offset];
+			char buf[2];
+			read(fd, buf, 1);
+			board[r][c] = buf[0];
 		}
 		tolowercase(board[r]);
 		board[r][ROWS] = '\0';
 	}
+	close(fd);
 	return board;
 }
 
@@ -140,7 +216,7 @@ void strand_solver(char** board, FILE* words_ptr, FILE* offset_ptr)
 	char** colors = set_colors();
 	// Uses backtracking and binary searching in a dictionary to come up with possible words
 	// For this purpose, a "full solution" is the case when a word is found in the dictionary
-	print_board(board, colors, NULL, 0);
+	//print_board(board, colors, NULL, 0);
 	// Initialize selected letters in partial solution
 	int** selected = (int**) malloc(sizeof(int*) * MAX_LETTER_SOLUTION); // Max selected letters
 	for (int i = 0; i < MAX_LETTER_SOLUTION; i++)
@@ -194,7 +270,7 @@ void backtrack(char** board, char** colors, int n, int r, int c, int** selected,
 		if (exists == 1)
 		{
 			append_word(wl, string, selected);
-			print_board(board, colors, selected, n);
+			//print_board(board, colors, selected, n);
 		}
 		else if (exists == 2)
 		{
@@ -593,9 +669,37 @@ void remove_word(WordList* wl, char* string)
 	}
 }
 
+// Sort the words in the word list by their length
 void sort_words(WordList* wl)
 {
-	
+	// For each position in the resulting list, find the word that goes here
+	for (int i = 0; i < wl->size; i++)
+	{
+		int longest = strlen(wl->list[i]);
+		char* word = wl->list[i];
+		int** word_location = wl->location_list[i];
+		int index = i;
+		// For all the words from here until the end, find the word that is longest
+		for (int j = i; j < wl->size; j++)
+		{
+			// If the word at this index is longer than our stored longest word, replace it
+			if (strlen(wl->list[j]) > longest)
+			{
+				// Replacing it entails tracking the word itself, as well as
+				// the 2D integer array of locations that depict the word
+				word = wl->list[j];
+				word_location = wl->location_list[j];
+				longest = strlen(word);
+				index = j;
+			}
+		}
+		// We can go ahead and toss whatever is at i in the spot of what we tracked as the longest
+		wl->list[index] = wl->list[i];
+		wl->location_list[index] = wl->location_list[i];
+		// Update the value of the word at i to be the longest word found
+		wl->list[i] = word;
+		wl->location_list[i] = word_location;
+	}
 }
 
 void expand_list(WordList* wl)

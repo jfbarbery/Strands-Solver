@@ -1,0 +1,9281 @@
+elaborators
+e 1 2
+l 2 1
+a 2 2
+b 1 3
+o 0 3
+r 1 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+elaborator
+e 1 2
+l 2 1
+a 2 2
+b 1 3
+o 0 3
+r 1 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+abandoning
+a 2 3
+b 1 3
+a 2 2
+n 3 1
+d 3 0
+o 2 0
+n 1 0
+i 0 1
+n 0 2
+g 1 1
+abnegators
+a 2 3
+b 1 3
+n 0 2
+e 1 2
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+abandoning
+a 2 3
+b 3 3
+a 2 2
+n 3 1
+d 3 0
+o 2 0
+n 1 0
+i 0 1
+n 0 2
+g 1 1
+personable
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+personable
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+personable
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+personable
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+reasonable
+r 5 2
+e 5 1
+a 6 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+reasonable
+r 5 2
+e 5 1
+a 6 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+reasonable
+r 5 2
+e 6 3
+a 6 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+reasonable
+r 5 2
+e 6 3
+a 6 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+calaboose
+c 0 5
+a 1 5
+l 2 4
+a 2 3
+b 3 3
+o 4 4
+o 5 4
+s 5 3
+e 6 3
+bandoleon
+b 1 3
+a 2 2
+n 3 1
+d 3 0
+o 2 0
+l 2 1
+e 1 2
+o 0 3
+n 0 2
+abnegator
+a 2 3
+b 1 3
+n 0 2
+e 1 2
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+bandoleon
+b 3 3
+a 2 2
+n 3 1
+d 3 0
+o 2 0
+l 2 1
+e 1 2
+o 0 3
+n 0 2
+deflators
+d 3 5
+e 3 4
+f 2 5
+l 2 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+personage
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 1 2
+personage
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 0 0
+personage
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 1 2
+personage
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 0 0
+codebtors
+c 4 5
+o 4 4
+d 3 5
+e 3 4
+b 3 3
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+opposable
+o 5 0
+p 4 0
+p 4 1
+o 4 2
+s 5 3
+a 6 2
+b 7 2
+l 6 1
+e 5 1
+ignorable
+i 0 1
+g 1 1
+n 0 2
+o 0 3
+r 1 4
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+ignorable
+i 0 1
+g 1 1
+n 0 2
+o 0 3
+r 1 4
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+baseboard
+b 7 2
+a 6 2
+s 5 3
+e 6 3
+b 6 4
+o 7 3
+a 7 4
+r 7 5
+d 6 5
+negators
+n 1 0
+e 0 0
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+nonlabor
+n 1 0
+o 2 0
+n 3 1
+l 2 1
+a 2 2
+b 1 3
+o 0 3
+r 1 4
+nonlabor
+n 1 0
+o 2 0
+n 3 1
+l 2 1
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+nonpolar
+n 1 0
+o 2 0
+n 3 1
+p 4 1
+o 5 0
+l 6 1
+a 6 2
+r 5 2
+nonpolar
+n 1 0
+o 2 0
+n 3 1
+p 4 0
+o 5 0
+l 6 1
+a 6 2
+r 5 2
+beatable
+b 1 3
+e 1 2
+a 2 2
+t 3 2
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+beanpole
+b 1 3
+e 1 2
+a 2 2
+n 3 1
+p 4 1
+o 5 0
+l 6 1
+e 5 1
+beanpole
+b 1 3
+e 1 2
+a 2 2
+n 3 1
+p 4 0
+o 5 0
+l 6 1
+e 5 1
+beatable
+b 1 3
+e 1 2
+a 2 3
+t 3 2
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+belabors
+b 1 3
+e 1 2
+l 2 1
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+s 5 3
+baalebos
+b 1 3
+a 2 2
+a 2 3
+l 2 4
+e 3 4
+b 3 3
+o 4 4
+s 5 3
+baalebos
+b 1 3
+a 2 2
+a 2 3
+l 2 4
+e 3 4
+b 3 3
+o 4 2
+s 5 3
+legators
+l 2 1
+e 1 2
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+ablators
+a 2 2
+b 1 3
+l 2 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+ablators
+a 2 2
+b 3 3
+l 2 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+atonable
+a 2 3
+t 3 2
+o 4 2
+n 3 1
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+atonable
+a 2 3
+t 3 2
+o 4 2
+n 3 1
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+flatland
+f 2 5
+l 2 4
+a 2 3
+t 3 2
+l 2 1
+a 2 2
+n 3 1
+d 3 0
+flatlong
+f 2 5
+l 2 4
+a 2 3
+t 3 2
+l 2 1
+o 2 0
+n 1 0
+g 1 1
+donators
+d 3 0
+o 2 0
+n 3 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+nonlabor
+n 3 1
+o 2 0
+n 1 0
+l 2 1
+a 2 2
+b 1 3
+o 0 3
+r 1 4
+nonlabor
+n 3 1
+o 2 0
+n 1 0
+l 2 1
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+delators
+d 3 5
+e 3 4
+l 2 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+deflator
+d 3 5
+e 3 4
+f 2 5
+l 2 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+degrease
+d 3 5
+e 3 4
+g 4 3
+r 5 2
+e 5 1
+a 6 2
+s 5 3
+e 6 3
+personae
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+e 1 2
+personal
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+l 2 1
+poseable
+p 4 1
+o 4 2
+s 5 3
+e 6 3
+a 6 2
+b 7 2
+l 6 1
+e 5 1
+personae
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+e 1 2
+personal
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+l 2 1
+probable
+p 4 1
+r 5 2
+o 4 2
+b 3 3
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+probable
+p 4 1
+r 5 2
+o 4 2
+b 3 3
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+preboard
+p 4 1
+r 5 2
+e 6 3
+b 6 4
+o 7 3
+a 7 4
+r 7 5
+d 6 5
+preboard
+p 4 1
+r 5 2
+e 6 3
+b 7 2
+o 7 3
+a 7 4
+r 7 5
+d 6 5
+caboodle
+c 4 5
+a 5 5
+b 6 4
+o 5 4
+o 4 4
+d 3 5
+l 2 4
+e 3 4
+codebtor
+c 4 5
+o 4 4
+d 3 5
+e 3 4
+b 3 3
+t 3 2
+o 4 2
+r 5 2
+negators
+n 0 2
+e 1 2
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+reposall
+r 5 2
+e 5 1
+p 4 1
+o 4 2
+s 5 3
+a 6 2
+l 6 1
+l 7 1
+reposall
+r 5 2
+e 5 1
+p 4 1
+o 4 2
+s 5 3
+a 6 2
+l 7 1
+l 6 1
+reoppose
+r 5 2
+e 5 1
+o 5 0
+p 4 0
+p 4 1
+o 4 2
+s 5 3
+e 6 3
+seaboard
+s 5 3
+e 6 3
+a 6 2
+b 7 2
+o 7 3
+a 7 4
+r 7 5
+d 6 5
+heptagon
+h 6 0
+e 5 1
+p 4 1
+t 3 2
+a 2 2
+g 1 1
+o 2 0
+n 1 0
+heptagon
+h 6 0
+e 5 1
+p 4 1
+t 3 2
+a 2 2
+g 1 1
+o 2 0
+n 3 1
+baronage
+b 7 2
+a 6 2
+r 5 2
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 1 2
+baronage
+b 7 2
+a 6 2
+r 5 2
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 0 0
+bargoose
+b 7 2
+a 6 2
+r 5 2
+g 4 3
+o 4 4
+o 5 4
+s 5 3
+e 6 3
+bargoose
+b 7 2
+a 6 2
+r 5 2
+g 4 3
+o 5 4
+o 4 4
+s 5 3
+e 6 3
+gearbox
+g 1 1
+e 1 2
+a 2 3
+r 1 4
+b 1 3
+o 0 3
+x 0 4
+gelatos
+g 1 1
+e 1 2
+l 2 1
+a 2 2
+t 3 2
+o 4 2
+s 5 3
+gelable
+g 1 1
+e 1 2
+l 2 1
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+gelable
+g 1 1
+e 1 2
+l 2 1
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+eatable
+e 1 2
+a 2 2
+t 3 2
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+eatable
+e 1 2
+a 2 2
+t 3 2
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+eatable
+e 1 2
+a 2 3
+t 3 2
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+eatable
+e 1 2
+a 2 3
+t 3 2
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+batable
+b 1 3
+a 2 3
+t 3 2
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+belabor
+b 1 3
+e 1 2
+l 2 1
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+batable
+b 1 3
+a 2 2
+t 3 2
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+rabatos
+r 1 4
+a 2 3
+b 1 3
+a 2 2
+t 3 2
+o 4 2
+s 5 3
+rabatos
+r 1 4
+a 2 3
+b 3 3
+a 2 2
+t 3 2
+o 4 2
+s 5 3
+ratable
+r 1 4
+a 2 3
+t 3 2
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+ratable
+r 1 4
+a 2 3
+t 3 2
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+acrobat
+a 1 5
+c 0 5
+r 1 4
+o 0 3
+b 1 3
+a 2 3
+t 3 2
+acrobat
+a 1 5
+c 0 5
+r 1 4
+o 0 3
+b 1 3
+a 2 2
+t 3 2
+albedos
+a 1 5
+l 2 4
+b 3 3
+e 3 4
+d 3 5
+o 4 4
+s 5 3
+legator
+l 2 1
+e 1 2
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+legatos
+l 2 1
+e 1 2
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+s 5 3
+leonine
+l 2 1
+e 1 2
+o 0 3
+n 0 2
+i 0 1
+n 1 0
+e 0 0
+atabegs
+a 2 2
+t 3 2
+a 2 3
+b 3 3
+e 3 4
+g 4 3
+s 5 3
+algebra
+a 2 2
+l 2 1
+g 1 1
+e 1 2
+b 1 3
+r 1 4
+a 1 5
+algebra
+a 2 2
+l 2 1
+g 1 1
+e 1 2
+b 1 3
+r 1 4
+a 2 3
+abators
+a 2 2
+b 1 3
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+ablator
+a 2 2
+b 1 3
+l 2 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+abators
+a 2 2
+b 3 3
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+ablator
+a 2 2
+b 3 3
+l 2 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+orators
+o 0 3
+r 1 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+antbear
+a 2 2
+n 3 1
+t 3 2
+b 3 3
+e 3 4
+a 2 3
+r 1 4
+abators
+a 2 3
+b 1 3
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+abalone
+a 2 3
+b 1 3
+a 2 2
+l 2 1
+o 2 0
+n 1 0
+e 0 0
+abandon
+a 2 3
+b 1 3
+a 2 2
+n 3 1
+d 3 0
+o 2 0
+n 1 0
+albedos
+a 2 3
+l 2 4
+b 3 3
+e 3 4
+d 3 5
+o 4 4
+s 5 3
+abators
+a 2 3
+b 3 3
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+abalone
+a 2 3
+b 3 3
+a 2 2
+l 2 1
+o 2 0
+n 1 0
+e 0 0
+abandon
+a 2 3
+b 3 3
+a 2 2
+n 3 1
+d 3 0
+o 2 0
+n 1 0
+atabegs
+a 2 3
+t 3 2
+a 2 2
+b 3 3
+e 3 4
+g 4 3
+s 5 3
+fleabag
+f 2 5
+l 2 4
+e 3 4
+a 2 3
+b 1 3
+a 2 2
+g 1 1
+fleabag
+f 2 5
+l 2 4
+e 3 4
+a 2 3
+b 3 3
+a 2 2
+g 1 1
+flatbed
+f 2 5
+l 2 4
+a 2 3
+t 3 2
+b 3 3
+e 3 4
+d 3 5
+donator
+d 3 0
+o 2 0
+n 3 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+notable
+n 3 1
+o 4 2
+t 3 2
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+notable
+n 3 1
+o 4 2
+t 3 2
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+notable
+n 3 1
+o 4 2
+t 3 2
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+notable
+n 3 1
+o 4 2
+t 3 2
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+toppers
+t 3 2
+o 4 2
+p 4 1
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+batable
+b 3 3
+a 2 3
+t 3 2
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+belabor
+b 3 3
+e 3 4
+l 2 4
+a 2 3
+b 1 3
+o 0 3
+r 1 4
+boppers
+b 3 3
+o 4 2
+p 4 1
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+batable
+b 3 3
+a 2 2
+t 3 2
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+delator
+d 3 5
+e 3 4
+l 2 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+debtors
+d 3 5
+e 3 4
+b 3 3
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+poperas
+p 4 0
+o 5 0
+p 4 1
+e 5 1
+r 5 2
+a 6 2
+s 5 3
+polaron
+p 4 0
+o 5 0
+l 6 1
+a 6 2
+r 5 2
+o 4 2
+n 3 1
+persona
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+peonage
+p 4 0
+e 5 1
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 1 2
+peonage
+p 4 0
+e 5 1
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 0 0
+potable
+p 4 1
+o 4 2
+t 3 2
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+potable
+p 4 1
+o 4 2
+t 3 2
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+potable
+p 4 1
+o 4 2
+t 3 2
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+potable
+p 4 1
+o 4 2
+t 3 2
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+pogoers
+p 4 1
+o 4 2
+g 4 3
+o 5 4
+e 6 3
+r 5 2
+s 5 3
+posable
+p 4 1
+o 4 2
+s 5 3
+a 6 2
+b 7 2
+l 6 1
+e 5 1
+pontage
+p 4 1
+o 4 2
+n 3 1
+t 3 2
+a 2 2
+g 1 1
+e 1 2
+pontage
+p 4 1
+o 4 2
+n 3 1
+t 3 2
+a 2 2
+g 1 1
+e 0 0
+persona
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+peonage
+p 4 1
+e 5 1
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 1 2
+peonage
+p 4 1
+e 5 1
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 0 0
+proband
+p 4 1
+r 5 2
+o 4 2
+b 3 3
+a 2 2
+n 3 1
+d 3 0
+presale
+p 4 1
+r 5 2
+e 6 3
+s 5 3
+a 6 2
+l 6 1
+e 5 1
+negator
+n 1 0
+e 0 0
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+poperas
+p 4 1
+o 5 0
+p 4 0
+e 5 1
+r 5 2
+a 6 2
+s 5 3
+polaron
+p 4 1
+o 5 0
+l 6 1
+a 6 2
+r 5 2
+o 4 2
+n 3 1
+goobers
+g 4 3
+o 4 4
+o 5 4
+b 6 4
+e 6 3
+r 5 2
+s 5 3
+gondola
+g 4 3
+o 4 2
+n 3 1
+d 3 0
+o 2 0
+l 2 1
+a 2 2
+gelatos
+g 4 3
+e 3 4
+l 2 4
+a 2 3
+t 3 2
+o 4 2
+s 5 3
+gearbox
+g 4 3
+e 3 4
+a 2 3
+r 1 4
+b 1 3
+o 0 3
+x 0 4
+negaton
+n 1 0
+e 0 0
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+n 3 1
+caboose
+c 4 5
+a 5 5
+b 6 4
+o 5 4
+o 4 4
+s 5 3
+e 6 3
+negator
+n 0 2
+e 1 2
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+cobaeas
+c 4 5
+o 5 4
+b 6 4
+a 7 4
+e 6 3
+a 6 2
+s 5 3
+opposer
+o 5 0
+p 4 0
+p 4 1
+o 4 2
+s 5 3
+e 6 3
+r 5 2
+opposal
+o 5 0
+p 4 0
+p 4 1
+o 4 2
+s 5 3
+a 6 2
+l 6 1
+opposal
+o 5 0
+p 4 0
+p 4 1
+o 4 2
+s 5 3
+a 6 2
+l 7 1
+operose
+o 5 0
+p 4 0
+e 5 1
+r 5 2
+o 4 2
+s 5 3
+e 6 3
+operose
+o 5 0
+p 4 1
+e 5 1
+r 5 2
+o 4 2
+s 5 3
+e 6 3
+reposal
+r 5 2
+e 5 1
+p 4 1
+o 4 2
+s 5 3
+a 6 2
+l 6 1
+reposal
+r 5 2
+e 5 1
+p 4 1
+o 4 2
+s 5 3
+a 6 2
+l 7 1
+nonpros
+n 1 0
+o 2 0
+n 3 1
+p 4 1
+r 5 2
+o 4 2
+s 5 3
+ignoble
+i 0 1
+g 1 1
+n 0 2
+o 0 3
+b 1 3
+l 2 4
+e 3 4
+reboard
+r 5 2
+e 6 3
+b 6 4
+o 7 3
+a 7 4
+r 7 5
+d 6 5
+negaton
+n 0 2
+e 1 2
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+n 3 1
+reboard
+r 5 2
+e 6 3
+b 7 2
+o 7 3
+a 7 4
+r 7 5
+d 6 5
+hoppers
+h 6 0
+o 5 0
+p 4 0
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+hoppers
+h 6 0
+o 5 0
+p 4 1
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+heptose
+h 6 0
+e 5 1
+p 4 1
+t 3 2
+o 4 2
+s 5 3
+e 6 3
+hersall
+h 6 0
+e 5 1
+r 5 2
+s 5 3
+a 6 2
+l 6 1
+l 7 1
+hersall
+h 6 0
+e 5 1
+r 5 2
+s 5 3
+a 6 2
+l 7 1
+l 6 1
+leprose
+l 6 1
+e 5 1
+p 4 1
+r 5 2
+o 4 2
+s 5 3
+e 6 3
+loppers
+l 6 1
+o 5 0
+p 4 0
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+loppers
+l 6 1
+o 5 0
+p 4 1
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+argonon
+a 6 2
+r 5 2
+g 4 3
+o 4 2
+n 3 1
+o 2 0
+n 1 0
+aerogel
+a 6 2
+e 6 3
+r 5 2
+o 4 2
+g 4 3
+e 3 4
+l 2 4
+aerobat
+a 6 2
+e 6 3
+r 5 2
+o 4 2
+b 3 3
+a 2 3
+t 3 2
+aerobat
+a 6 2
+e 6 3
+r 5 2
+o 4 2
+b 3 3
+a 2 2
+t 3 2
+albergo
+a 6 2
+l 6 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 4 4
+albergo
+a 6 2
+l 6 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 4 2
+albergo
+a 6 2
+l 6 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 5 4
+albergo
+a 6 2
+l 7 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 4 4
+albergo
+a 6 2
+l 7 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 4 2
+albergo
+a 6 2
+l 7 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 5 4
+aerogel
+a 6 2
+e 5 1
+r 5 2
+o 4 2
+g 4 3
+e 3 4
+l 2 4
+aerobat
+a 6 2
+e 5 1
+r 5 2
+o 4 2
+b 3 3
+a 2 3
+t 3 2
+aerobat
+a 6 2
+e 5 1
+r 5 2
+o 4 2
+b 3 3
+a 2 2
+t 3 2
+berobed
+b 6 4
+e 6 3
+r 5 2
+o 4 2
+b 3 3
+e 3 4
+d 3 5
+albergo
+a 7 0
+l 7 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 4 4
+albergo
+a 7 0
+l 7 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 4 2
+albergo
+a 7 0
+l 7 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 5 4
+albergo
+a 7 0
+l 6 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 4 4
+albergo
+a 7 0
+l 6 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 4 2
+albergo
+a 7 0
+l 6 1
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+o 5 4
+nonoral
+n 1 0
+o 2 0
+n 3 1
+o 4 2
+r 5 2
+a 6 2
+l 6 1
+nonoral
+n 1 0
+o 2 0
+n 3 1
+o 4 2
+r 5 2
+a 6 2
+l 7 1
+ballers
+b 7 2
+a 6 2
+l 7 1
+l 6 1
+e 5 1
+r 5 2
+s 5 3
+berobed
+b 7 2
+e 6 3
+r 5 2
+o 4 2
+b 3 3
+e 3 4
+d 3 5
+aerogel
+a 7 4
+e 6 3
+r 5 2
+o 4 2
+g 4 3
+e 3 4
+l 2 4
+aerobat
+a 7 4
+e 6 3
+r 5 2
+o 4 2
+b 3 3
+a 2 3
+t 3 2
+aerobat
+a 7 4
+e 6 3
+r 5 2
+o 4 2
+b 3 3
+a 2 2
+t 3 2
+baboos
+b 1 3
+a 2 2
+b 3 3
+o 4 4
+o 5 4
+s 5 3
+bandog
+b 1 3
+a 2 2
+n 3 1
+d 3 0
+o 2 0
+g 1 1
+rabato
+r 1 4
+a 2 3
+b 1 3
+a 2 2
+t 3 2
+o 4 2
+gelato
+g 1 1
+e 1 2
+l 2 1
+a 2 2
+t 3 2
+o 4 2
+rabato
+r 1 4
+a 2 3
+b 3 3
+a 2 2
+t 3 2
+o 4 2
+ratbag
+r 1 4
+a 2 3
+t 3 2
+b 3 3
+a 2 2
+g 1 1
+robalo
+r 1 4
+o 0 3
+b 1 3
+a 2 2
+l 2 1
+o 2 0
+roband
+r 1 4
+o 0 3
+b 1 3
+a 2 2
+n 3 1
+d 3 0
+gelant
+g 1 1
+e 1 2
+l 2 1
+a 2 2
+n 3 1
+t 3 2
+arable
+a 1 5
+r 1 4
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+arable
+a 1 5
+r 1 4
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+aldose
+a 1 5
+l 2 4
+d 3 5
+o 4 4
+s 5 3
+e 6 3
+albata
+a 1 5
+l 2 4
+b 3 3
+a 2 3
+t 3 2
+a 2 2
+albedo
+a 1 5
+l 2 4
+b 3 3
+e 3 4
+d 3 5
+o 4 4
+albata
+a 1 5
+l 2 4
+b 3 3
+a 2 2
+t 3 2
+a 2 3
+albata
+a 1 5
+l 2 4
+b 1 3
+a 2 3
+t 3 2
+a 2 2
+albata
+a 1 5
+l 2 4
+b 1 3
+a 2 2
+t 3 2
+a 2 3
+oleine
+o 2 0
+l 2 1
+e 1 2
+i 0 1
+n 1 0
+e 0 0
+labral
+l 2 1
+a 2 2
+b 1 3
+r 1 4
+a 1 5
+l 2 4
+labral
+l 2 1
+a 2 2
+b 1 3
+r 1 4
+a 2 3
+l 2 4
+labara
+l 2 1
+a 2 2
+b 1 3
+a 2 3
+r 1 4
+a 1 5
+lablab
+l 2 1
+a 2 2
+b 1 3
+l 2 4
+a 2 3
+b 3 3
+labara
+l 2 1
+a 2 2
+b 3 3
+a 2 3
+r 1 4
+a 1 5
+lablab
+l 2 1
+a 2 2
+b 3 3
+l 2 4
+a 2 3
+b 1 3
+labors
+l 2 1
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+s 5 3
+lanose
+l 2 1
+a 2 2
+n 3 1
+o 4 2
+s 5 3
+e 6 3
+longan
+l 2 1
+o 2 0
+n 1 0
+g 1 1
+a 2 2
+n 3 1
+legato
+l 2 1
+e 1 2
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+atabeg
+a 2 2
+t 3 2
+a 2 3
+b 1 3
+e 1 2
+g 1 1
+atabeg
+a 2 2
+t 3 2
+a 2 3
+b 3 3
+e 3 4
+g 4 3
+glebae
+g 1 1
+l 2 1
+e 1 2
+b 1 3
+a 2 3
+e 3 4
+aboral
+a 2 2
+b 1 3
+o 0 3
+r 1 4
+a 1 5
+l 2 4
+aboral
+a 2 2
+b 1 3
+o 0 3
+r 1 4
+a 2 3
+l 2 4
+abator
+a 2 2
+b 1 3
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+orator
+o 0 3
+r 1 4
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+abator
+a 2 2
+b 3 3
+a 2 3
+t 3 2
+o 4 2
+r 5 2
+gators
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+aboral
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+a 6 2
+l 6 1
+aboral
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+a 6 2
+l 7 1
+antara
+a 2 2
+n 3 1
+t 3 2
+a 2 3
+r 1 4
+a 1 5
+aboral
+a 2 3
+b 1 3
+o 0 3
+r 1 4
+a 1 5
+l 2 4
+abator
+a 2 3
+b 1 3
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+galeae
+g 1 1
+a 2 2
+l 2 1
+e 1 2
+a 2 3
+e 3 4
+gabled
+g 1 1
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+d 3 5
+engine
+e 0 0
+n 1 0
+g 1 1
+i 0 1
+n 0 2
+e 1 2
+aldose
+a 2 3
+l 2 4
+d 3 5
+o 4 4
+s 5 3
+e 6 3
+albedo
+a 2 3
+l 2 4
+b 3 3
+e 3 4
+d 3 5
+o 4 4
+aboral
+a 2 3
+b 3 3
+o 4 2
+r 5 2
+a 6 2
+l 6 1
+aboral
+a 2 3
+b 3 3
+o 4 2
+r 5 2
+a 6 2
+l 7 1
+abator
+a 2 3
+b 3 3
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+gabled
+g 1 1
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+d 3 5
+aefald
+a 2 3
+e 3 4
+f 2 5
+a 1 5
+l 2 4
+d 3 5
+atabeg
+a 2 3
+t 3 2
+a 2 2
+b 1 3
+e 1 2
+g 1 1
+atabeg
+a 2 3
+t 3 2
+a 2 2
+b 3 3
+e 3 4
+g 4 3
+atonal
+a 2 3
+t 3 2
+o 4 2
+n 3 1
+a 2 2
+l 2 1
+labors
+l 2 4
+a 2 3
+b 3 3
+o 4 2
+r 5 2
+s 5 3
+engine
+e 1 2
+n 0 2
+g 1 1
+i 0 1
+n 1 0
+e 0 0
+dongle
+d 3 0
+o 2 0
+n 1 0
+g 1 1
+l 2 1
+e 1 2
+doning
+d 3 0
+o 2 0
+n 1 0
+i 0 1
+n 0 2
+g 1 1
+dogear
+d 3 0
+o 2 0
+g 1 1
+e 1 2
+a 2 3
+r 1 4
+donors
+d 3 0
+o 2 0
+n 3 1
+o 4 2
+r 5 2
+s 5 3
+nosode
+n 3 1
+o 4 2
+s 5 3
+o 4 4
+d 3 5
+e 3 4
+carbon
+c 0 5
+a 1 5
+r 1 4
+b 1 3
+o 0 3
+n 0 2
+taeing
+t 3 2
+a 2 2
+e 1 2
+i 0 1
+n 0 2
+g 1 1
+taeing
+t 3 2
+a 2 2
+e 1 2
+i 0 1
+n 1 0
+g 1 1
+taleae
+t 3 2
+a 2 2
+l 2 1
+e 1 2
+a 2 3
+e 3 4
+tabled
+t 3 2
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+d 3 5
+tabled
+t 3 2
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+d 3 5
+taboos
+t 3 2
+a 2 2
+b 3 3
+o 4 4
+o 5 4
+s 5 3
+tabors
+t 3 2
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+s 5 3
+tagine
+t 3 2
+a 2 2
+g 1 1
+i 0 1
+n 0 2
+e 1 2
+tagine
+t 3 2
+a 2 2
+g 1 1
+i 0 1
+n 1 0
+e 0 0
+topers
+t 3 2
+o 4 2
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+topper
+t 3 2
+o 4 2
+p 4 1
+p 4 0
+e 5 1
+r 5 2
+tabled
+t 3 2
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+d 3 5
+tabled
+t 3 2
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+d 3 5
+taboos
+t 3 2
+a 2 3
+b 3 3
+o 4 4
+o 5 4
+s 5 3
+tabors
+t 3 2
+a 2 3
+b 3 3
+o 4 2
+r 5 2
+s 5 3
+taeing
+t 3 2
+a 2 3
+e 1 2
+i 0 1
+n 0 2
+g 1 1
+taeing
+t 3 2
+a 2 3
+e 1 2
+i 0 1
+n 1 0
+g 1 1
+barbel
+b 3 3
+a 2 3
+r 1 4
+b 1 3
+e 1 2
+l 2 1
+barbal
+b 3 3
+a 2 3
+r 1 4
+b 1 3
+a 2 2
+l 2 1
+barfed
+b 3 3
+a 2 3
+r 1 4
+f 2 5
+e 3 4
+d 3 5
+barong
+b 3 3
+a 2 3
+r 1 4
+o 0 3
+n 0 2
+g 1 1
+begoes
+b 3 3
+e 3 4
+g 4 3
+o 5 4
+e 6 3
+s 5 3
+boreal
+b 3 3
+o 4 2
+r 5 2
+e 5 1
+a 6 2
+l 6 1
+boreas
+b 3 3
+o 4 2
+r 5 2
+e 5 1
+a 6 2
+s 5 3
+boreal
+b 3 3
+o 4 2
+r 5 2
+e 5 1
+a 6 2
+l 7 1
+borgos
+b 3 3
+o 4 2
+r 5 2
+g 4 3
+o 4 4
+s 5 3
+borgos
+b 3 3
+o 4 2
+r 5 2
+g 4 3
+o 5 4
+s 5 3
+boreal
+b 3 3
+o 4 2
+r 5 2
+e 6 3
+a 6 2
+l 6 1
+boreas
+b 3 3
+o 4 2
+r 5 2
+e 6 3
+a 6 2
+s 5 3
+boreal
+b 3 3
+o 4 2
+r 5 2
+e 6 3
+a 6 2
+l 7 1
+bopper
+b 3 3
+o 4 2
+p 4 1
+p 4 0
+e 5 1
+r 5 2
+gealed
+g 1 1
+e 1 2
+a 2 3
+l 2 4
+e 3 4
+d 3 5
+eatage
+e 1 2
+a 2 3
+t 3 2
+a 2 2
+g 1 1
+e 0 0
+inland
+i 0 1
+n 1 0
+l 2 1
+a 2 2
+n 3 1
+d 3 0
+bandog
+b 3 3
+a 2 2
+n 3 1
+d 3 0
+o 2 0
+g 1 1
+eatage
+e 3 4
+a 2 3
+t 3 2
+a 2 2
+g 1 1
+e 1 2
+eatage
+e 3 4
+a 2 3
+t 3 2
+a 2 2
+g 1 1
+e 0 0
+debtor
+d 3 5
+e 3 4
+b 3 3
+t 3 2
+o 4 2
+r 5 2
+degras
+d 3 5
+e 3 4
+g 4 3
+r 5 2
+a 6 2
+s 5 3
+doosra
+d 3 5
+o 4 4
+o 5 4
+s 5 3
+r 5 2
+a 6 2
+dogear
+d 3 5
+o 4 4
+g 4 3
+e 3 4
+a 2 3
+r 1 4
+popera
+p 4 0
+o 5 0
+p 4 1
+e 5 1
+r 5 2
+a 6 2
+polers
+p 4 0
+o 5 0
+l 6 1
+e 5 1
+r 5 2
+s 5 3
+polars
+p 4 0
+o 5 0
+l 6 1
+a 6 2
+r 5 2
+s 5 3
+person
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+peraea
+p 4 0
+e 5 1
+r 5 2
+a 6 2
+e 6 3
+a 7 4
+peares
+p 4 0
+e 5 1
+a 6 2
+r 5 2
+e 6 3
+s 5 3
+peason
+p 4 0
+e 5 1
+a 6 2
+s 5 3
+o 4 2
+n 3 1
+potale
+p 4 1
+o 4 2
+t 3 2
+a 2 2
+l 2 1
+e 1 2
+boxcar
+b 1 3
+o 0 3
+x 0 4
+c 0 5
+a 1 5
+r 1 4
+potage
+p 4 1
+o 4 2
+t 3 2
+a 2 2
+g 1 1
+e 1 2
+potage
+p 4 1
+o 4 2
+t 3 2
+a 2 2
+g 1 1
+e 0 0
+potale
+p 4 1
+o 4 2
+t 3 2
+a 2 3
+l 2 4
+e 3 4
+pogoed
+p 4 1
+o 4 2
+g 4 3
+o 4 4
+e 3 4
+d 3 5
+pogoer
+p 4 1
+o 4 2
+g 4 3
+o 5 4
+e 6 3
+r 5 2
+boning
+b 1 3
+o 0 3
+n 0 2
+i 0 1
+n 1 0
+g 1 1
+poraes
+p 4 1
+o 4 2
+r 5 2
+a 6 2
+e 6 3
+s 5 3
+porged
+p 4 1
+o 4 2
+r 5 2
+g 4 3
+e 3 4
+d 3 5
+poepol
+p 4 1
+o 4 2
+e 5 1
+p 4 0
+o 5 0
+l 6 1
+pontal
+p 4 1
+o 4 2
+n 3 1
+t 3 2
+a 2 2
+l 2 1
+pontal
+p 4 1
+o 4 2
+n 3 1
+t 3 2
+a 2 3
+l 2 4
+person
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+peraea
+p 4 1
+e 5 1
+r 5 2
+a 6 2
+e 6 3
+a 7 4
+peares
+p 4 1
+e 5 1
+a 6 2
+r 5 2
+e 6 3
+s 5 3
+peason
+p 4 1
+e 5 1
+a 6 2
+s 5 3
+o 4 2
+n 3 1
+craton
+c 0 5
+r 1 4
+a 2 3
+t 3 2
+o 4 2
+n 3 1
+probed
+p 4 1
+r 5 2
+o 4 2
+b 3 3
+e 3 4
+d 3 5
+prease
+p 4 1
+r 5 2
+e 5 1
+a 6 2
+s 5 3
+e 6 3
+popera
+p 4 1
+o 5 0
+p 4 0
+e 5 1
+r 5 2
+a 6 2
+polers
+p 4 1
+o 5 0
+l 6 1
+e 5 1
+r 5 2
+s 5 3
+polars
+p 4 1
+o 5 0
+l 6 1
+a 6 2
+r 5 2
+s 5 3
+orgeat
+o 4 2
+r 5 2
+g 4 3
+e 3 4
+a 2 3
+t 3 2
+operas
+o 4 2
+p 4 1
+e 5 1
+r 5 2
+a 6 2
+s 5 3
+goober
+g 4 3
+o 4 4
+o 5 4
+b 6 4
+e 6 3
+r 5 2
+gelato
+g 4 3
+e 3 4
+l 2 4
+a 2 3
+t 3 2
+o 4 2
+balboa
+b 1 3
+a 2 3
+l 2 4
+b 3 3
+o 4 4
+a 5 5
+goboes
+g 4 3
+o 5 4
+b 6 4
+o 7 3
+e 6 3
+s 5 3
+grease
+g 4 3
+r 5 2
+e 5 1
+a 6 2
+s 5 3
+e 6 3
+grebos
+g 4 3
+r 5 2
+e 6 3
+b 6 4
+o 5 4
+s 5 3
+cabers
+c 4 5
+a 5 5
+b 6 4
+e 6 3
+r 5 2
+s 5 3
+cooser
+c 4 5
+o 4 4
+o 5 4
+s 5 3
+e 6 3
+r 5 2
+cooers
+c 4 5
+o 4 4
+o 5 4
+e 6 3
+r 5 2
+s 5 3
+baboos
+b 1 3
+a 2 3
+b 3 3
+o 4 4
+o 5 4
+s 5 3
+cobaea
+c 4 5
+o 4 4
+b 3 3
+a 2 3
+e 1 2
+a 2 2
+cobaea
+c 4 5
+o 4 4
+b 3 3
+a 2 2
+e 1 2
+a 2 3
+cobalt
+c 4 5
+o 4 4
+b 3 3
+a 2 2
+l 2 1
+t 3 2
+cooser
+c 4 5
+o 5 4
+o 4 4
+s 5 3
+e 6 3
+r 5 2
+cobaea
+c 4 5
+o 5 4
+b 6 4
+a 7 4
+e 6 3
+a 6 2
+oppose
+o 5 0
+p 4 0
+p 4 1
+o 4 2
+s 5 3
+e 6 3
+barfed
+b 1 3
+a 2 3
+r 1 4
+f 2 5
+e 3 4
+d 3 5
+operon
+o 5 0
+p 4 0
+e 5 1
+r 5 2
+o 4 2
+n 3 1
+operas
+o 5 0
+p 4 0
+e 5 1
+r 5 2
+a 6 2
+s 5 3
+operon
+o 5 0
+p 4 1
+e 5 1
+r 5 2
+o 4 2
+n 3 1
+operas
+o 5 0
+p 4 1
+e 5 1
+r 5 2
+a 6 2
+s 5 3
+robalo
+r 5 2
+o 4 2
+b 3 3
+a 2 2
+l 2 1
+o 2 0
+roband
+r 5 2
+o 4 2
+b 3 3
+a 2 2
+n 3 1
+d 3 0
+roseal
+r 5 2
+o 4 2
+s 5 3
+e 6 3
+a 6 2
+l 6 1
+roseal
+r 5 2
+o 4 2
+s 5 3
+e 6 3
+a 6 2
+l 7 1
+repose
+r 5 2
+e 5 1
+p 4 1
+o 4 2
+s 5 3
+e 6 3
+barong
+b 1 3
+a 2 3
+r 1 4
+o 0 3
+n 0 2
+g 1 1
+repoll
+r 5 2
+e 5 1
+p 4 1
+o 5 0
+l 6 1
+l 7 1
+reason
+r 5 2
+e 5 1
+a 6 2
+s 5 3
+o 4 2
+n 3 1
+repoll
+r 5 2
+e 5 1
+p 4 0
+o 5 0
+l 6 1
+l 7 1
+resale
+r 5 2
+e 6 3
+s 5 3
+a 6 2
+l 6 1
+e 5 1
+reason
+r 5 2
+e 6 3
+a 6 2
+s 5 3
+o 4 2
+n 3 1
+benign
+b 1 3
+e 1 2
+n 0 2
+i 0 1
+g 1 1
+n 1 0
+sealer
+s 5 3
+e 6 3
+a 6 2
+l 6 1
+e 5 1
+r 5 2
+seadog
+s 5 3
+e 6 3
+a 7 4
+d 6 5
+o 5 4
+g 4 3
+serged
+s 5 3
+e 6 3
+r 5 2
+g 4 3
+e 3 4
+d 3 5
+sorell
+s 5 3
+o 4 2
+r 5 2
+e 5 1
+l 6 1
+l 7 1
+sontag
+s 5 3
+o 4 2
+n 3 1
+t 3 2
+a 2 2
+g 1 1
+sonata
+s 5 3
+o 4 2
+n 3 1
+a 2 2
+t 3 2
+a 2 3
+adobes
+a 5 5
+d 6 5
+o 5 4
+b 6 4
+e 6 3
+s 5 3
+abears
+a 5 5
+b 6 4
+e 6 3
+a 6 2
+r 5 2
+s 5 3
+aboard
+a 5 5
+b 6 4
+o 7 3
+a 7 4
+r 7 5
+d 6 5
+hopdog
+h 6 0
+o 5 0
+p 4 0
+d 3 0
+o 2 0
+g 1 1
+hopper
+h 6 0
+o 5 0
+p 4 0
+p 4 1
+e 5 1
+r 5 2
+hopers
+h 6 0
+o 5 0
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+hopers
+h 6 0
+o 5 0
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+hopper
+h 6 0
+o 5 0
+p 4 1
+p 4 0
+e 5 1
+r 5 2
+hopdog
+h 6 0
+o 5 0
+p 4 1
+d 3 0
+o 2 0
+g 1 1
+hollas
+h 6 0
+o 5 0
+l 6 1
+l 7 1
+a 6 2
+s 5 3
+halers
+h 6 0
+a 7 0
+l 6 1
+e 5 1
+r 5 2
+s 5 3
+nonage
+n 1 0
+o 2 0
+n 3 1
+a 2 2
+g 1 1
+e 1 2
+nonage
+n 1 0
+o 2 0
+n 3 1
+a 2 2
+g 1 1
+e 0 0
+onbeat
+o 0 3
+n 0 2
+b 1 3
+e 1 2
+a 2 2
+t 3 2
+hearse
+h 6 0
+e 5 1
+a 6 2
+r 5 2
+s 5 3
+e 6 3
+heares
+h 6 0
+e 5 1
+a 6 2
+r 5 2
+e 6 3
+s 5 3
+lepton
+l 6 1
+e 5 1
+p 4 1
+t 3 2
+o 4 2
+n 3 1
+lepras
+l 6 1
+e 5 1
+p 4 1
+r 5 2
+a 6 2
+s 5 3
+leares
+l 6 1
+e 5 1
+a 6 2
+r 5 2
+e 6 3
+s 5 3
+leaser
+l 6 1
+e 5 1
+a 6 2
+s 5 3
+e 6 3
+r 5 2
+largos
+l 6 1
+a 6 2
+r 5 2
+g 4 3
+o 4 4
+s 5 3
+largos
+l 6 1
+a 6 2
+r 5 2
+g 4 3
+o 4 2
+s 5 3
+largos
+l 6 1
+a 6 2
+r 5 2
+g 4 3
+o 5 4
+s 5 3
+lopper
+l 6 1
+o 5 0
+p 4 0
+p 4 1
+e 5 1
+r 5 2
+beanos
+b 1 3
+e 1 2
+a 2 2
+n 3 1
+o 4 2
+s 5 3
+lopers
+l 6 1
+o 5 0
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+lopers
+l 6 1
+o 5 0
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+lopper
+l 6 1
+o 5 0
+p 4 1
+p 4 0
+e 5 1
+r 5 2
+onbeat
+o 0 3
+n 0 2
+b 1 3
+e 1 2
+a 2 3
+t 3 2
+areola
+a 6 2
+r 5 2
+e 5 1
+o 5 0
+l 6 1
+a 7 0
+aerobe
+a 6 2
+e 6 3
+r 5 2
+o 4 2
+b 3 3
+e 3 4
+aboard
+a 6 2
+b 7 2
+o 7 3
+a 7 4
+r 7 5
+d 6 5
+begone
+b 1 3
+e 1 2
+g 1 1
+o 2 0
+n 1 0
+e 0 0
+aerobe
+a 6 2
+e 5 1
+r 5 2
+o 4 2
+b 3 3
+e 3 4
+earbob
+e 6 3
+a 7 4
+r 7 5
+b 6 4
+o 7 3
+b 7 2
+boodle
+b 6 4
+o 5 4
+o 4 4
+d 3 5
+l 2 4
+e 3 4
+boobed
+b 6 4
+o 5 4
+o 4 4
+b 3 3
+e 3 4
+d 3 5
+bardos
+b 6 4
+a 7 4
+r 7 5
+d 6 5
+o 5 4
+s 5 3
+baobab
+b 6 4
+a 5 5
+o 4 4
+b 3 3
+a 2 3
+b 1 3
+baobab
+b 6 4
+a 5 5
+o 4 4
+b 3 3
+a 2 2
+b 1 3
+dooced
+d 6 5
+o 5 4
+o 4 4
+c 4 5
+e 3 4
+d 3 5
+doodle
+d 6 5
+o 5 4
+o 4 4
+d 3 5
+l 2 4
+e 3 4
+doosra
+d 6 5
+o 5 4
+o 4 4
+s 5 3
+r 5 2
+a 6 2
+dobson
+d 6 5
+o 5 4
+b 6 4
+s 5 3
+o 4 2
+n 3 1
+dogear
+d 6 5
+o 5 4
+g 4 3
+e 3 4
+a 2 3
+r 1 4
+belong
+b 1 3
+e 1 2
+l 2 1
+o 2 0
+n 1 0
+g 1 1
+beigne
+b 1 3
+e 1 2
+i 0 1
+g 1 1
+n 1 0
+e 0 0
+largos
+l 7 1
+a 6 2
+r 5 2
+g 4 3
+o 4 4
+s 5 3
+largos
+l 7 1
+a 6 2
+r 5 2
+g 4 3
+o 4 2
+s 5 3
+largos
+l 7 1
+a 6 2
+r 5 2
+g 4 3
+o 5 4
+s 5 3
+barged
+b 7 2
+a 6 2
+r 5 2
+g 4 3
+e 3 4
+d 3 5
+balers
+b 7 2
+a 6 2
+l 6 1
+e 5 1
+r 5 2
+s 5 3
+nealed
+n 0 2
+e 1 2
+a 2 3
+l 2 4
+e 3 4
+d 3 5
+baller
+b 7 2
+a 6 2
+l 7 1
+l 6 1
+e 5 1
+r 5 2
+blares
+b 7 2
+l 7 1
+a 6 2
+r 5 2
+e 6 3
+s 5 3
+blears
+b 7 2
+l 6 1
+e 5 1
+a 6 2
+r 5 2
+s 5 3
+blares
+b 7 2
+l 6 1
+a 6 2
+r 5 2
+e 6 3
+s 5 3
+abears
+a 7 4
+b 6 4
+e 6 3
+a 6 2
+r 5 2
+s 5 3
+adobes
+a 7 4
+d 6 5
+o 5 4
+b 6 4
+e 6 3
+s 5 3
+aerobe
+a 7 4
+e 6 3
+r 5 2
+o 4 2
+b 3 3
+e 3 4
+labor
+l 2 4
+a 2 3
+b 1 3
+o 0 3
+r 1 4
+labra
+l 2 4
+a 2 3
+b 1 3
+r 1 4
+a 1 5
+label
+l 2 4
+a 2 3
+b 1 3
+e 1 2
+l 2 1
+labor
+l 2 4
+a 2 3
+b 3 3
+o 4 2
+r 5 2
+farle
+f 2 5
+a 1 5
+r 1 4
+l 2 4
+e 3 4
+flegs
+f 2 5
+l 2 4
+e 3 4
+g 4 3
+s 5 3
+genie
+g 1 1
+e 0 0
+n 1 0
+i 0 1
+e 1 2
+baton
+b 1 3
+a 2 2
+t 3 2
+o 4 2
+n 3 1
+carle
+c 0 5
+a 1 5
+r 1 4
+l 2 4
+e 3 4
+araba
+a 1 5
+r 1 4
+a 2 3
+b 1 3
+a 2 2
+donga
+d 3 0
+o 2 0
+n 1 0
+g 1 1
+a 2 2
+dogie
+d 3 0
+o 2 0
+g 1 1
+i 0 1
+e 0 0
+dogie
+d 3 0
+o 2 0
+g 1 1
+i 0 1
+e 1 2
+araba
+a 1 5
+r 1 4
+a 2 3
+b 3 3
+a 2 2
+carbo
+c 0 5
+a 1 5
+r 1 4
+b 1 3
+o 0 3
+donor
+d 3 0
+o 2 0
+n 3 1
+o 4 2
+r 5 2
+aroba
+a 1 5
+r 1 4
+o 0 3
+b 1 3
+a 2 3
+natal
+n 3 1
+a 2 2
+t 3 2
+a 2 3
+l 2 4
+nabla
+n 3 1
+a 2 2
+b 1 3
+l 2 4
+a 2 3
+nabla
+n 3 1
+a 2 2
+b 1 3
+l 2 4
+a 1 5
+nabla
+n 3 1
+a 2 2
+b 3 3
+l 2 4
+a 2 3
+nabla
+n 3 1
+a 2 2
+b 3 3
+l 2 4
+a 1 5
+notal
+n 3 1
+o 4 2
+t 3 2
+a 2 2
+l 2 1
+notal
+n 3 1
+o 4 2
+t 3 2
+a 2 3
+l 2 4
+noble
+n 3 1
+o 4 2
+b 3 3
+l 2 4
+e 3 4
+noser
+n 3 1
+o 4 2
+s 5 3
+e 6 3
+r 5 2
+aroba
+a 1 5
+r 1 4
+o 0 3
+b 1 3
+a 2 2
+carat
+c 0 5
+a 1 5
+r 1 4
+a 2 3
+t 3 2
+talon
+t 3 2
+a 2 2
+l 2 1
+o 2 0
+n 1 0
+talon
+t 3 2
+a 2 2
+l 2 1
+o 2 0
+n 3 1
+talea
+t 3 2
+a 2 2
+l 2 1
+e 1 2
+a 2 3
+tabor
+t 3 2
+a 2 2
+b 1 3
+o 0 3
+r 1 4
+table
+t 3 2
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+tabla
+t 3 2
+a 2 2
+b 1 3
+l 2 4
+a 2 3
+tabla
+t 3 2
+a 2 2
+b 1 3
+l 2 4
+a 1 5
+table
+t 3 2
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+aldea
+a 1 5
+l 2 4
+d 3 5
+e 3 4
+a 2 3
+tabla
+t 3 2
+a 2 2
+b 3 3
+l 2 4
+a 2 3
+tabla
+t 3 2
+a 2 2
+b 3 3
+l 2 4
+a 1 5
+taboo
+t 3 2
+a 2 2
+b 3 3
+o 4 4
+o 5 4
+tabor
+t 3 2
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+toged
+t 3 2
+o 4 2
+g 4 3
+e 3 4
+d 3 5
+torso
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+o 5 4
+torse
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+e 6 3
+torso
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+o 4 4
+toras
+t 3 2
+o 4 2
+r 5 2
+a 6 2
+s 5 3
+tores
+t 3 2
+o 4 2
+r 5 2
+e 6 3
+s 5 3
+toper
+t 3 2
+o 4 2
+p 4 1
+e 5 1
+r 5 2
+toeas
+t 3 2
+o 4 2
+e 5 1
+a 6 2
+s 5 3
+tondo
+t 3 2
+o 4 2
+n 3 1
+d 3 0
+o 2 0
+tonal
+t 3 2
+o 4 2
+n 3 1
+a 2 2
+l 2 1
+tabor
+t 3 2
+a 2 3
+b 1 3
+o 0 3
+r 1 4
+table
+t 3 2
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+tabla
+t 3 2
+a 2 3
+b 1 3
+l 2 4
+a 1 5
+talar
+t 3 2
+a 2 3
+l 2 4
+a 1 5
+r 1 4
+table
+t 3 2
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+tabla
+t 3 2
+a 2 3
+b 3 3
+l 2 4
+a 1 5
+taboo
+t 3 2
+a 2 3
+b 3 3
+o 4 4
+o 5 4
+tabor
+t 3 2
+a 2 3
+b 3 3
+o 4 2
+r 5 2
+babel
+b 1 3
+a 2 2
+b 3 3
+e 3 4
+l 2 4
+babel
+b 3 3
+a 2 3
+b 1 3
+e 1 2
+l 2 1
+baled
+b 3 3
+a 2 3
+l 2 4
+e 3 4
+d 3 5
+barbe
+b 3 3
+a 2 3
+r 1 4
+b 1 3
+e 1 2
+baboo
+b 1 3
+a 2 2
+b 3 3
+o 4 4
+o 5 4
+barca
+b 3 3
+a 2 3
+r 1 4
+c 0 5
+a 1 5
+axone
+a 1 5
+x 0 4
+o 0 3
+n 0 2
+e 1 2
+baron
+b 3 3
+a 2 3
+r 1 4
+o 0 3
+n 0 2
+baton
+b 3 3
+a 2 3
+t 3 2
+o 4 2
+n 3 1
+belar
+b 3 3
+e 3 4
+l 2 4
+a 2 3
+r 1 4
+belar
+b 3 3
+e 3 4
+l 2 4
+a 1 5
+r 1 4
+begot
+b 3 3
+e 3 4
+g 4 3
+o 4 2
+t 3 2
+blear
+b 3 3
+l 2 4
+e 3 4
+a 2 3
+r 1 4
+bleat
+b 3 3
+l 2 4
+e 3 4
+a 2 3
+t 3 2
+boobs
+b 3 3
+o 4 4
+o 5 4
+b 6 4
+s 5 3
+boose
+b 3 3
+o 4 4
+o 5 4
+s 5 3
+e 6 3
+bodle
+b 3 3
+o 4 4
+d 3 5
+l 2 4
+e 3 4
+boabs
+b 3 3
+o 4 4
+a 5 5
+b 6 4
+s 5 3
+boson
+b 3 3
+o 4 4
+s 5 3
+o 4 2
+n 3 1
+boral
+b 3 3
+o 4 2
+r 5 2
+a 6 2
+l 6 1
+boras
+b 3 3
+o 4 2
+r 5 2
+a 6 2
+s 5 3
+boral
+b 3 3
+o 4 2
+r 5 2
+a 6 2
+l 7 1
+borel
+b 3 3
+o 4 2
+r 5 2
+e 5 1
+l 6 1
+borgo
+b 3 3
+o 4 2
+r 5 2
+g 4 3
+o 4 4
+olein
+o 2 0
+l 2 1
+e 1 2
+i 0 1
+n 0 2
+borgo
+b 3 3
+o 4 2
+r 5 2
+g 4 3
+o 5 4
+olein
+o 2 0
+l 2 1
+e 1 2
+i 0 1
+n 1 0
+bores
+b 3 3
+o 4 2
+r 5 2
+e 6 3
+s 5 3
+labor
+l 2 1
+a 2 2
+b 1 3
+o 0 3
+r 1 4
+baaed
+b 3 3
+a 2 2
+a 2 3
+e 3 4
+d 3 5
+baton
+b 3 3
+a 2 2
+t 3 2
+o 4 2
+n 3 1
+labra
+l 2 1
+a 2 2
+b 1 3
+r 1 4
+a 1 5
+babel
+b 3 3
+a 2 2
+b 1 3
+e 1 2
+l 2 1
+labra
+l 2 1
+a 2 2
+b 1 3
+r 1 4
+a 2 3
+bagie
+b 3 3
+a 2 2
+g 1 1
+i 0 1
+e 0 0
+bagie
+b 3 3
+a 2 2
+g 1 1
+i 0 1
+e 1 2
+bagel
+b 3 3
+a 2 2
+g 1 1
+e 1 2
+l 2 1
+ingan
+i 0 1
+n 1 0
+g 1 1
+a 2 2
+n 3 1
+eigne
+e 0 0
+i 0 1
+g 1 1
+n 0 2
+e 1 2
+carob
+c 0 5
+a 1 5
+r 1 4
+o 0 3
+b 1 3
+debar
+d 3 5
+e 3 4
+b 3 3
+a 2 3
+r 1 4
+debag
+d 3 5
+e 3 4
+b 3 3
+a 2 2
+g 1 1
+caron
+c 0 5
+a 1 5
+r 1 4
+o 0 3
+n 0 2
+noxal
+n 0 2
+o 0 3
+x 0 4
+a 1 5
+l 2 4
+decad
+d 3 5
+e 3 4
+c 4 5
+a 5 5
+d 6 5
+decos
+d 3 5
+e 3 4
+c 4 5
+o 4 4
+s 5 3
+decos
+d 3 5
+e 3 4
+c 4 5
+o 5 4
+s 5 3
+bagie
+b 1 3
+a 2 2
+g 1 1
+i 0 1
+e 0 0
+docos
+d 3 5
+o 4 4
+c 4 5
+o 5 4
+s 5 3
+doobs
+d 3 5
+o 4 4
+o 5 4
+b 6 4
+s 5 3
+label
+l 2 1
+a 2 2
+b 3 3
+e 3 4
+l 2 4
+dooce
+d 3 5
+o 4 4
+o 5 4
+c 4 5
+e 3 4
+bagie
+b 1 3
+a 2 2
+g 1 1
+i 0 1
+e 1 2
+doabs
+d 3 5
+o 4 4
+a 5 5
+b 6 4
+s 5 3
+doser
+d 3 5
+o 4 4
+s 5 3
+e 6 3
+r 5 2
+dobla
+d 3 5
+o 4 4
+b 3 3
+l 2 4
+a 2 3
+dobla
+d 3 5
+o 4 4
+b 3 3
+l 2 4
+a 1 5
+labor
+l 2 1
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+poler
+p 4 0
+o 5 0
+l 6 1
+e 5 1
+r 5 2
+bagel
+b 1 3
+a 2 2
+g 1 1
+e 1 2
+l 2 1
+polar
+p 4 0
+o 5 0
+l 6 1
+a 6 2
+r 5 2
+eland
+e 1 2
+l 2 1
+a 2 2
+n 3 1
+d 3 0
+pepos
+p 4 0
+e 5 1
+p 4 1
+o 4 2
+s 5 3
+perse
+p 4 0
+e 5 1
+r 5 2
+s 5 3
+e 6 3
+eloge
+e 1 2
+l 2 1
+o 2 0
+g 1 1
+e 0 0
+ingle
+i 0 1
+n 1 0
+g 1 1
+l 2 1
+e 1 2
+caxon
+c 0 5
+a 1 5
+x 0 4
+o 0 3
+n 0 2
+inorb
+i 0 1
+n 0 2
+o 0 3
+r 1 4
+b 1 3
+inbox
+i 0 1
+n 0 2
+b 1 3
+o 0 3
+x 0 4
+noble
+n 0 2
+o 0 3
+b 1 3
+l 2 4
+e 3 4
+peres
+p 4 0
+e 5 1
+r 5 2
+e 6 3
+s 5 3
+perea
+p 4 0
+e 5 1
+r 5 2
+e 6 3
+a 6 2
+perea
+p 4 0
+e 5 1
+r 5 2
+e 6 3
+a 7 4
+pelas
+p 4 0
+e 5 1
+l 6 1
+a 6 2
+s 5 3
+eigne
+e 1 2
+i 0 1
+g 1 1
+n 1 0
+e 0 0
+pears
+p 4 0
+e 5 1
+a 6 2
+r 5 2
+s 5 3
+peare
+p 4 0
+e 5 1
+a 6 2
+r 5 2
+e 6 3
+pearl
+p 4 0
+e 5 1
+a 6 2
+r 5 2
+l 6 1
+pease
+p 4 0
+e 5 1
+a 6 2
+s 5 3
+e 6 3
+potae
+p 4 1
+o 4 2
+t 3 2
+a 2 2
+e 1 2
+longe
+l 2 1
+o 2 0
+n 1 0
+g 1 1
+e 1 2
+longa
+l 2 1
+o 2 0
+n 1 0
+g 1 1
+a 2 2
+rabat
+r 1 4
+a 2 3
+b 1 3
+a 2 2
+t 3 2
+longe
+l 2 1
+o 2 0
+n 1 0
+g 1 1
+e 0 0
+bonie
+b 1 3
+o 0 3
+n 0 2
+i 0 1
+e 0 0
+login
+l 2 1
+o 2 0
+g 1 1
+i 0 1
+n 0 2
+bonie
+b 1 3
+o 0 3
+n 0 2
+i 0 1
+e 1 2
+potae
+p 4 1
+o 4 2
+t 3 2
+a 2 3
+e 3 4
+potae
+p 4 1
+o 4 2
+t 3 2
+a 2 3
+e 1 2
+logie
+l 2 1
+o 2 0
+g 1 1
+i 0 1
+e 0 0
+pogos
+p 4 1
+o 4 2
+g 4 3
+o 4 4
+s 5 3
+pogos
+p 4 1
+o 4 2
+g 4 3
+o 5 4
+s 5 3
+logie
+l 2 1
+o 2 0
+g 1 1
+i 0 1
+e 1 2
+login
+l 2 1
+o 2 0
+g 1 1
+i 0 1
+n 1 0
+porae
+p 4 1
+o 4 2
+r 5 2
+a 6 2
+e 6 3
+poral
+p 4 1
+o 4 2
+r 5 2
+a 6 2
+l 6 1
+poral
+p 4 1
+o 4 2
+r 5 2
+a 6 2
+l 7 1
+porae
+p 4 1
+o 4 2
+r 5 2
+a 6 2
+e 5 1
+porge
+p 4 1
+o 4 2
+r 5 2
+g 4 3
+e 3 4
+logan
+l 2 1
+o 2 0
+g 1 1
+a 2 2
+n 3 1
+pores
+p 4 1
+o 4 2
+r 5 2
+e 6 3
+s 5 3
+poser
+p 4 1
+o 4 2
+s 5 3
+e 6 3
+r 5 2
+bongo
+b 1 3
+o 0 3
+n 0 2
+g 1 1
+o 2 0
+perse
+p 4 1
+e 5 1
+r 5 2
+s 5 3
+e 6 3
+boral
+b 1 3
+o 0 3
+r 1 4
+a 1 5
+l 2 4
+craal
+c 0 5
+r 1 4
+a 2 3
+a 2 2
+l 2 1
+ingle
+i 0 1
+n 0 2
+g 1 1
+l 2 1
+e 1 2
+ingan
+i 0 1
+n 0 2
+g 1 1
+a 2 2
+n 3 1
+peres
+p 4 1
+e 5 1
+r 5 2
+e 6 3
+s 5 3
+perea
+p 4 1
+e 5 1
+r 5 2
+e 6 3
+a 6 2
+perea
+p 4 1
+e 5 1
+r 5 2
+e 6 3
+a 7 4
+pelas
+p 4 1
+e 5 1
+l 6 1
+a 6 2
+s 5 3
+borax
+b 1 3
+o 0 3
+r 1 4
+a 1 5
+x 0 4
+pears
+p 4 1
+e 5 1
+a 6 2
+r 5 2
+s 5 3
+peare
+p 4 1
+e 5 1
+a 6 2
+r 5 2
+e 6 3
+leant
+l 2 1
+e 1 2
+a 2 2
+n 3 1
+t 3 2
+pearl
+p 4 1
+e 5 1
+a 6 2
+r 5 2
+l 6 1
+pease
+p 4 1
+e 5 1
+a 6 2
+s 5 3
+e 6 3
+progs
+p 4 1
+r 5 2
+o 4 2
+g 4 3
+s 5 3
+gland
+g 1 1
+l 2 1
+a 2 2
+n 3 1
+d 3 0
+probe
+p 4 1
+r 5 2
+o 4 2
+b 3 3
+e 3 4
+crone
+c 0 5
+r 1 4
+o 0 3
+n 0 2
+e 1 2
+boral
+b 1 3
+o 0 3
+r 1 4
+a 2 3
+l 2 4
+proso
+p 4 1
+r 5 2
+o 4 2
+s 5 3
+o 5 4
+prose
+p 4 1
+r 5 2
+o 4 2
+s 5 3
+e 6 3
+proso
+p 4 1
+r 5 2
+o 4 2
+s 5 3
+o 4 4
+prase
+p 4 1
+r 5 2
+a 6 2
+s 5 3
+e 6 3
+preop
+p 4 1
+r 5 2
+e 5 1
+o 5 0
+p 4 0
+preon
+p 4 1
+r 5 2
+e 5 1
+o 4 2
+n 3 1
+presa
+p 4 1
+r 5 2
+e 6 3
+s 5 3
+a 6 2
+gleba
+g 1 1
+l 2 1
+e 1 2
+b 1 3
+a 2 3
+poler
+p 4 1
+o 5 0
+l 6 1
+e 5 1
+r 5 2
+polar
+p 4 1
+o 5 0
+l 6 1
+a 6 2
+r 5 2
+ogres
+o 4 2
+g 4 3
+r 5 2
+e 6 3
+s 5 3
+oread
+o 4 2
+r 5 2
+e 6 3
+a 7 4
+d 6 5
+orlop
+o 4 2
+r 5 2
+l 6 1
+o 5 0
+p 4 0
+orlop
+o 4 2
+r 5 2
+l 6 1
+o 5 0
+p 4 1
+opera
+o 4 2
+p 4 1
+e 5 1
+r 5 2
+a 6 2
+baled
+b 1 3
+a 2 3
+l 2 4
+e 3 4
+d 3 5
+goose
+g 4 3
+o 4 4
+o 5 4
+s 5 3
+e 6 3
+gobar
+g 4 3
+o 4 4
+b 3 3
+a 2 3
+r 1 4
+gobos
+g 4 3
+o 4 4
+b 3 3
+o 4 2
+s 5 3
+goban
+g 4 3
+o 4 4
+b 3 3
+a 2 2
+n 3 1
+gorse
+g 4 3
+o 4 2
+r 5 2
+s 5 3
+e 6 3
+goral
+g 4 3
+o 4 2
+r 5 2
+a 6 2
+l 6 1
+goras
+g 4 3
+o 4 2
+r 5 2
+a 6 2
+s 5 3
+goral
+g 4 3
+o 4 2
+r 5 2
+a 6 2
+l 7 1
+gores
+g 4 3
+o 4 2
+r 5 2
+e 6 3
+s 5 3
+gobar
+g 4 3
+o 4 2
+b 3 3
+a 2 3
+r 1 4
+gobos
+g 4 3
+o 4 2
+b 3 3
+o 4 4
+s 5 3
+goban
+g 4 3
+o 4 2
+b 3 3
+a 2 2
+n 3 1
+goers
+g 4 3
+o 4 2
+e 5 1
+r 5 2
+s 5 3
+goose
+g 4 3
+o 5 4
+o 4 4
+s 5 3
+e 6 3
+gobar
+g 4 3
+o 5 4
+b 6 4
+a 7 4
+r 7 5
+rabat
+r 1 4
+a 2 3
+b 3 3
+a 2 2
+t 3 2
+goers
+g 4 3
+o 5 4
+e 6 3
+r 5 2
+s 5 3
+grope
+g 4 3
+r 5 2
+o 4 2
+p 4 1
+e 5 1
+algin
+a 2 2
+l 2 1
+g 1 1
+i 0 1
+n 0 2
+grebo
+g 4 3
+r 5 2
+e 6 3
+b 6 4
+o 5 4
+algin
+a 2 2
+l 2 1
+g 1 1
+i 0 1
+n 1 0
+grebo
+g 4 3
+r 5 2
+e 6 3
+b 6 4
+o 7 3
+grebo
+g 4 3
+r 5 2
+e 6 3
+b 7 2
+o 7 3
+ogres
+o 4 4
+g 4 3
+r 5 2
+e 6 3
+s 5 3
+babel
+b 1 3
+a 2 3
+b 3 3
+e 3 4
+l 2 4
+baboo
+b 1 3
+a 2 3
+b 3 3
+o 4 4
+o 5 4
+caber
+c 4 5
+a 5 5
+b 6 4
+e 6 3
+r 5 2
+gleba
+g 1 1
+l 2 1
+e 1 2
+b 1 3
+a 2 2
+cabob
+c 4 5
+a 5 5
+b 6 4
+o 7 3
+b 7 2
+glean
+g 1 1
+l 2 1
+e 1 2
+a 2 2
+n 3 1
+cooer
+c 4 5
+o 4 4
+o 5 4
+e 6 3
+r 5 2
+alone
+a 2 2
+l 2 1
+o 2 0
+n 1 0
+e 0 0
+cogon
+c 4 5
+o 4 4
+g 4 3
+o 4 2
+n 3 1
+along
+a 2 2
+l 2 1
+o 2 0
+n 1 0
+g 1 1
+coble
+c 4 5
+o 4 4
+b 3 3
+l 2 4
+e 3 4
+altos
+a 2 2
+l 2 1
+t 3 2
+o 4 2
+s 5 3
+cooed
+c 4 5
+o 5 4
+o 4 4
+e 3 4
+d 3 5
+altar
+a 2 2
+l 2 1
+t 3 2
+a 2 3
+r 1 4
+cobra
+c 4 5
+o 5 4
+b 6 4
+r 7 5
+a 7 4
+cogon
+c 4 5
+o 5 4
+g 4 3
+o 4 2
+n 3 1
+oppos
+o 5 0
+p 4 0
+p 4 1
+o 4 2
+s 5 3
+barca
+b 1 3
+a 2 3
+r 1 4
+c 0 5
+a 1 5
+opera
+o 5 0
+p 4 0
+e 5 1
+r 5 2
+a 6 2
+abear
+a 2 2
+b 1 3
+e 1 2
+a 2 3
+r 1 4
+baron
+b 1 3
+a 2 3
+r 1 4
+o 0 3
+n 0 2
+opera
+o 5 0
+p 4 1
+e 5 1
+r 5 2
+a 6 2
+abled
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+d 3 5
+oleos
+o 5 0
+l 6 1
+e 5 1
+o 4 2
+s 5 3
+ollas
+o 5 0
+l 6 1
+l 7 1
+a 6 2
+s 5 3
+erose
+e 5 1
+r 5 2
+o 4 2
+s 5 3
+e 6 3
+erase
+e 5 1
+r 5 2
+a 6 2
+s 5 3
+e 6 3
+ergos
+e 5 1
+r 5 2
+g 4 3
+o 4 4
+s 5 3
+ergot
+e 5 1
+r 5 2
+g 4 3
+o 4 2
+t 3 2
+ergos
+e 5 1
+r 5 2
+g 4 3
+o 4 2
+s 5 3
+ergon
+e 5 1
+r 5 2
+g 4 3
+o 4 2
+n 3 1
+ergos
+e 5 1
+r 5 2
+g 4 3
+o 5 4
+s 5 3
+easer
+e 5 1
+a 6 2
+s 5 3
+e 6 3
+r 5 2
+epopt
+e 5 1
+p 4 0
+o 5 0
+p 4 1
+t 3 2
+rotal
+r 5 2
+o 4 2
+t 3 2
+a 2 2
+l 2 1
+rotan
+r 5 2
+o 4 2
+t 3 2
+a 2 2
+n 3 1
+rotal
+r 5 2
+o 4 2
+t 3 2
+a 2 3
+l 2 4
+robed
+r 5 2
+o 4 2
+b 3 3
+e 3 4
+d 3 5
+roble
+r 5 2
+o 4 2
+b 3 3
+l 2 4
+e 3 4
+ratal
+r 1 4
+a 2 3
+t 3 2
+a 2 2
+l 2 1
+genie
+g 1 1
+e 1 2
+n 0 2
+i 0 1
+e 0 0
+gator
+g 1 1
+a 2 2
+t 3 2
+o 4 2
+r 5 2
+rondo
+r 5 2
+o 4 2
+n 3 1
+d 3 0
+o 2 0
+repot
+r 5 2
+e 5 1
+p 4 1
+o 4 2
+t 3 2
+repos
+r 5 2
+e 5 1
+p 4 1
+o 4 2
+s 5 3
+abear
+a 2 2
+b 3 3
+e 3 4
+a 2 3
+r 1 4
+ninon
+n 0 2
+i 0 1
+n 1 0
+o 2 0
+n 3 1
+realo
+r 5 2
+e 5 1
+a 6 2
+l 6 1
+o 5 0
+abled
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+d 3 5
+baton
+b 1 3
+a 2 3
+t 3 2
+o 4 2
+n 3 1
+resod
+r 5 2
+e 6 3
+s 5 3
+o 5 4
+d 6 5
+resod
+r 5 2
+e 6 3
+s 5 3
+o 4 4
+d 3 5
+rebar
+r 5 2
+e 6 3
+b 6 4
+a 7 4
+r 7 5
+realo
+r 5 2
+e 6 3
+a 6 2
+l 6 1
+o 5 0
+abode
+a 2 2
+b 3 3
+o 4 4
+d 3 5
+e 3 4
+sober
+s 5 3
+o 5 4
+b 6 4
+e 6 3
+r 5 2
+seare
+s 5 3
+e 6 3
+a 6 2
+r 5 2
+e 5 1
+ratan
+r 1 4
+a 2 3
+t 3 2
+a 2 2
+n 3 1
+seron
+s 5 3
+e 6 3
+r 5 2
+o 4 2
+n 3 1
+seral
+s 5 3
+e 6 3
+r 5 2
+a 6 2
+l 6 1
+seral
+s 5 3
+e 6 3
+r 5 2
+a 6 2
+l 7 1
+serge
+s 5 3
+e 6 3
+r 5 2
+g 4 3
+e 3 4
+abore
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+e 5 1
+sargo
+s 5 3
+a 6 2
+r 5 2
+g 4 3
+o 4 4
+sargo
+s 5 3
+a 6 2
+r 5 2
+g 4 3
+o 4 2
+sarge
+s 5 3
+a 6 2
+r 5 2
+g 4 3
+e 3 4
+sargo
+s 5 3
+a 6 2
+r 5 2
+g 4 3
+o 5 4
+saber
+s 5 3
+a 6 2
+b 7 2
+e 6 3
+r 5 2
+sable
+s 5 3
+a 6 2
+b 7 2
+l 6 1
+e 5 1
+salep
+s 5 3
+a 6 2
+l 6 1
+e 5 1
+p 4 1
+salep
+s 5 3
+a 6 2
+l 6 1
+e 5 1
+p 4 0
+salal
+s 5 3
+a 6 2
+l 6 1
+a 7 0
+l 7 1
+salop
+s 5 3
+a 6 2
+l 6 1
+o 5 0
+p 4 0
+salop
+s 5 3
+a 6 2
+l 6 1
+o 5 0
+p 4 1
+salle
+s 5 3
+a 6 2
+l 7 1
+l 6 1
+e 5 1
+salal
+s 5 3
+a 6 2
+l 7 1
+a 7 0
+l 6 1
+soral
+s 5 3
+o 4 2
+r 5 2
+a 6 2
+l 6 1
+soral
+s 5 3
+o 4 2
+r 5 2
+a 6 2
+l 7 1
+sorel
+s 5 3
+o 4 2
+r 5 2
+e 5 1
+l 6 1
+abore
+a 2 2
+b 3 3
+o 4 2
+r 5 2
+e 6 3
+sorgo
+s 5 3
+o 4 2
+r 5 2
+g 4 3
+o 4 4
+sorgo
+s 5 3
+o 4 2
+r 5 2
+g 4 3
+o 5 4
+sopra
+s 5 3
+o 4 2
+p 4 1
+r 5 2
+a 6 2
+galea
+g 1 1
+a 2 2
+l 2 1
+e 1 2
+a 2 3
+oboes
+o 5 4
+b 6 4
+o 7 3
+e 6 3
+s 5 3
+ogres
+o 5 4
+g 4 3
+r 5 2
+e 6 3
+s 5 3
+adobe
+a 5 5
+d 6 5
+o 5 4
+b 6 4
+e 6 3
+adobo
+a 5 5
+d 6 5
+o 5 4
+b 6 4
+o 7 3
+abear
+a 5 5
+b 6 4
+e 6 3
+a 6 2
+r 5 2
+antar
+a 2 2
+n 3 1
+t 3 2
+a 2 3
+r 1 4
+abear
+a 5 5
+b 6 4
+e 6 3
+a 7 4
+r 7 5
+antae
+a 2 2
+n 3 1
+t 3 2
+a 2 3
+e 3 4
+antae
+a 2 2
+n 3 1
+t 3 2
+a 2 3
+e 1 2
+benga
+b 1 3
+e 1 2
+n 0 2
+g 1 1
+a 2 2
+hoper
+h 6 0
+o 5 0
+p 4 0
+e 5 1
+r 5 2
+hoers
+h 6 0
+o 5 0
+e 5 1
+r 5 2
+s 5 3
+hoper
+h 6 0
+o 5 0
+p 4 1
+e 5 1
+r 5 2
+anole
+a 2 2
+n 3 1
+o 2 0
+l 2 1
+e 1 2
+holla
+h 6 0
+o 5 0
+l 6 1
+l 7 1
+a 7 0
+holla
+h 6 0
+o 5 0
+l 6 1
+l 7 1
+a 6 2
+hallo
+h 6 0
+a 7 0
+l 7 1
+l 6 1
+o 5 0
+halal
+h 6 0
+a 7 0
+l 7 1
+a 6 2
+l 6 1
+haler
+h 6 0
+a 7 0
+l 6 1
+e 5 1
+r 5 2
+halal
+h 6 0
+a 7 0
+l 6 1
+a 6 2
+l 7 1
+agone
+a 2 2
+g 1 1
+o 2 0
+n 1 0
+e 0 0
+heros
+h 6 0
+e 5 1
+r 5 2
+o 4 2
+s 5 3
+heron
+h 6 0
+e 5 1
+r 5 2
+o 4 2
+n 3 1
+herse
+h 6 0
+e 5 1
+r 5 2
+s 5 3
+e 6 3
+heres
+h 6 0
+e 5 1
+r 5 2
+e 6 3
+s 5 3
+hears
+h 6 0
+e 5 1
+a 6 2
+r 5 2
+s 5 3
+ratos
+r 1 4
+a 2 3
+t 3 2
+o 4 2
+s 5 3
+heare
+h 6 0
+e 5 1
+a 6 2
+r 5 2
+e 6 3
+lepta
+l 6 1
+e 5 1
+p 4 1
+t 3 2
+a 2 2
+abled
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+d 3 5
+lepta
+l 6 1
+e 5 1
+p 4 1
+t 3 2
+a 2 3
+beano
+b 1 3
+e 1 2
+a 2 2
+n 3 1
+o 4 2
+lepra
+l 6 1
+e 5 1
+p 4 1
+r 5 2
+a 6 2
+leres
+l 6 1
+e 5 1
+r 5 2
+e 6 3
+s 5 3
+lears
+l 6 1
+e 5 1
+a 6 2
+r 5 2
+s 5 3
+leare
+l 6 1
+e 5 1
+a 6 2
+r 5 2
+e 6 3
+roble
+r 1 4
+o 0 3
+b 1 3
+l 2 4
+e 3 4
+lease
+l 6 1
+e 5 1
+a 6 2
+s 5 3
+e 6 3
+gable
+g 1 1
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+largo
+l 6 1
+a 6 2
+r 5 2
+g 4 3
+o 4 4
+aband
+a 2 3
+b 1 3
+a 2 2
+n 3 1
+d 3 0
+largo
+l 6 1
+a 6 2
+r 5 2
+g 4 3
+o 4 2
+large
+l 6 1
+a 6 2
+r 5 2
+g 4 3
+e 3 4
+largo
+l 6 1
+a 6 2
+r 5 2
+g 4 3
+o 5 4
+lares
+l 6 1
+a 6 2
+r 5 2
+e 6 3
+s 5 3
+laers
+l 6 1
+a 6 2
+e 6 3
+r 5 2
+s 5 3
+laser
+l 6 1
+a 6 2
+s 5 3
+e 6 3
+r 5 2
+laers
+l 6 1
+a 6 2
+e 5 1
+r 5 2
+s 5 3
+loper
+l 6 1
+o 5 0
+p 4 0
+e 5 1
+r 5 2
+loper
+l 6 1
+o 5 0
+p 4 1
+e 5 1
+r 5 2
+aroba
+a 6 2
+r 5 2
+o 4 2
+b 3 3
+a 2 3
+aroba
+a 6 2
+r 5 2
+o 4 2
+b 3 3
+a 2 2
+arose
+a 6 2
+r 5 2
+o 4 2
+s 5 3
+e 6 3
+arson
+a 6 2
+r 5 2
+s 5 3
+o 4 2
+n 3 1
+argot
+a 6 2
+r 5 2
+g 4 3
+o 4 2
+t 3 2
+argon
+a 6 2
+r 5 2
+g 4 3
+o 4 2
+n 3 1
+beano
+b 1 3
+e 1 2
+a 2 2
+n 3 1
+o 2 0
+arear
+a 6 2
+r 5 2
+e 6 3
+a 7 4
+r 7 5
+aread
+a 6 2
+r 5 2
+e 6 3
+a 7 4
+d 6 5
+begin
+b 1 3
+e 1 2
+g 1 1
+i 0 1
+n 0 2
+begin
+b 1 3
+e 1 2
+g 1 1
+i 0 1
+n 1 0
+begat
+b 1 3
+e 1 2
+g 1 1
+a 2 2
+t 3 2
+aeros
+a 6 2
+e 6 3
+r 5 2
+o 4 2
+s 5 3
+ronin
+r 1 4
+o 0 3
+n 0 2
+i 0 1
+n 1 0
+abear
+a 6 2
+b 7 2
+e 6 3
+a 7 4
+r 7 5
+abler
+a 6 2
+b 7 2
+l 6 1
+e 5 1
+r 5 2
+began
+b 1 3
+e 1 2
+g 1 1
+a 2 2
+n 3 1
+gable
+g 1 1
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+aloha
+a 6 2
+l 6 1
+o 5 0
+h 6 0
+a 7 0
+belga
+b 1 3
+e 1 2
+l 2 1
+g 1 1
+a 2 2
+aeros
+a 6 2
+e 5 1
+r 5 2
+o 4 2
+s 5 3
+ergos
+e 6 3
+r 5 2
+g 4 3
+o 4 4
+s 5 3
+ergot
+e 6 3
+r 5 2
+g 4 3
+o 4 2
+t 3 2
+ergos
+e 6 3
+r 5 2
+g 4 3
+o 4 2
+s 5 3
+ergon
+e 6 3
+r 5 2
+g 4 3
+o 4 2
+n 3 1
+ergos
+e 6 3
+r 5 2
+g 4 3
+o 5 4
+s 5 3
+booed
+b 6 4
+o 5 4
+o 4 4
+e 3 4
+d 3 5
+boose
+b 6 4
+o 5 4
+o 4 4
+s 5 3
+e 6 3
+boson
+b 6 4
+o 5 4
+s 5 3
+o 4 2
+n 3 1
+bardo
+b 6 4
+a 7 4
+r 7 5
+d 6 5
+o 5 4
+besot
+b 6 4
+e 6 3
+s 5 3
+o 4 2
+t 3 2
+bears
+b 6 4
+e 6 3
+a 6 2
+r 5 2
+s 5 3
+beare
+b 6 4
+e 6 3
+a 6 2
+r 5 2
+e 5 1
+beard
+b 6 4
+e 6 3
+a 7 4
+r 7 5
+d 6 5
+berob
+b 6 4
+e 6 3
+r 5 2
+o 4 2
+b 3 3
+belon
+b 1 3
+e 1 2
+l 2 1
+o 2 0
+n 1 0
+bergs
+b 6 4
+e 6 3
+r 5 2
+g 4 3
+s 5 3
+abled
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+d 3 5
+abode
+a 2 3
+b 3 3
+o 4 4
+d 3 5
+e 3 4
+braes
+b 6 4
+r 7 5
+a 7 4
+e 6 3
+s 5 3
+board
+b 6 4
+o 7 3
+a 7 4
+r 7 5
+d 6 5
+bobas
+b 6 4
+o 7 3
+b 7 2
+a 6 2
+s 5 3
+boars
+b 6 4
+o 7 3
+a 6 2
+r 5 2
+s 5 3
+drabs
+d 6 5
+r 7 5
+a 7 4
+b 6 4
+s 5 3
+darbs
+d 6 5
+a 7 4
+r 7 5
+b 6 4
+s 5 3
+dooce
+d 6 5
+o 5 4
+o 4 4
+c 4 5
+e 3 4
+baaed
+b 1 3
+a 2 2
+a 2 3
+e 3 4
+d 3 5
+doabs
+d 6 5
+o 5 4
+a 5 5
+b 6 4
+s 5 3
+dobra
+d 6 5
+o 5 4
+b 6 4
+r 7 5
+a 7 4
+abore
+a 2 3
+b 3 3
+o 4 2
+r 5 2
+e 5 1
+doser
+d 6 5
+o 5 4
+s 5 3
+e 6 3
+r 5 2
+docos
+d 6 5
+o 5 4
+c 4 5
+o 4 4
+s 5 3
+doers
+d 6 5
+o 5 4
+e 6 3
+r 5 2
+s 5 3
+abore
+a 2 3
+b 3 3
+o 4 2
+r 5 2
+e 6 3
+albas
+a 7 0
+l 7 1
+b 7 2
+a 6 2
+s 5 3
+belon
+b 1 3
+e 1 2
+l 2 1
+o 2 0
+n 3 1
+albas
+a 7 0
+l 6 1
+b 7 2
+a 6 2
+s 5 3
+being
+b 1 3
+e 1 2
+i 0 1
+n 0 2
+g 1 1
+largo
+l 7 1
+a 6 2
+r 5 2
+g 4 3
+o 4 4
+afear
+a 1 5
+f 2 5
+e 3 4
+a 2 3
+r 1 4
+largo
+l 7 1
+a 6 2
+r 5 2
+g 4 3
+o 4 2
+large
+l 7 1
+a 6 2
+r 5 2
+g 4 3
+e 3 4
+largo
+l 7 1
+a 6 2
+r 5 2
+g 4 3
+o 5 4
+aband
+a 2 3
+b 3 3
+a 2 2
+n 3 1
+d 3 0
+lares
+l 7 1
+a 6 2
+r 5 2
+e 6 3
+s 5 3
+laers
+l 7 1
+a 6 2
+e 6 3
+r 5 2
+s 5 3
+laser
+l 7 1
+a 6 2
+s 5 3
+e 6 3
+r 5 2
+laers
+l 7 1
+a 6 2
+e 5 1
+r 5 2
+s 5 3
+baron
+b 7 2
+a 6 2
+r 5 2
+o 4 2
+n 3 1
+beige
+b 1 3
+e 1 2
+i 0 1
+g 1 1
+e 0 0
+barge
+b 7 2
+a 6 2
+r 5 2
+g 4 3
+e 3 4
+bares
+b 7 2
+a 6 2
+r 5 2
+e 6 3
+s 5 3
+baler
+b 7 2
+a 6 2
+l 6 1
+e 5 1
+r 5 2
+baser
+b 7 2
+a 6 2
+s 5 3
+e 6 3
+r 5 2
+bason
+b 7 2
+a 6 2
+s 5 3
+o 4 2
+n 3 1
+arled
+a 2 3
+r 1 4
+l 2 4
+e 3 4
+d 3 5
+being
+b 1 3
+e 1 2
+i 0 1
+n 1 0
+g 1 1
+boabs
+b 7 2
+o 7 3
+a 7 4
+b 6 4
+s 5 3
+board
+b 7 2
+o 7 3
+a 7 4
+r 7 5
+d 6 5
+bobac
+b 7 2
+o 7 3
+b 6 4
+a 5 5
+c 4 5
+boars
+b 7 2
+o 7 3
+a 6 2
+r 5 2
+s 5 3
+blare
+b 7 2
+l 7 1
+a 6 2
+r 5 2
+e 5 1
+blare
+b 7 2
+l 7 1
+a 6 2
+r 5 2
+e 6 3
+blaes
+b 7 2
+l 7 1
+a 6 2
+e 6 3
+s 5 3
+blaer
+b 7 2
+l 7 1
+a 6 2
+e 6 3
+r 5 2
+blase
+b 7 2
+l 7 1
+a 6 2
+s 5 3
+e 6 3
+blaer
+b 7 2
+l 7 1
+a 6 2
+e 5 1
+r 5 2
+besot
+b 7 2
+e 6 3
+s 5 3
+o 4 2
+t 3 2
+bears
+b 7 2
+e 6 3
+a 6 2
+r 5 2
+s 5 3
+beare
+b 7 2
+e 6 3
+a 6 2
+r 5 2
+e 5 1
+beard
+b 7 2
+e 6 3
+a 7 4
+r 7 5
+d 6 5
+berob
+b 7 2
+e 6 3
+r 5 2
+o 4 2
+b 3 3
+bergs
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+s 5 3
+blear
+b 7 2
+l 6 1
+e 5 1
+a 6 2
+r 5 2
+aroba
+a 2 3
+r 1 4
+o 0 3
+b 1 3
+a 2 2
+blare
+b 7 2
+l 6 1
+a 6 2
+r 5 2
+e 5 1
+blare
+b 7 2
+l 6 1
+a 6 2
+r 5 2
+e 6 3
+blaes
+b 7 2
+l 6 1
+a 6 2
+e 6 3
+s 5 3
+blaer
+b 7 2
+l 6 1
+a 6 2
+e 6 3
+r 5 2
+blase
+b 7 2
+l 6 1
+a 6 2
+s 5 3
+e 6 3
+blaer
+b 7 2
+l 6 1
+a 6 2
+e 5 1
+r 5 2
+oboes
+o 7 3
+b 6 4
+o 5 4
+e 6 3
+s 5 3
+abear
+a 7 4
+b 6 4
+e 6 3
+a 6 2
+r 5 2
+adobe
+a 7 4
+d 6 5
+o 5 4
+b 6 4
+e 6 3
+arled
+a 1 5
+r 1 4
+l 2 4
+e 3 4
+d 3 5
+adobo
+a 7 4
+d 6 5
+o 5 4
+b 6 4
+o 7 3
+blear
+b 1 3
+l 2 4
+e 3 4
+a 2 3
+r 1 4
+bleat
+b 1 3
+l 2 4
+e 3 4
+a 2 3
+t 3 2
+aeros
+a 7 4
+e 6 3
+r 5 2
+o 4 2
+s 5 3
+atop
+a 2 2
+t 3 2
+o 4 2
+p 4 1
+bogs
+b 3 3
+o 4 4
+g 4 3
+s 5 3
+goos
+g 4 3
+o 4 4
+o 5 4
+s 5 3
+bode
+b 3 3
+o 4 4
+d 3 5
+e 3 4
+good
+g 4 3
+o 4 4
+o 5 4
+d 6 5
+goad
+g 4 3
+o 4 4
+a 5 5
+d 6 5
+nose
+n 3 1
+o 4 2
+s 5 3
+e 6 3
+gobo
+g 4 3
+o 4 4
+b 3 3
+o 4 2
+boab
+b 3 3
+o 4 4
+a 5 5
+b 6 4
+leat
+l 2 4
+e 3 4
+a 2 3
+t 3 2
+atop
+a 2 3
+t 3 2
+o 4 2
+p 4 1
+gora
+g 4 3
+o 4 2
+r 5 2
+a 6 2
+bota
+b 3 3
+o 4 2
+t 3 2
+a 2 2
+bota
+b 3 3
+o 4 2
+t 3 2
+a 2 3
+bogs
+b 3 3
+o 4 2
+g 4 3
+s 5 3
+gore
+g 4 3
+o 4 2
+r 5 2
+e 5 1
+gore
+g 4 3
+o 4 2
+r 5 2
+e 6 3
+bors
+b 3 3
+o 4 2
+r 5 2
+s 5 3
+gorp
+g 4 3
+o 4 2
+r 5 2
+p 4 1
+bora
+b 3 3
+o 4 2
+r 5 2
+a 6 2
+gobo
+g 4 3
+o 4 2
+b 3 3
+o 4 4
+noel
+n 3 1
+o 4 2
+e 5 1
+l 6 1
+none
+n 3 1
+o 2 0
+n 1 0
+e 0 0
+goer
+g 4 3
+o 4 2
+e 5 1
+r 5 2
+nong
+n 3 1
+o 2 0
+n 1 0
+g 1 1
+goel
+g 4 3
+o 4 2
+e 5 1
+l 6 1
+bald
+b 1 3
+a 2 3
+l 2 4
+d 3 5
+blae
+b 1 3
+l 2 4
+a 2 3
+e 1 2
+rale
+r 1 4
+a 2 3
+l 2 4
+e 3 4
+geld
+g 4 3
+e 3 4
+l 2 4
+d 3 5
+geos
+g 4 3
+e 3 4
+o 4 4
+s 5 3
+geal
+g 4 3
+e 3 4
+a 2 3
+l 2 4
+gear
+g 4 3
+e 3 4
+a 2 3
+r 1 4
+babe
+b 1 3
+a 2 3
+b 3 3
+e 3 4
+geat
+g 4 3
+e 3 4
+a 2 3
+t 3 2
+good
+g 4 3
+o 5 4
+o 4 4
+d 3 5
+goos
+g 4 3
+o 5 4
+o 4 4
+s 5 3
+bore
+b 3 3
+o 4 2
+r 5 2
+e 5 1
+goad
+g 4 3
+o 5 4
+a 5 5
+d 6 5
+noni
+n 3 1
+o 2 0
+n 1 0
+i 0 1
+gobo
+g 4 3
+o 5 4
+b 6 4
+o 7 3
+olea
+o 2 0
+l 2 1
+e 1 2
+a 2 2
+gobs
+g 4 3
+o 5 4
+b 6 4
+s 5 3
+goes
+g 4 3
+o 5 4
+e 6 3
+s 5 3
+goer
+g 4 3
+o 5 4
+e 6 3
+r 5 2
+oleo
+o 2 0
+l 2 1
+e 1 2
+o 0 3
+grot
+g 4 3
+r 5 2
+o 4 2
+t 3 2
+olea
+o 2 0
+l 2 1
+e 1 2
+a 2 3
+grab
+g 4 3
+r 5 2
+a 6 2
+b 7 2
+alef
+a 1 5
+l 2 4
+e 3 4
+f 2 5
+carb
+c 0 5
+a 1 5
+r 1 4
+b 1 3
+nole
+n 3 1
+o 2 0
+l 2 1
+e 1 2
+tael
+t 3 2
+a 2 2
+e 1 2
+l 2 1
+bore
+b 3 3
+o 4 2
+r 5 2
+e 6 3
+oose
+o 4 4
+o 5 4
+s 5 3
+e 6 3
+ogre
+o 4 4
+g 4 3
+r 5 2
+e 5 1
+ogre
+o 4 4
+g 4 3
+r 5 2
+e 6 3
+alec
+a 1 5
+l 2 4
+e 3 4
+c 4 5
+odea
+o 4 4
+d 3 5
+e 3 4
+a 2 3
+osar
+o 4 4
+s 5 3
+a 6 2
+r 5 2
+obos
+o 4 4
+b 3 3
+o 4 2
+s 5 3
+oboe
+o 4 4
+b 3 3
+o 4 2
+e 5 1
+blab
+b 1 3
+l 2 4
+a 2 3
+b 3 3
+ogle
+o 2 0
+g 1 1
+l 2 1
+e 1 2
+caba
+c 4 5
+a 5 5
+b 6 4
+a 7 4
+onto
+o 2 0
+n 3 1
+t 3 2
+o 4 2
+onos
+o 2 0
+n 3 1
+o 4 2
+s 5 3
+alar
+a 1 5
+l 2 4
+a 2 3
+r 1 4
+cabs
+c 4 5
+a 5 5
+b 6 4
+s 5 3
+coed
+c 4 5
+o 4 4
+e 3 4
+d 3 5
+coos
+c 4 5
+o 4 4
+o 5 4
+s 5 3
+boep
+b 3 3
+o 4 2
+e 5 1
+p 4 1
+boep
+b 3 3
+o 4 2
+e 5 1
+p 4 0
+bond
+b 3 3
+o 4 2
+n 3 1
+d 3 0
+cogs
+c 4 5
+o 4 4
+g 4 3
+s 5 3
+bona
+b 3 3
+o 4 2
+n 3 1
+a 2 2
+code
+c 4 5
+o 4 4
+d 3 5
+e 3 4
+nole
+n 1 0
+o 2 0
+l 2 1
+e 1 2
+bael
+b 3 3
+a 2 2
+e 1 2
+l 2 1
+cose
+c 4 5
+o 4 4
+s 5 3
+e 6 3
+alod
+a 2 2
+l 2 1
+o 2 0
+d 3 0
+baal
+b 3 3
+a 2 2
+a 2 3
+l 2 4
+alto
+a 2 2
+l 2 1
+t 3 2
+o 4 2
+taal
+t 3 2
+a 2 2
+a 2 3
+l 2 4
+flax
+f 2 5
+l 2 4
+a 1 5
+x 0 4
+coos
+c 4 5
+o 5 4
+o 4 4
+s 5 3
+feod
+f 2 5
+e 3 4
+o 4 4
+d 3 5
+bael
+b 1 3
+a 2 2
+e 1 2
+l 2 1
+baba
+b 1 3
+a 2 3
+b 3 3
+a 2 2
+bale
+b 3 3
+a 2 2
+l 2 1
+e 1 2
+cobs
+c 4 5
+o 5 4
+b 6 4
+s 5 3
+cose
+c 4 5
+o 5 4
+s 5 3
+e 6 3
+coda
+c 4 5
+o 5 4
+d 6 5
+a 5 5
+coda
+c 4 5
+o 5 4
+d 6 5
+a 7 4
+cogs
+c 4 5
+o 5 4
+g 4 3
+s 5 3
+bald
+b 3 3
+a 2 2
+l 2 1
+d 3 0
+oppo
+o 5 0
+p 4 0
+p 4 1
+o 4 2
+baba
+b 3 3
+a 2 2
+b 1 3
+a 2 3
+gien
+g 1 1
+i 0 1
+e 1 2
+n 0 2
+baal
+b 1 3
+a 2 3
+a 2 2
+l 2 1
+neat
+n 0 2
+e 1 2
+a 2 3
+t 3 2
+babe
+b 3 3
+a 2 2
+b 1 3
+e 1 2
+barf
+b 1 3
+a 2 3
+r 1 4
+f 2 5
+rata
+r 1 4
+a 2 3
+t 3 2
+a 2 2
+glei
+g 1 1
+l 2 1
+e 1 2
+i 0 1
+tale
+t 3 2
+a 2 2
+l 2 1
+e 1 2
+bant
+b 3 3
+a 2 2
+n 3 1
+t 3 2
+band
+b 3 3
+a 2 2
+n 3 1
+d 3 0
+able
+a 2 2
+b 1 3
+l 2 4
+e 3 4
+bant
+b 1 3
+a 2 2
+n 3 1
+t 3 2
+fegs
+f 2 5
+e 3 4
+g 4 3
+s 5 3
+oleo
+o 5 0
+l 6 1
+e 5 1
+o 4 2
+alae
+a 1 5
+l 2 4
+a 2 3
+e 3 4
+olea
+o 5 0
+l 6 1
+e 5 1
+a 6 2
+olla
+o 5 0
+l 6 1
+l 7 1
+a 7 0
+olla
+o 5 0
+l 6 1
+l 7 1
+a 6 2
+feal
+f 2 5
+e 3 4
+a 2 3
+l 2 4
+epos
+e 5 1
+p 4 1
+o 4 2
+s 5 3
+eros
+e 5 1
+r 5 2
+o 4 2
+s 5 3
+fear
+f 2 5
+e 3 4
+a 2 3
+r 1 4
+eras
+e 5 1
+r 5 2
+a 6 2
+s 5 3
+ebon
+e 3 4
+b 3 3
+o 4 2
+n 3 1
+ergo
+e 5 1
+r 5 2
+g 4 3
+o 4 4
+ecad
+e 3 4
+c 4 5
+a 5 5
+d 6 5
+ergs
+e 5 1
+r 5 2
+g 4 3
+s 5 3
+ergo
+e 5 1
+r 5 2
+g 4 3
+o 4 2
+ecod
+e 3 4
+c 4 5
+o 4 4
+d 3 5
+ecos
+e 3 4
+c 4 5
+o 4 4
+s 5 3
+ecos
+e 3 4
+c 4 5
+o 5 4
+s 5 3
+ergo
+e 5 1
+r 5 2
+g 4 3
+o 5 4
+ecod
+e 3 4
+c 4 5
+o 5 4
+d 6 5
+eres
+e 5 1
+r 5 2
+e 6 3
+s 5 3
+eorl
+e 5 1
+o 4 2
+r 5 2
+l 6 1
+ears
+e 5 1
+a 6 2
+r 5 2
+s 5 3
+earl
+e 5 1
+a 6 2
+r 5 2
+l 6 1
+ease
+e 5 1
+a 6 2
+s 5 3
+e 6 3
+egos
+e 3 4
+g 4 3
+o 4 4
+s 5 3
+egos
+e 3 4
+g 4 3
+o 4 2
+s 5 3
+rota
+r 5 2
+o 4 2
+t 3 2
+a 2 2
+egos
+e 3 4
+g 4 3
+o 5 4
+s 5 3
+earl
+e 3 4
+a 2 3
+r 1 4
+l 2 4
+rota
+r 5 2
+o 4 2
+t 3 2
+a 2 3
+band
+b 1 3
+a 2 2
+n 3 1
+d 3 0
+rotl
+r 5 2
+o 4 2
+t 3 2
+l 2 1
+rope
+r 5 2
+o 4 2
+p 4 1
+e 5 1
+robe
+r 5 2
+o 4 2
+b 3 3
+e 3 4
+alae
+a 1 5
+l 2 4
+a 2 3
+e 1 2
+delf
+d 3 5
+e 3 4
+l 2 4
+f 2 5
+gaen
+g 1 1
+a 2 2
+e 1 2
+n 0 2
+feat
+f 2 5
+e 3 4
+a 2 3
+t 3 2
+rose
+r 5 2
+o 4 2
+s 5 3
+e 6 3
+frab
+f 2 5
+r 1 4
+a 2 3
+b 1 3
+frab
+f 2 5
+r 1 4
+a 2 3
+b 3 3
+ront
+r 5 2
+o 4 2
+n 3 1
+t 3 2
+debt
+d 3 5
+e 3 4
+b 3 3
+t 3 2
+rale
+r 5 2
+a 6 2
+l 6 1
+e 5 1
+rase
+r 5 2
+a 6 2
+s 5 3
+e 6 3
+repo
+r 5 2
+e 5 1
+p 4 1
+o 4 2
+blae
+b 1 3
+l 2 4
+a 2 3
+e 3 4
+eine
+e 0 0
+i 0 1
+n 0 2
+e 1 2
+abed
+a 2 2
+b 3 3
+e 3 4
+d 3 5
+frae
+f 2 5
+r 1 4
+a 2 3
+e 3 4
+nine
+n 0 2
+i 0 1
+n 1 0
+e 0 0
+bael
+b 1 3
+a 2 3
+e 3 4
+l 2 4
+gear
+g 1 1
+e 1 2
+a 2 3
+r 1 4
+repp
+r 5 2
+e 5 1
+p 4 1
+p 4 0
+repo
+r 5 2
+e 5 1
+p 4 1
+o 5 0
+able
+a 2 2
+b 3 3
+l 2 4
+e 3 4
+frat
+f 2 5
+r 1 4
+a 2 3
+t 3 2
+reos
+r 5 2
+e 5 1
+o 4 2
+s 5 3
+real
+r 5 2
+e 5 1
+a 6 2
+l 6 1
+frae
+f 2 5
+r 1 4
+a 2 3
+e 1 2
+froe
+f 2 5
+r 1 4
+o 0 3
+e 1 2
+ingo
+i 0 1
+n 0 2
+g 1 1
+o 2 0
+deco
+d 3 5
+e 3 4
+c 4 5
+o 4 4
+real
+r 5 2
+e 5 1
+a 6 2
+l 7 1
+repp
+r 5 2
+e 5 1
+p 4 0
+p 4 1
+repo
+r 5 2
+e 5 1
+p 4 0
+o 5 0
+geat
+g 1 1
+e 1 2
+a 2 2
+t 3 2
+bale
+b 1 3
+a 2 2
+l 2 1
+e 1 2
+deco
+d 3 5
+e 3 4
+c 4 5
+o 5 4
+gale
+g 1 1
+a 2 2
+l 2 1
+e 1 2
+done
+d 3 0
+o 2 0
+n 1 0
+e 0 0
+bael
+b 1 3
+a 2 3
+e 1 2
+l 2 1
+rebs
+r 5 2
+e 6 3
+b 6 4
+s 5 3
+real
+r 5 2
+e 6 3
+a 6 2
+l 6 1
+degs
+d 3 5
+e 3 4
+g 4 3
+s 5 3
+alba
+a 1 5
+l 2 4
+b 3 3
+a 2 3
+beni
+b 1 3
+e 1 2
+n 0 2
+i 0 1
+neal
+n 0 2
+e 1 2
+a 2 3
+l 2 4
+real
+r 5 2
+e 6 3
+a 6 2
+l 7 1
+reos
+r 5 2
+e 6 3
+o 5 4
+s 5 3
+rear
+r 5 2
+e 6 3
+a 7 4
+r 7 5
+read
+r 5 2
+e 6 3
+a 7 4
+d 6 5
+abos
+a 2 2
+b 3 3
+o 4 4
+s 5 3
+soba
+s 5 3
+o 5 4
+b 6 4
+a 7 4
+calf
+c 0 5
+a 1 5
+l 2 4
+f 2 5
+soba
+s 5 3
+o 5 4
+b 6 4
+a 5 5
+soca
+s 5 3
+o 5 4
+c 4 5
+a 5 5
+soda
+s 5 3
+o 5 4
+d 6 5
+a 5 5
+soda
+s 5 3
+o 5 4
+d 6 5
+a 7 4
+sear
+s 5 3
+e 6 3
+a 6 2
+r 5 2
+deal
+d 3 5
+e 3 4
+a 2 3
+l 2 4
+nona
+n 1 0
+o 2 0
+n 3 1
+a 2 2
+seal
+s 5 3
+e 6 3
+a 6 2
+l 6 1
+dear
+d 3 5
+e 3 4
+a 2 3
+r 1 4
+seal
+s 5 3
+e 6 3
+a 6 2
+l 7 1
+sear
+s 5 3
+e 6 3
+a 7 4
+r 7 5
+baal
+b 1 3
+a 2 2
+a 2 3
+l 2 4
+doco
+d 3 5
+o 4 4
+c 4 5
+o 5 4
+sera
+s 5 3
+e 6 3
+r 5 2
+a 6 2
+bald
+b 1 3
+a 2 2
+l 2 1
+d 3 0
+doob
+d 3 5
+o 4 4
+o 5 4
+b 6 4
+sere
+s 5 3
+e 6 3
+r 5 2
+e 5 1
+albe
+a 1 5
+l 2 4
+b 3 3
+e 3 4
+doos
+d 3 5
+o 4 4
+o 5 4
+s 5 3
+soca
+s 5 3
+o 4 4
+c 4 5
+a 5 5
+soba
+s 5 3
+o 4 4
+b 3 3
+a 2 3
+soba
+s 5 3
+o 4 4
+b 3 3
+a 2 2
+togs
+t 3 2
+o 4 2
+g 4 3
+s 5 3
+toge
+t 3 2
+o 4 2
+g 4 3
+e 3 4
+dogs
+d 3 5
+o 4 4
+g 4 3
+s 5 3
+doge
+d 3 5
+o 4 4
+g 4 3
+e 3 4
+sabe
+s 5 3
+a 6 2
+b 7 2
+e 6 3
+dong
+d 3 0
+o 2 0
+n 1 0
+g 1 1
+doab
+d 3 5
+o 4 4
+a 5 5
+b 6 4
+sale
+s 5 3
+a 6 2
+l 6 1
+e 5 1
+tors
+t 3 2
+o 4 2
+r 5 2
+s 5 3
+dose
+d 3 5
+o 4 4
+s 5 3
+e 6 3
+sall
+s 5 3
+a 6 2
+l 6 1
+l 7 1
+arba
+a 1 5
+r 1 4
+b 1 3
+a 2 3
+cafe
+c 0 5
+a 1 5
+f 2 5
+e 3 4
+geat
+g 1 1
+e 1 2
+a 2 3
+t 3 2
+sall
+s 5 3
+a 6 2
+l 7 1
+l 6 1
+poep
+p 4 0
+o 5 0
+e 5 1
+p 4 1
+pope
+p 4 0
+o 5 0
+p 4 1
+e 5 1
+sora
+s 5 3
+o 4 2
+r 5 2
+a 6 2
+tora
+t 3 2
+o 4 2
+r 5 2
+a 6 2
+elan
+e 1 2
+l 2 1
+a 2 2
+n 3 1
+sore
+s 5 3
+o 4 2
+r 5 2
+e 5 1
+pole
+p 4 0
+o 5 0
+l 6 1
+e 5 1
+dole
+d 3 0
+o 2 0
+l 2 1
+e 1 2
+tore
+t 3 2
+o 4 2
+r 5 2
+e 5 1
+tore
+t 3 2
+o 4 2
+r 5 2
+e 6 3
+sore
+s 5 3
+o 4 2
+r 5 2
+e 6 3
+dolt
+d 3 0
+o 2 0
+l 2 1
+t 3 2
+soba
+s 5 3
+o 4 2
+b 3 3
+a 2 3
+soba
+s 5 3
+o 4 2
+b 3 3
+a 2 2
+abos
+a 2 2
+b 3 3
+o 4 2
+s 5 3
+lant
+l 2 1
+a 2 2
+n 3 1
+t 3 2
+oose
+o 5 4
+o 4 4
+s 5 3
+e 6 3
+obes
+o 5 4
+b 6 4
+e 6 3
+s 5 3
+oboe
+o 5 4
+b 6 4
+o 7 3
+e 6 3
+poll
+p 4 0
+o 5 0
+l 6 1
+l 7 1
+osar
+o 5 4
+s 5 3
+a 6 2
+r 5 2
+ogre
+o 5 4
+g 4 3
+r 5 2
+e 5 1
+ogre
+o 5 4
+g 4 3
+r 5 2
+e 6 3
+pepo
+p 4 0
+e 5 1
+p 4 1
+o 4 2
+aced
+a 5 5
+c 4 5
+e 3 4
+d 3 5
+tope
+t 3 2
+o 4 2
+p 4 1
+e 5 1
+anta
+a 2 2
+n 3 1
+t 3 2
+a 2 3
+pepo
+p 4 0
+e 5 1
+p 4 1
+o 5 0
+ados
+a 5 5
+d 6 5
+o 5 4
+s 5 3
+abos
+a 5 5
+b 6 4
+o 5 4
+s 5 3
+carl
+c 0 5
+a 1 5
+r 1 4
+l 2 4
+land
+l 2 1
+a 2 2
+n 3 1
+d 3 0
+baba
+b 1 3
+a 2 2
+b 3 3
+a 2 3
+rato
+r 1 4
+a 2 3
+t 3 2
+o 4 2
+geld
+g 1 1
+e 1 2
+l 2 1
+d 3 0
+eale
+e 1 2
+a 2 3
+l 2 4
+e 3 4
+topo
+t 3 2
+o 4 2
+p 4 1
+o 5 0
+hope
+h 6 0
+o 5 0
+p 4 0
+e 5 1
+tose
+t 3 2
+o 4 2
+s 5 3
+e 6 3
+anon
+a 2 2
+n 3 1
+o 2 0
+n 1 0
+hoer
+h 6 0
+o 5 0
+e 5 1
+r 5 2
+tosa
+t 3 2
+o 4 2
+s 5 3
+a 6 2
+hope
+h 6 0
+o 5 0
+p 4 1
+e 5 1
+noel
+n 0 2
+o 0 3
+e 1 2
+l 2 1
+rale
+r 1 4
+a 1 5
+l 2 4
+e 3 4
+agin
+a 2 2
+g 1 1
+i 0 1
+n 0 2
+beat
+b 1 3
+e 1 2
+a 2 2
+t 3 2
+agin
+a 2 2
+g 1 1
+i 0 1
+n 1 0
+hole
+h 6 0
+o 5 0
+l 6 1
+e 5 1
+pere
+p 4 0
+e 5 1
+r 5 2
+e 6 3
+toea
+t 3 2
+o 4 2
+e 5 1
+a 6 2
+agen
+a 2 2
+g 1 1
+e 1 2
+n 0 2
+hall
+h 6 0
+a 7 0
+l 7 1
+l 6 1
+arba
+a 1 5
+r 1 4
+b 1 3
+a 2 2
+doge
+d 3 0
+o 2 0
+g 1 1
+e 1 2
+hale
+h 6 0
+a 7 0
+l 6 1
+e 5 1
+perp
+p 4 0
+e 5 1
+r 5 2
+p 4 1
+agon
+a 2 2
+g 1 1
+o 2 0
+n 1 0
+pela
+p 4 0
+e 5 1
+l 6 1
+a 6 2
+hall
+h 6 0
+a 7 0
+l 6 1
+l 7 1
+halo
+h 6 0
+a 7 0
+l 6 1
+o 5 0
+hept
+h 6 0
+e 5 1
+p 4 1
+t 3 2
+farl
+f 2 5
+a 1 5
+r 1 4
+l 2 4
+agon
+a 2 2
+g 1 1
+o 2 0
+n 3 1
+onie
+o 0 3
+n 0 2
+i 0 1
+e 1 2
+hero
+h 6 0
+e 5 1
+r 5 2
+o 4 2
+pell
+p 4 0
+e 5 1
+l 6 1
+l 7 1
+pela
+p 4 0
+e 5 1
+l 6 1
+a 7 0
+hers
+h 6 0
+e 5 1
+r 5 2
+s 5 3
+peon
+p 4 0
+e 5 1
+o 4 2
+n 3 1
+bean
+b 1 3
+e 1 2
+a 2 2
+n 3 1
+agen
+a 2 2
+g 1 1
+e 0 0
+n 1 0
+here
+h 6 0
+e 5 1
+r 5 2
+e 6 3
+doge
+d 3 0
+o 2 0
+g 1 1
+e 0 0
+herl
+h 6 0
+e 5 1
+r 5 2
+l 6 1
+hell
+h 6 0
+e 5 1
+l 6 1
+l 7 1
+helo
+h 6 0
+e 5 1
+l 6 1
+o 5 0
+hear
+h 6 0
+e 5 1
+a 6 2
+r 5 2
+eine
+e 1 2
+i 0 1
+n 1 0
+e 0 0
+pear
+p 4 0
+e 5 1
+a 6 2
+r 5 2
+dona
+d 3 0
+o 2 0
+n 3 1
+a 2 2
+able
+a 2 3
+b 1 3
+l 2 4
+e 3 4
+heal
+h 6 0
+e 5 1
+a 6 2
+l 6 1
+heal
+h 6 0
+e 5 1
+a 6 2
+l 7 1
+lept
+l 6 1
+e 5 1
+p 4 1
+t 3 2
+alba
+a 1 5
+l 2 4
+b 3 3
+a 2 2
+lone
+l 2 1
+o 2 0
+n 1 0
+e 0 0
+ebon
+e 1 2
+b 1 3
+o 0 3
+n 0 2
+peal
+p 4 0
+e 5 1
+a 6 2
+l 6 1
+peas
+p 4 0
+e 5 1
+a 6 2
+s 5 3
+robe
+r 1 4
+o 0 3
+b 1 3
+e 1 2
+lere
+l 6 1
+e 5 1
+r 5 2
+e 6 3
+tale
+t 3 2
+a 2 3
+l 2 4
+e 3 4
+lerp
+l 6 1
+e 5 1
+r 5 2
+p 4 1
+lear
+l 6 1
+e 5 1
+a 6 2
+r 5 2
+long
+l 2 1
+o 2 0
+n 1 0
+g 1 1
+peal
+p 4 0
+e 5 1
+a 6 2
+l 7 1
+tala
+t 3 2
+a 2 3
+l 2 4
+a 1 5
+leas
+l 6 1
+e 5 1
+a 6 2
+s 5 3
+aeon
+a 2 3
+e 1 2
+o 0 3
+n 0 2
+faro
+f 2 5
+a 1 5
+r 1 4
+o 0 3
+leal
+l 6 1
+e 5 1
+a 6 2
+l 7 1
+lars
+l 6 1
+a 6 2
+r 5 2
+s 5 3
+lare
+l 6 1
+a 6 2
+r 5 2
+e 5 1
+bone
+b 1 3
+o 0 3
+n 0 2
+e 1 2
+babe
+b 1 3
+a 2 2
+b 3 3
+e 3 4
+fled
+f 2 5
+l 2 4
+e 3 4
+d 3 5
+orca
+o 0 3
+r 1 4
+c 0 5
+a 1 5
+fleg
+f 2 5
+l 2 4
+e 3 4
+g 4 3
+alba
+a 1 5
+l 2 4
+b 1 3
+a 2 3
+orfe
+o 0 3
+r 1 4
+f 2 5
+e 3 4
+lare
+l 6 1
+a 6 2
+r 5 2
+e 6 3
+nabe
+n 3 1
+a 2 2
+b 1 3
+e 1 2
+laer
+l 6 1
+a 6 2
+e 6 3
+r 5 2
+legs
+l 2 4
+e 3 4
+g 4 3
+s 5 3
+lase
+l 6 1
+a 6 2
+s 5 3
+e 6 3
+taal
+t 3 2
+a 2 3
+a 2 2
+l 2 1
+laer
+l 6 1
+a 6 2
+e 5 1
+r 5 2
+pogo
+p 4 1
+o 4 2
+g 4 3
+o 4 4
+ingo
+i 0 1
+n 1 0
+g 1 1
+o 2 0
+enol
+e 0 0
+n 1 0
+o 2 0
+l 2 1
+lope
+l 6 1
+o 5 0
+p 4 0
+e 5 1
+tara
+t 3 2
+a 2 3
+r 1 4
+a 1 5
+alfa
+a 2 3
+l 2 4
+f 2 5
+a 1 5
+lope
+l 6 1
+o 5 0
+p 4 1
+e 5 1
+taro
+t 3 2
+a 2 3
+r 1 4
+o 0 3
+alef
+a 2 3
+l 2 4
+e 3 4
+f 2 5
+alec
+a 2 3
+l 2 4
+e 3 4
+c 4 5
+alar
+a 2 3
+l 2 4
+a 1 5
+r 1 4
+pogo
+p 4 1
+o 4 2
+g 4 3
+o 5 4
+tael
+t 3 2
+a 2 3
+e 3 4
+l 2 4
+taed
+t 3 2
+a 2 3
+e 3 4
+d 3 5
+arse
+a 6 2
+r 5 2
+s 5 3
+e 6 3
+tael
+t 3 2
+a 2 3
+e 1 2
+l 2 1
+rone
+r 1 4
+o 0 3
+n 0 2
+e 1 2
+albe
+a 1 5
+l 2 4
+b 1 3
+e 1 2
+loge
+l 2 1
+o 2 0
+g 1 1
+e 1 2
+alba
+a 1 5
+l 2 4
+b 1 3
+a 2 2
+ares
+a 6 2
+r 5 2
+e 6 3
+s 5 3
+area
+a 6 2
+r 5 2
+e 6 3
+a 7 4
+babe
+b 3 3
+a 2 3
+b 1 3
+e 1 2
+flea
+f 2 5
+l 2 4
+e 3 4
+a 2 3
+arle
+a 6 2
+r 5 2
+l 6 1
+e 5 1
+aero
+a 6 2
+e 6 3
+r 5 2
+o 4 2
+pore
+p 4 1
+o 4 2
+r 5 2
+e 5 1
+baba
+b 3 3
+a 2 3
+b 1 3
+a 2 2
+albe
+a 2 3
+l 2 4
+b 3 3
+e 3 4
+bale
+b 3 3
+a 2 3
+l 2 4
+e 3 4
+pore
+p 4 1
+o 4 2
+r 5 2
+e 6 3
+nabe
+n 3 1
+a 2 2
+b 3 3
+e 3 4
+pose
+p 4 1
+o 4 2
+s 5 3
+e 6 3
+able
+a 6 2
+b 7 2
+l 6 1
+e 5 1
+crab
+c 0 5
+r 1 4
+a 2 3
+b 1 3
+albe
+a 6 2
+l 6 1
+b 7 2
+e 6 3
+bald
+b 3 3
+a 2 3
+l 2 4
+d 3 5
+bego
+b 1 3
+e 1 2
+g 1 1
+o 2 0
+bong
+b 1 3
+o 0 3
+n 0 2
+g 1 1
+aloe
+a 6 2
+l 6 1
+o 5 0
+e 5 1
+poep
+p 4 1
+o 4 2
+e 5 1
+p 4 0
+asea
+a 6 2
+s 5 3
+e 6 3
+a 7 4
+albe
+a 6 2
+l 7 1
+b 7 2
+e 6 3
+bear
+b 1 3
+e 1 2
+a 2 3
+r 1 4
+beat
+b 1 3
+e 1 2
+a 2 3
+t 3 2
+oral
+o 0 3
+r 1 4
+a 1 5
+l 2 4
+aero
+a 6 2
+e 5 1
+r 5 2
+o 4 2
+loge
+l 2 1
+o 2 0
+g 1 1
+e 0 0
+gien
+g 1 1
+i 0 1
+e 0 0
+n 1 0
+alba
+a 2 3
+l 2 4
+b 3 3
+a 2 2
+orle
+o 0 3
+r 1 4
+l 2 4
+e 3 4
+pont
+p 4 1
+o 4 2
+n 3 1
+t 3 2
+aeon
+a 6 2
+e 5 1
+o 4 2
+n 3 1
+ears
+e 6 3
+a 6 2
+r 5 2
+s 5 3
+earl
+e 6 3
+a 6 2
+r 5 2
+l 6 1
+eale
+e 6 3
+a 6 2
+l 6 1
+e 5 1
+eard
+e 6 3
+a 7 4
+r 7 5
+d 6 5
+albe
+a 2 3
+l 2 4
+b 1 3
+e 1 2
+eros
+e 6 3
+r 5 2
+o 4 2
+s 5 3
+eras
+e 6 3
+r 5 2
+a 6 2
+s 5 3
+ergo
+e 6 3
+r 5 2
+g 4 3
+o 4 4
+leno
+l 2 1
+e 1 2
+n 0 2
+o 0 3
+ergs
+e 6 3
+r 5 2
+g 4 3
+s 5 3
+ergo
+e 6 3
+r 5 2
+g 4 3
+o 4 2
+baal
+b 3 3
+a 2 3
+a 2 2
+l 2 1
+bora
+b 1 3
+o 0 3
+r 1 4
+a 1 5
+leng
+l 2 1
+e 1 2
+n 0 2
+g 1 1
+ergo
+e 6 3
+r 5 2
+g 4 3
+o 5 4
+pond
+p 4 1
+o 4 2
+n 3 1
+d 3 0
+barb
+b 3 3
+a 2 3
+r 1 4
+b 1 3
+alba
+a 2 3
+l 2 4
+b 1 3
+a 2 2
+boos
+b 6 4
+o 5 4
+o 4 4
+s 5 3
+leat
+l 2 1
+e 1 2
+a 2 2
+t 3 2
+boob
+b 6 4
+o 5 4
+o 4 4
+b 3 3
+abed
+a 2 3
+b 3 3
+e 3 4
+d 3 5
+gold
+g 1 1
+o 2 0
+l 2 1
+d 3 0
+bogs
+b 6 4
+o 5 4
+g 4 3
+s 5 3
+bard
+b 6 4
+a 7 4
+r 7 5
+d 6 5
+crab
+c 0 5
+r 1 4
+a 2 3
+b 3 3
+able
+a 2 3
+b 3 3
+l 2 4
+e 3 4
+lear
+l 2 4
+e 3 4
+a 2 3
+r 1 4
+bear
+b 6 4
+e 6 3
+a 6 2
+r 5 2
+axon
+a 1 5
+x 0 4
+o 0 3
+n 0 2
+nota
+n 3 1
+o 4 2
+t 3 2
+a 2 2
+bear
+b 6 4
+e 6 3
+a 7 4
+r 7 5
+neat
+n 0 2
+e 1 2
+a 2 2
+t 3 2
+bead
+b 6 4
+e 6 3
+a 7 4
+d 6 5
+neal
+n 0 2
+e 1 2
+a 2 2
+l 2 1
+lean
+l 2 1
+e 1 2
+a 2 2
+n 3 1
+bere
+b 6 4
+e 6 3
+r 5 2
+e 5 1
+berg
+b 6 4
+e 6 3
+r 5 2
+g 4 3
+pere
+p 4 1
+e 5 1
+r 5 2
+e 6 3
+barf
+b 3 3
+a 2 3
+r 1 4
+f 2 5
+flab
+f 2 5
+l 2 4
+a 2 3
+b 1 3
+brad
+b 6 4
+r 7 5
+a 7 4
+d 6 5
+brae
+b 6 4
+r 7 5
+a 7 4
+e 6 3
+geal
+g 1 1
+e 1 2
+a 2 2
+l 2 1
+boar
+b 6 4
+o 7 3
+a 7 4
+r 7 5
+pela
+p 4 1
+e 5 1
+l 6 1
+a 6 2
+boba
+b 6 4
+o 7 3
+b 7 2
+a 6 2
+onie
+o 2 0
+n 1 0
+i 0 1
+e 0 0
+boar
+b 6 4
+o 7 3
+a 6 2
+r 5 2
+pell
+p 4 1
+e 5 1
+l 6 1
+l 7 1
+boab
+b 6 4
+o 7 3
+a 6 2
+b 7 2
+boas
+b 6 4
+o 7 3
+a 6 2
+s 5 3
+dace
+d 6 5
+a 5 5
+c 4 5
+e 3 4
+dabs
+d 6 5
+a 5 5
+b 6 4
+s 5 3
+drab
+d 6 5
+r 7 5
+a 7 4
+b 6 4
+pela
+p 4 1
+e 5 1
+l 6 1
+a 7 0
+dabs
+d 6 5
+a 7 4
+b 6 4
+s 5 3
+darb
+d 6 5
+a 7 4
+r 7 5
+b 6 4
+peon
+p 4 1
+e 5 1
+o 4 2
+n 3 1
+daes
+d 6 5
+a 7 4
+e 6 3
+s 5 3
+bael
+b 3 3
+a 2 3
+e 3 4
+l 2 4
+abos
+a 2 3
+b 3 3
+o 4 4
+s 5 3
+rong
+r 1 4
+o 0 3
+n 0 2
+g 1 1
+doos
+d 6 5
+o 5 4
+o 4 4
+s 5 3
+bora
+b 1 3
+o 0 3
+r 1 4
+a 2 3
+doob
+d 6 5
+o 5 4
+o 4 4
+b 3 3
+doab
+d 6 5
+o 5 4
+a 5 5
+b 6 4
+pear
+p 4 1
+e 5 1
+a 6 2
+r 5 2
+earl
+e 1 2
+a 2 3
+r 1 4
+l 2 4
+dobs
+d 6 5
+o 5 4
+b 6 4
+s 5 3
+gean
+g 1 1
+e 1 2
+a 2 2
+n 3 1
+dose
+d 6 5
+o 5 4
+s 5 3
+e 6 3
+bael
+b 3 3
+a 2 3
+e 1 2
+l 2 1
+doco
+d 6 5
+o 5 4
+c 4 5
+o 4 4
+geal
+g 1 1
+e 1 2
+a 2 3
+l 2 4
+does
+d 6 5
+o 5 4
+e 6 3
+s 5 3
+doer
+d 6 5
+o 5 4
+e 6 3
+r 5 2
+peal
+p 4 1
+e 5 1
+a 6 2
+l 6 1
+dogs
+d 6 5
+o 5 4
+g 4 3
+s 5 3
+doge
+d 6 5
+o 5 4
+g 4 3
+e 3 4
+peas
+p 4 1
+e 5 1
+a 6 2
+s 5 3
+alba
+a 7 0
+l 7 1
+b 7 2
+a 6 2
+nota
+n 3 1
+o 4 2
+t 3 2
+a 2 3
+albe
+a 7 0
+l 7 1
+b 7 2
+e 6 3
+abos
+a 2 3
+b 3 3
+o 4 2
+s 5 3
+blat
+b 1 3
+l 2 4
+a 2 3
+t 3 2
+belt
+b 1 3
+e 1 2
+l 2 1
+t 3 2
+alar
+a 7 0
+l 7 1
+a 6 2
+r 5 2
+alae
+a 7 0
+l 7 1
+a 6 2
+e 6 3
+alas
+a 7 0
+l 7 1
+a 6 2
+s 5 3
+alae
+a 7 0
+l 7 1
+a 6 2
+e 5 1
+alar
+a 7 0
+l 6 1
+a 6 2
+r 5 2
+alae
+a 7 0
+l 6 1
+a 6 2
+e 6 3
+alas
+a 7 0
+l 6 1
+a 6 2
+s 5 3
+alae
+a 7 0
+l 6 1
+a 6 2
+e 5 1
+alba
+a 7 0
+l 6 1
+b 7 2
+a 6 2
+peal
+p 4 1
+e 5 1
+a 6 2
+l 7 1
+albe
+a 7 0
+l 6 1
+b 7 2
+e 6 3
+bein
+b 1 3
+e 1 2
+i 0 1
+n 0 2
+pepo
+p 4 1
+e 5 1
+p 4 0
+o 5 0
+gelt
+g 1 1
+e 1 2
+l 2 1
+t 3 2
+aloe
+a 7 0
+l 6 1
+o 5 0
+e 5 1
+lars
+l 7 1
+a 6 2
+r 5 2
+s 5 3
+lare
+l 7 1
+a 6 2
+r 5 2
+e 5 1
+prog
+p 4 1
+r 5 2
+o 4 2
+g 4 3
+egal
+e 1 2
+g 1 1
+a 2 2
+l 2 1
+prob
+p 4 1
+r 5 2
+o 4 2
+b 3 3
+gant
+g 1 1
+a 2 2
+n 3 1
+t 3 2
+bego
+b 3 3
+e 3 4
+g 4 3
+o 4 4
+begs
+b 3 3
+e 3 4
+g 4 3
+s 5 3
+oral
+o 0 3
+r 1 4
+a 2 3
+l 2 4
+lare
+l 7 1
+a 6 2
+r 5 2
+e 6 3
+bego
+b 3 3
+e 3 4
+g 4 3
+o 4 2
+laer
+l 7 1
+a 6 2
+e 6 3
+r 5 2
+flab
+f 2 5
+l 2 4
+a 2 3
+b 3 3
+lase
+l 7 1
+a 6 2
+s 5 3
+e 6 3
+pros
+p 4 1
+r 5 2
+o 4 2
+s 5 3
+laer
+l 7 1
+a 6 2
+e 5 1
+r 5 2
+bego
+b 3 3
+e 3 4
+g 4 3
+o 5 4
+onie
+o 2 0
+n 1 0
+i 0 1
+e 1 2
+bear
+b 3 3
+e 3 4
+a 2 3
+r 1 4
+bein
+b 1 3
+e 1 2
+i 0 1
+n 1 0
+bars
+b 7 2
+a 6 2
+r 5 2
+s 5 3
+bare
+b 7 2
+a 6 2
+r 5 2
+e 5 1
+onie
+o 0 3
+n 0 2
+i 0 1
+e 0 0
+beat
+b 3 3
+e 3 4
+a 2 3
+t 3 2
+gone
+g 1 1
+o 2 0
+n 1 0
+e 0 0
+nine
+n 1 0
+i 0 1
+n 0 2
+e 1 2
+bare
+b 7 2
+a 6 2
+r 5 2
+e 6 3
+prao
+p 4 1
+r 5 2
+a 6 2
+o 7 3
+barp
+b 7 2
+a 6 2
+r 5 2
+p 4 1
+bale
+b 7 2
+a 6 2
+l 6 1
+e 5 1
+bled
+b 3 3
+l 2 4
+e 3 4
+d 3 5
+egal
+e 0 0
+g 1 1
+a 2 2
+l 2 1
+ball
+b 7 2
+a 6 2
+l 6 1
+l 7 1
+base
+b 7 2
+a 6 2
+s 5 3
+e 6 3
+arle
+a 2 3
+r 1 4
+l 2 4
+e 3 4
+eorl
+e 1 2
+o 0 3
+r 1 4
+l 2 4
+glen
+g 1 1
+l 2 1
+e 1 2
+n 0 2
+ball
+b 7 2
+a 6 2
+l 7 1
+l 6 1
+prep
+p 4 1
+r 5 2
+e 5 1
+p 4 0
+nogs
+n 3 1
+o 4 2
+g 4 3
+s 5 3
+bael
+b 7 2
+a 6 2
+e 5 1
+l 6 1
+boab
+b 7 2
+o 7 3
+a 7 4
+b 6 4
+brae
+b 1 3
+r 1 4
+a 2 3
+e 3 4
+boar
+b 7 2
+o 7 3
+a 7 4
+r 7 5
+brat
+b 1 3
+r 1 4
+a 2 3
+t 3 2
+boba
+b 7 2
+o 7 3
+b 6 4
+a 7 4
+boba
+b 7 2
+o 7 3
+b 6 4
+a 5 5
+near
+n 0 2
+e 1 2
+a 2 3
+r 1 4
+bobs
+b 7 2
+o 7 3
+b 6 4
+s 5 3
+boar
+b 7 2
+o 7 3
+a 6 2
+r 5 2
+pope
+p 4 1
+o 5 0
+p 4 0
+e 5 1
+boas
+b 7 2
+o 7 3
+a 6 2
+s 5 3
+blah
+b 7 2
+l 7 1
+a 7 0
+h 6 0
+blab
+b 3 3
+l 2 4
+a 2 3
+b 1 3
+brae
+b 1 3
+r 1 4
+a 2 3
+e 1 2
+arba
+a 2 3
+r 1 4
+b 1 3
+a 2 2
+blae
+b 7 2
+l 7 1
+a 6 2
+e 6 3
+poep
+p 4 1
+o 5 0
+e 5 1
+p 4 0
+pole
+p 4 1
+o 5 0
+l 6 1
+e 5 1
+blae
+b 3 3
+l 2 4
+a 2 3
+e 3 4
+blae
+b 7 2
+l 7 1
+a 6 2
+e 5 1
+leal
+l 2 1
+e 1 2
+a 2 3
+l 2 4
+blat
+b 3 3
+l 2 4
+a 2 3
+t 3 2
+bear
+b 7 2
+e 6 3
+a 6 2
+r 5 2
+bale
+b 1 3
+a 2 3
+l 2 4
+e 3 4
+lear
+l 2 1
+e 1 2
+a 2 3
+r 1 4
+bear
+b 7 2
+e 6 3
+a 7 4
+r 7 5
+poll
+p 4 1
+o 5 0
+l 6 1
+l 7 1
+bead
+b 7 2
+e 6 3
+a 7 4
+d 6 5
+ogre
+o 4 2
+g 4 3
+r 5 2
+e 5 1
+bled
+b 1 3
+l 2 4
+e 3 4
+d 3 5
+bere
+b 7 2
+e 6 3
+r 5 2
+e 5 1
+berg
+b 7 2
+e 6 3
+r 5 2
+g 4 3
+ogre
+o 4 2
+g 4 3
+r 5 2
+e 6 3
+blae
+b 3 3
+l 2 4
+a 2 3
+e 1 2
+oral
+o 4 2
+r 5 2
+a 6 2
+l 6 1
+oral
+o 4 2
+r 5 2
+a 6 2
+l 7 1
+leat
+l 2 1
+e 1 2
+a 2 3
+t 3 2
+afro
+a 1 5
+f 2 5
+r 1 4
+o 0 3
+blae
+b 7 2
+l 6 1
+a 6 2
+e 6 3
+ores
+o 4 2
+r 5 2
+e 6 3
+s 5 3
+boob
+b 3 3
+o 4 4
+o 5 4
+b 6 4
+orle
+o 4 2
+r 5 2
+l 6 1
+e 5 1
+blae
+b 7 2
+l 6 1
+a 6 2
+e 5 1
+nope
+n 3 1
+o 4 2
+p 4 1
+e 5 1
+blah
+b 7 2
+l 6 1
+a 7 0
+h 6 0
+obas
+o 7 3
+b 7 2
+a 6 2
+s 5 3
+obes
+o 7 3
+b 7 2
+e 6 3
+s 5 3
+obos
+o 7 3
+b 6 4
+o 5 4
+s 5 3
+oboe
+o 7 3
+b 6 4
+o 5 4
+e 6 3
+boos
+b 3 3
+o 4 4
+o 5 4
+s 5 3
+obes
+o 7 3
+b 6 4
+e 6 3
+s 5 3
+oars
+o 7 3
+a 6 2
+r 5 2
+s 5 3
+abos
+a 7 4
+b 6 4
+o 5 4
+s 5 3
+flat
+f 2 5
+l 2 4
+a 2 3
+t 3 2
+arle
+a 1 5
+r 1 4
+l 2 4
+e 3 4
+abac
+a 7 4
+b 6 4
+a 5 5
+c 4 5
+arba
+a 7 4
+r 7 5
+b 6 4
+a 5 5
+arbs
+a 7 4
+r 7 5
+b 6 4
+s 5 3
+aeon
+a 2 2
+e 1 2
+o 0 3
+n 0 2
+oppo
+o 4 2
+p 4 1
+p 4 0
+o 5 0
+oboe
+o 4 2
+b 3 3
+o 4 4
+e 3 4
+ados
+a 7 4
+d 6 5
+o 5 4
+s 5 3
+aero
+a 7 4
+e 6 3
+r 5 2
+o 4 2
+bleb
+b 1 3
+l 2 4
+e 3 4
+b 3 3
+obos
+o 4 2
+b 3 3
+o 4 4
+s 5 3
+gole
+g 1 1
+o 2 0
+l 2 1
+e 1 2
+osar
+o 4 2
+s 5 3
+a 6 2
+r 5 2
+goel
+g 4 3
+o 4 4
+e 3 4
+l 2 4
+flatland
+f 2 5
+l 2 4
+a 2 3
+t 3 2
+l 2 1
+a 2 2
+n 3 1
+d 3 0
+flatlong
+f 2 5
+l 2 4
+a 2 3
+t 3 2
+l 2 1
+o 2 0
+n 1 0
+g 1 1
+baronage
+b 7 2
+a 6 2
+r 5 2
+o 4 2
+n 3 1
+a 2 2
+g 1 1
+e 0 0
