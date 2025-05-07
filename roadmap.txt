@@ -1,0 +1,25 @@
+1.  Take in the board of letters
+2.  Create a list of words based off the grid
+3.  Process the list of words and remove words (criteria listed below)
+		- Criteria for adding words to the list / removing words:
+			- A word must be at least 4 letters
+			- A word must be no more than 19 letters
+			- A word must not leave a region of the board with less than 4 letters
+4.  Find potential spangram words (shouldn't be that many)
+		- If there's more than one spangram word, we need to add additional level of backtracking
+5.  Create graph of nodes, where each node is a word
+		- Nodes are connected if they can be placed next to each other on the board
+		- Look at the spangram, and pick a node connected to spangram node
+		- Looking at the node you picked, find all nodes connected to that one AND spangram
+			- While there is a chance that a word runs along the spangram and thus there are not
+			  multiple words fitting this criteria, we can raise a flag to say the algorithm does
+			  not work with this strands, and just look for an alternate, worse solution in place.
+		- This should give you a very limited possibility of words. If there are no words, you
+		  should probably consider iterating to another word
+		- Assuming you find a cross section, this is highly likely to be two of the theme words
+		- Apply this algorithm again to the other side of the spangram.
+		- You should only have about 2-4 words left in the spangram, so at this point you may
+		  choose to solve it in a number of ways. You can reapply the same algorithm with words
+		  you've already found, or you can use a makeshift backtracking algorithm to parse over
+		  letters that are not contained in words. You can further this to create a new list of
+		  words with only the leftover letters to shorten the search
