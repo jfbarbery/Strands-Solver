@@ -4,6 +4,7 @@
 #include <unistd.h>
 
 #define MAX_WORD_LENGTH 19
+#define MIN_WORD_LENGTH 4
 #define MAX_LETTER_SOLUTION 10
 #define ROWS 8
 #define COLS 6
@@ -45,21 +46,42 @@ void tolowercase(char* str);
 void reset_selected(int** selected);
 
 WordList* wl;
+// An array representing the compounded number of words at an index 
+// (e.g. 2 words at [0][0], 2 (from [0][0]) + 3 (at [0][1]) = 5 words at index [0][1] of the array
+int** num_words_per_index_offsets;
 char** colors;
 
 int main(int argc, char* argv[])
 {
 	wl = create_list();
+	num_words_per_index_offsets = (int**) malloc(sizeof(int*) * ROWS);
+	for (int i = 0; i < ROWS; i++)
+	{
+		num_words_per_index_offsets[i] = (int*) malloc(sizeof(int) * COLS);
+		for (int j = 0; j < COLS; j++)
+		{
+			num_words_per_index_offsets[i][j] = 0;
+		}
+	}
 	colors = set_colors();
+	// 1. Take in the board of letters
 	char** board = read_board(argv);
+	// 2. Create a list of words based off the grid
 	FILE* words_ptr = fopen("./en.txt", "r");
 	FILE* offset_ptr = fopen("./preprocessed.txt", "r");
 	strand_solver(board, words_ptr, offset_ptr);
+	// Clean up memory
 	for (int i = 0; i < ROWS; i++)
 		free(board[i]);
 	free(board);
 	fclose(words_ptr);
 	fclose(offset_ptr);
+	// 3. Process the list of words and remove words
+	
+	
+	
+	
+	
 	//printf("num words found: %d\n", wl->size);
 	for (int i = 0; i < wl->size; i++)
 	{
@@ -193,6 +215,7 @@ void backtrack_find(char** board, int n, int r, int c, int** selected, FILE* wor
 		}
 		if (exists == 1)
 		{
+			num_words_per_index_offsets[r][c] = num_words_per_index_offsets[r][c] + 1;
 			append_word(wl, string, selected);
 			print_board(board, selected, n);
 		}
@@ -214,6 +237,7 @@ void backtrack_find(char** board, int n, int r, int c, int** selected, FILE* wor
 		//printf("n %d %d\n", r-1, c);
 		selected[n][0] = r-1;
 		selected[n][1] = c;
+		
 		backtrack_find(board, n+1, r-1, c, selected, words_ptr, offset_ptr);
 	}
 	// East
@@ -307,9 +331,14 @@ char** glue_puzzle_pieces()
 	}
 	print_board(board, selected, 0);
 	// Iterate through all indexes and
-	backtrack_place(board, selected);
+	backtrack_place(board, selected, 0, 0, 0);
 }
 
+// General Solution:
+/*
+	Track the number of placed letters on the board with n.
+	On each function call, find the 
+*/
 void backtrack_place(char** board, int** selected, int n, int r, int c)
 {
 	// For each cardinal direction:
