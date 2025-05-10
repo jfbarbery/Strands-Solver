@@ -48,9 +48,32 @@ int word_is_vertical_spangram(WordList* wl, int i);
 int word_is_horizontal_spangram(WordList* wl, int i);
 
 WordList* wl;
+char* answers[] = {
+				"andouille",
+				"liverwurst",
+				"sausages",
+				"kielbasa",
+				"chorizo",
+				"salami"
+				};
+int*** answer_locations;
 
 int main()
 {
+	int num_words = 6;
+	// Allocate space for each word
+	answer_locations = (int***) malloc(sizeof(int**) * ROWS);
+	for (int i = 0; i < num_words; i++)
+	{
+		int word_len = strlen(answers[i]);
+		// Allocate space for each letter in a given word
+		answer_locations[i] = (int**) malloc(sizeof(int*) * word_len);
+		for (int j = 0; j < word_len; j++)
+		{
+			// Allocate space for row and col of this letter
+			answer_locations[i][j] = (int*) malloc(sizeof(int) * 2);
+		}
+	}
 	wl = create_list();
 	char** board = read_board();
 	FILE* words_ptr = fopen("./en.txt", "r");
@@ -96,6 +119,17 @@ int main()
 			}
 		}
 	}
+	
+	for (int i = 0; i < num_words; i++)
+	{
+		int word_len = strlen(answers[i]);
+		for (int j = 0; j < word_len; j++)
+		{
+			free(answer_locations[i][j]);
+		}
+		free(answer_locations[i]);
+	}
+	free(answer_locations);
 	
 	// Memory leak bad!!!
 	for (int i = 0; i < wl->cap; i++)
