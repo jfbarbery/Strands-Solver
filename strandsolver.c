@@ -46,8 +46,10 @@ void tolowercase(char* str);
 void reset_selected(int** selected);
 int word_is_vertical_spangram(WordList* wl, int i);
 int word_is_horizontal_spangram(WordList* wl, int i);
+int word_matches_answer(char* potential, int** selected);
 
 WordList* wl;
+int num_words = 6;
 char* answers[] = {
 				"andouille",
 				"liverwurst",
@@ -60,7 +62,6 @@ int*** answer_locations;
 
 int main()
 {
-	int num_words = 6;
 	// Allocate space for each word
 	answer_locations = (int***) malloc(sizeof(int**) * ROWS);
 	for (int i = 0; i < num_words; i++)
@@ -74,6 +75,158 @@ int main()
 			answer_locations[i][j] = (int*) malloc(sizeof(int) * 2);
 		}
 	}
+	
+	// First word
+	answer_locations[0][0][0] = 0;
+	answer_locations[0][0][1] = 1;
+	
+	answer_locations[0][1][0] = 0;
+	answer_locations[0][1][1] = 2;
+	
+	answer_locations[0][2][0] = 1;
+	answer_locations[0][2][1] = 2;
+	
+	answer_locations[0][3][0] = 2;
+	answer_locations[0][3][1] = 2;
+	
+	answer_locations[0][4][0] = 1;
+	answer_locations[0][4][1] = 1;
+	
+	answer_locations[0][5][0] = 0;
+	answer_locations[0][5][1] = 0;
+	
+	answer_locations[0][6][0] = 1;
+	answer_locations[0][6][1] = 0;
+	
+	answer_locations[0][7][0] = 2;
+	answer_locations[0][7][1] = 0;
+	
+	answer_locations[0][8][0] = 2;
+	answer_locations[0][8][1] = 1;
+	
+	// Second word
+	answer_locations[1][0][0] = 3;
+	answer_locations[1][0][1] = 2;
+	
+	answer_locations[1][1][0] = 2;
+	answer_locations[1][1][1] = 3;
+	
+	answer_locations[1][2][0] = 1;
+	answer_locations[1][2][1] = 3;
+	
+	answer_locations[1][3][0] = 0;
+	answer_locations[1][3][1] = 3;
+	
+	answer_locations[1][4][0] = 0;
+	answer_locations[1][4][1] = 4;
+	
+	answer_locations[1][5][0] = 1;
+	answer_locations[1][5][1] = 4;
+	
+	answer_locations[1][6][0] = 2;
+	answer_locations[1][6][1] = 4;
+	
+	answer_locations[1][7][0] = 2;
+	answer_locations[1][7][1] = 5;
+	
+	answer_locations[1][8][0] = 1;
+	answer_locations[1][8][1] = 5;
+	
+	answer_locations[1][9][0] = 0;
+	answer_locations[1][9][1] = 5;
+	
+	// Third word
+	answer_locations[2][0][0] = 3;
+	answer_locations[2][0][1] = 0;
+	
+	answer_locations[2][1][0] = 3;
+	answer_locations[2][1][1] = 1;
+	
+	answer_locations[2][2][0] = 4;
+	answer_locations[2][2][1] = 1;
+	
+	answer_locations[2][3][0] = 4;
+	answer_locations[2][3][1] = 2;
+	
+	answer_locations[2][4][0] = 4;
+	answer_locations[2][4][1] = 3;
+	
+	answer_locations[2][5][0] = 3;
+	answer_locations[2][5][1] = 3;
+	
+	answer_locations[2][6][0] = 3;
+	answer_locations[2][6][1] = 4;
+	
+	answer_locations[2][7][0] = 3;
+	answer_locations[2][7][1] = 5;
+	
+	// Fourth word
+	answer_locations[3][0][0] = 4;
+	answer_locations[3][0][1] = 0;
+	
+	answer_locations[3][1][0] = 5;
+	answer_locations[3][1][1] = 0;
+	
+	answer_locations[3][2][0] = 6;
+	answer_locations[3][2][1] = 1;
+	
+	answer_locations[3][3][0] = 6;
+	answer_locations[3][3][1] = 2;
+	
+	answer_locations[3][4][0] = 6;
+	answer_locations[3][4][1] = 3;
+	
+	answer_locations[3][5][0] = 6;
+	answer_locations[3][5][1] = 4;
+	
+	answer_locations[3][6][0] = 6;
+	answer_locations[3][6][1] = 5;
+	
+	answer_locations[3][7][0] = 7;
+	answer_locations[3][7][1] = 5;
+	
+	// Fifth word
+	answer_locations[4][0][0] = 4;
+	answer_locations[4][0][1] = 4;
+	
+	answer_locations[4][1][0] = 4;
+	answer_locations[4][1][1] = 5;
+	
+	answer_locations[4][2][0] = 5;
+	answer_locations[4][2][1] = 5;
+	
+	answer_locations[4][3][0] = 5;
+	answer_locations[4][3][1] = 4;
+	
+	answer_locations[4][4][0] = 5;
+	answer_locations[4][4][1] = 3;
+	
+	answer_locations[4][5][0] = 5;
+	answer_locations[4][5][1] = 2;
+	
+	answer_locations[4][6][0] = 5;
+	answer_locations[4][6][1] = 1;
+	
+	// Sixth word
+	answer_locations[5][0][0] = 7;
+	answer_locations[5][0][1] = 0;
+	
+	answer_locations[5][1][0] = 6;
+	answer_locations[5][1][1] = 0;
+	
+	answer_locations[5][2][0] = 7;
+	answer_locations[5][2][1] = 1;
+	
+	answer_locations[5][3][0] = 7;
+	answer_locations[5][3][1] = 2;
+	
+	answer_locations[5][4][0] = 7;
+	answer_locations[5][4][1] = 3;
+	
+	answer_locations[5][5][0] = 7;
+	answer_locations[5][5][1] = 4;
+	
+	
 	wl = create_list();
 	char** board = read_board();
 	FILE* words_ptr = fopen("./en.txt", "r");
@@ -145,6 +298,32 @@ int main()
 	free(wl->list);
 	free(wl->location_list);
 	free(wl);
+	return 0;
+}
+
+int word_matches_answer(char* potential, int** selected)
+{
+	for (int i = 0; i < num_words; i++)
+	{
+		// These are the same word, but we still need to make sure they're the same location
+		if (!strcmp(potential, answers[i]))
+		{
+			int word_len = strlen(potential);
+			// Check to make sure, at each letter, the row and col match
+			for (int j = 0; j < word_len; j++)
+			{
+				if (selected[j][0] != answer_locations[i][j][0])
+				{
+					return 0;
+				}
+				else if (selected[j][1] != answer_locations[i][j][1])
+				{
+					return 0;
+				}
+			}
+			return 1;
+		}
+	}
 	return 0;
 }
 
